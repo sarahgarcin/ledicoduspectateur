@@ -10,7 +10,7 @@ You need NPM, Bower and GIT (for the Kirby submodules) to use this project.
 
 1. clone this repo :
   ```
-  git clone --recursive https://github.com/julien-gargot/kirby-devkit.git path/to/your-project
+  git clone --recursive https://github.com/sarahgarcin/ledicoduspectateur.git path/to/your-project
   cd path/to/your-project
   ```
 
