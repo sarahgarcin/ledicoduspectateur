@@ -51,19 +51,41 @@ function init() {
 
 
     function displayDef(e) {
-        e.preventDefault();
-        url = $(this).data('target');
-//        log(url);
-        $.ajax({
-            url: url,
-            success: function(data) {
-//                console.log(data);
-                console.log(typeof(data));
-//                $(".random-div").append(data);
-//                if(data == )
-            }
-        });
+        var that = this, xhr, coord;
+        
+        if (that.querySelector("#placeholder")) {
+            return; // avoid div stacking
+        }
+        
+        coord = that.getBoundingClientRect();
+        
+        console.log(coord);
+        console.log(that);
+         
+        that.classList.add("is-active");
+        
+        xhr = new XMLHttpRequest();
+        xhr.open("post", this.getAttribute("data-target"));
+        xhr.setRequestHeader('X-Requested-With','XMLHttpRequest');
+        
+        xhr.onload = function getRes() {
+            var placeholder = document.createElement("div");
+            placeholder.id = "placeholder";
+            placeholder.className = "placeholder";
+            placeholder.innerHTML = this.response;
+//            console.log(placeholder);
+            byId("pagedefinitions").appendChild(placeholder);
+    
+            placeholder.style.border = "1px solid red";
+            placeholder.style.left = that.offsetLeft + "px";
+            placeholder.style.top = that.offsetTop + "px";
+//            log("placeholder.offsetTop");
+//            log(that.offsetTop);
+//            log(placeholder.getBoundingClientRect());
+        }
 
+        xhr.send();
+        e.preventDefault();
     }
 
 
