@@ -57,11 +57,9 @@ function init() {
             return; // avoid div stacking
         }
         
+        /* get  evt target position */
         coord = that.getBoundingClientRect();
         
-        console.log(coord);
-        console.log(that);
-         
         that.classList.add("is-active");
         
         xhr = new XMLHttpRequest();
@@ -73,15 +71,11 @@ function init() {
             placeholder.id = "placeholder";
             placeholder.className = "placeholder";
             placeholder.innerHTML = this.response;
-//            console.log(placeholder);
             byId("pagedefinitions").appendChild(placeholder);
     
             placeholder.style.border = "1px solid red";
             placeholder.style.left = that.offsetLeft + "px";
             placeholder.style.top = that.offsetTop + "px";
-//            log("placeholder.offsetTop");
-//            log(that.offsetTop);
-//            log(placeholder.getBoundingClientRect());
         }
 
         xhr.send();

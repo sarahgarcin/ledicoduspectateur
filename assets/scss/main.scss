@@ -4,7 +4,6 @@
 @import "_font-awesome.scss";
 @import "_variables.scss";
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,10 +22,15 @@ a {
     &:hover {
         color:$text-color;
     }
+    &:visited {
+        color:$text-color;
+    }
 }
 
 hr {
-    border: 1px solid #E6E6E6;
+    background-color: $text-color; 
+    height: 1px; 
+    border: 0;
 }
 
 h2 {
@@ -157,8 +161,9 @@ ul {
 
 /*END HEADER ET MENU*/
 
+/* TEXTE AVANT PROPOS*/
 #texte {
-    border:$box-border;
+    border: $box-border;
     padding: 20px;
     display: block;
     margin-bottom: 100px;
@@ -168,13 +173,9 @@ ul {
         display: none;
     }
     p {
-        font-family: $font-family;
-        font-size: 20px;
-        color: $text-color;
-
+        @include anchorText;
         a {
-            color: $text-color;
-            border: $box-border;
+            @include highlightLink;
         }
         a:hover {
             color: $vert;
@@ -182,6 +183,25 @@ ul {
     }
 }
 
+/* SNIPPET BREADCRUMB - */
+nav.breadcrumb {
+    margin-top: 100px;
+    padding: 0;
+    display: inline-block;
+    ul {
+        margin: 0;
+        background-color: $vert;
+        display: flex;
+        padding: 0 10px 3px 10px;
+    }
+    li { 
+        margin-left: 3px;
+        a {
+            @include tinyText;
+        }
+    }
+}
+/*-- END BREADCRUMB --*/
 
 #subpage {
     margin: 24px 0px 24px 0px;
@@ -285,7 +305,7 @@ ul {
     }
 }
 /* --- */
-/* SNIPPET BREADCRUMB */
+/* CREDITS */
 #credits {
     border: $box-border;
     padding: 20px;
@@ -299,30 +319,7 @@ ul {
     }
 }
 
-/* SNIPPET BREADCRUMB */
-.breadcrumb {
-    margin-top: 100px;
-    padding: 0;
 
-    ul {
-        margin: 0;
-        display: block;
-        list-style-type: none;
-        display: inline;
-        background-color: rgb(0, 255, 154);
-        border: 7px solid rgb(0, 255, 154);;
-
-    }
-    li {
-        display: inline-block;
-        a {
-            font-family: $font-family;
-            font-size: 18px;
-            color: $text-color;
-        }
-    }
-}
-/*-- END BREADCRUMB --*/
 
 /* PAGE DEFINITIONS -- definition.php*/
 #content-definitions {
@@ -340,6 +337,9 @@ ul {
                 height: 200px;
                 overflow:hidden;
                 padding: 10px 18px;
+                p {
+                    margin-top: 15px;
+                }
                 img {
                     width: 80%;
                 }

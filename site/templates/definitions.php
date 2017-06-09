@@ -12,7 +12,7 @@ function debug($val) {
 ?>
 
 <div class="row" id="content-definitions">
-    <ul class="medium-12 medium-push-1 columns">
+    <ul class="small-11 medium-12 medium-push-1 columns">
         <?php foreach ($page->children() as $subpage) { ?>
         <li data-target="<?php $subpage->url()?>" class="small-12 medium-4 large-4 columns end">
             <div>
@@ -20,7 +20,7 @@ function debug($val) {
                 <?php if($image = $subpage->image()): ?>
                 <img src="<?php echo $image->url() ?>" alt="">
                 <?php else: ?>
-                <p><?php echo html($subpage->text()->excerpt(100)) ?><p>
+                <p><?php echo html($subpage->text()->excerpt(115)) ?><p>
                 <?php  endif ?>
             </div>
         </li>

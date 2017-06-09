@@ -2,6 +2,7 @@
 
 $text-color: #0000D2;
 $vert: #00FF9A;
+$lighter: lighten($vert,30%);
 $rouge: #FF2E74;
 $font-family:  "amiri", serif;
 $box-border: 3px solid $vert;
@@ -19,8 +20,27 @@ $box-border: 3px solid $vert;
     line-height: 1.1;
 }
 
+@mixin anchorText() {
+    font-weight: normal;
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
 @mixin currentText() {
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.3;
 }
+
+@mixin tinyText() {
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+@mixin highlightLink() {
+    padding-bottom: 1px;
+    border-bottom: 3px solid $vert;
+    display: inline-block;
+}
+
