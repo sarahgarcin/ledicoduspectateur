@@ -1,32 +1,26 @@
-<?php snippet('header') ?>
-<?php snippet('menu') ?>
+<?php if(!kirby()->request()->ajax()):
+  snippet('header'); 
+  snippet('logo'); 
+  snippet('menu'); 
+endif ?>
 
-
-<?php $monurl = $page->url();
-
-function debug($val) {
-    '<pre>';
-    var_dump($val);
-    '</pre>';
-}
-?>
-
-<div class="row" id="content-definitions">
-    <ul class="small-11 medium-12 medium-push-1 columns">
-        <?php foreach ($page->children() as $subpage) { ?>
-        <li data-target="<?php $subpage->url()?>" class="small-12 medium-4 large-4 columns end">
-            <div>
-                <h2><?php echo html($subpage->title()) ?></h2>
-                <?php if($image = $subpage->image()): ?>
-                <img src="<?php echo $image->url() ?>" alt="">
-                <?php else: ?>
-                <p><?php echo html($subpage->text()->excerpt(115)) ?><p>
-                <?php  endif ?>
-            </div>
-        </li>
-        <?php } ?>
+<main>
+  <div class="small-10 small-push-1 medium-6 medium-push-3">
+    <ul class="row">
+      <?php foreach ($page->children() as $subpage) { ?>
+      <li class="definition small-12 medium-4 large-4 columns end" data-target="<?php echo $subpage->url()?>">
+        <h2><?php echo html($subpage->title()) ?></h2>
+        <?php if($image = $subpage->image()): ?>
+          <img src="<?php echo $image->url() ?>" alt="">
+        <?php else: ?>
+          <p><?php echo html($subpage->text()->excerpt(115)) ?></p>
+        <?php  endif ?>
+      </li>
+      <div class="loadPage"></div>
+      <?php } ?>
     </ul>
-</div>
+  </div>
+</main>
 
 
 <?php snippet('footer') ?>

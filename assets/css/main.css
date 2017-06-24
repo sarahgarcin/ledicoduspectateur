@@ -493,7 +493,7 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -0.375rem;
+    margin: 0 -0.9375rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -513,8 +513,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.375rem;
-  padding-right: 0.375rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
   width: 100%;
   float: left; }
 
@@ -632,8 +632,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
   .small-1 {
     width: 8.33333%; }
@@ -717,8 +717,8 @@ select {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; } }
 
 @media only screen and (min-width: 40.0625em) {
@@ -821,8 +821,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
   .medium-1 {
     width: 8.33333%; }
@@ -906,8 +906,8 @@ select {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -1106,8 +1106,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
   .large-1 {
     width: 8.33333%; }
@@ -1191,8 +1191,8 @@ select {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.375rem;
-    padding-right: 0.375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -1316,7 +1316,7 @@ select {
         background: #e3e3e3; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 0.375rem; }
+      padding: 0.9375rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: #FFFFFF;
         display: block; }
@@ -4664,17 +4664,17 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.375rem 0;
+    padding: 0.9375rem 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block;
       float: none; }
     .tabs-content > .content.contained {
-      padding: 0.375rem; }
+      padding: 0.9375rem; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 0.375rem; }
+      padding: 0 0.9375rem; }
 
 @media only screen and (min-width: 40.0625em) {
   .tabs.vertical {
@@ -8698,7 +8698,7 @@ th.hide-for-touch {
   padding: 0; }
 
 body, h1, h2, h3 {
-  font-family: "amiri", serif;
+  font-family: "amiri", georgia, serif;
   color: #0000D2;
   font-size: 16px; }
 
@@ -8733,24 +8733,40 @@ ul {
   margin: 0; }
 
 /* HEADER ET NAV - snippet menu.php*/
-#menu {
+nav.menu {
   position: fixed;
-  top: 25%;
-  z-index: 999; }
-  #menu li {
-    margin-bottom: 30px; }
-    #menu li a {
-      font-weight: bold;
-      font-size: 1.7rem;
-      line-height: 1;
-      background: white;
-      border: 3px solid #00FF9A;
-      padding: 9px 20px 15px 35px;
-      display: inline-block; }
-      #menu li a:hover {
-        box-shadow: 0px 0px 30px #FF2E74; }
-    #menu li:hover #submenu {
-      display: block; }
+  z-index: 1000;
+  top: 0;
+  padding: 1em; }
+  nav.menu > ul {
+    display: -ms-flexbox;
+    display: flex; }
+    nav.menu > ul > li {
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      display: block;
+      text-align: center; }
+      nav.menu > ul > li > a {
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 1; }
+      nav.menu > ul > li:hover, nav.menu > ul > li.active {
+        border-bottom: 3px solid #00FF9A; }
+      nav.menu > ul > li:hover .submenu {
+        display: block; }
+      nav.menu > ul > li .submenu {
+        display: none;
+        margin-left: 0;
+        background: #FFF;
+        padding: 1em;
+        border-bottom: 3px solid #00FF9A;
+        border-left: 3px solid #00FF9A;
+        border-right: 3px solid #00FF9A; }
+        nav.menu > ul > li .submenu li {
+          text-align: left;
+          margin-bottom: 0.3em; }
+          nav.menu > ul > li .submenu li a:hover {
+            text-decoration: underline; }
 
 @media only screen and (max-width: 40em) {
   .buttonmenu {
@@ -8771,55 +8787,37 @@ ul {
   #menu {
     display: none; } }
 
-@media only screen and (min-width: 40.0625em) {
-  #submenu {
-    position: absolute;
-    display: none;
-    width: 50vw;
-    left: -51.4vw;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    #submenu li {
-      list-style-type: none;
-      position: relative;
-      margin: 0;
-      text-align: right; }
-      #submenu li a {
-        font-family: "amiri", serif;
-        font-size: 18px;
-        color: #0000D2;
-        padding: 2px 15px 2px 15px;
-        border: 3px solid #00FF9A;
-        background-color: #00FF9A;
-        display: inline-block;
-        z-index: 99; }
-        #submenu li a:hover {
-          color: #FF2E74;
-          box-shadow: 0 0 0 0; } }
-
-@media only screen and (max-width: 40em) {
-  #submenu {
-    position: absolute;
-    display: none;
-    width: 50vw;
-    left: -4.9vw; }
-    #submenu li {
-      list-style-type: none;
-      position: relative;
-      margin: 0;
-      text-align: left;
-      z-index: 99; }
-      #submenu li a {
-        font-family: "amiri", serif;
-        font-size: 18px;
-        color: #0000D2;
-        padding: 2px 15px 2px 15px;
-        border: 3px solid #00FF9A;
-        background-color: #00FF9A;
-        display: inline-block; } }
+header {
+  position: fixed;
+  z-index: 1;
+  bottom: 1.5em;
+  left: 1.5em; }
 
 /*END HEADER ET MENU*/
+.close-button {
+  font-family: helvetica, sans-serif;
+  color: #FF2E74;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer; }
+
+body[data-template="home"] .logo-wrapper-home {
+  margin-top: 3rem; }
+
+body[data-template="home"] .citation-wrapper {
+  border: 3px solid #00FF9A;
+  background: #FFF;
+  box-shadow: 0px 0px 30px #FF2E74;
+  position: absolute;
+  padding: 1em;
+  z-index: 999;
+  cursor: move; }
+  body[data-template="home"] .citation-wrapper p {
+    font-size: 1.5em;
+    margin-bottom: 0; }
+
 /* TEXTE AVANT PROPOS*/
 #texte {
   border: 3px solid #00FF9A;
@@ -8841,9 +8839,11 @@ ul {
     #texte p a:hover {
       color: #00FF9A; }
 
+main {
+  margin-top: 100px; }
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
-  margin-top: 100px;
   padding: 0;
   display: inline-block; }
   nav.breadcrumb ul {
@@ -8867,7 +8867,7 @@ nav.breadcrumb {
     margin: 20px 6px 0px 6px;
     display: inline-block; }
     #subpage li a {
-      font-family: "amiri", serif;
+      font-family: "amiri", georgia, serif;
       font-size: 16px;
       color: #0000D2;
       padding: 2px 15px 2px 15px;
@@ -8882,15 +8882,15 @@ nav.breadcrumb {
     display: none;
     width: 0; }
   #textlabo strong {
-    font-family: "amiri", serif;
+    font-family: "amiri", georgia, serif;
     font-size: 30px;
     color: #0000D2; }
   #textlabo p {
-    font-family: "amiri", serif;
+    font-family: "amiri", georgia, serif;
     font-size: 20px;
     color: #0000D2; }
   #textlabo h6 {
-    font-family: "amiri", serif;
+    font-family: "amiri", georgia, serif;
     font-size: 18px; }
   #textlabo a {
     color: #0000D2;
@@ -8924,13 +8924,13 @@ nav.breadcrumb {
     #labodefinition li h1 {
       display: none; }
     #labodefinition li h2 {
-      font-family: "amiri", serif;
+      font-family: "amiri", georgia, serif;
       font-weight: bold;
       font-size: 22px;
       color: #0000D2; }
     #labodefinition li p {
       position: relative;
-      font-family: "amiri", serif;
+      font-family: "amiri", georgia, serif;
       font-size: 16px;
       color: #0000D2;
       background-color: #FFFFFF; }
@@ -8947,30 +8947,29 @@ nav.breadcrumb {
   margin-bottom: 100px;
   background-color: #FFFFFF; }
   #credits p {
-    font-family: "amiri", serif;
+    font-family: "amiri", georgia, serif;
     font-size: 20px;
     color: #0000D2; }
 
 /* PAGE DEFINITIONS -- definition.php*/
-#content-definitions {
-  position: relative;
-  top: 80px;
-  z-index: 5; }
-  #content-definitions ul {
-    width: 70%; }
-    #content-definitions ul li {
-      padding: 10px; }
-      #content-definitions ul li div {
-        background: white;
-        border: 3px solid #00FF9A;
-        cursor: pointer;
-        height: 200px;
-        overflow: hidden;
-        padding: 10px 18px; }
-        #content-definitions ul li div p {
-          margin-top: 15px; }
-        #content-definitions ul li div img {
-          width: 80%; }
+body[data-template="definitions"] main ul li {
+  padding: 10px;
+  background: #FFF;
+  border: 3px solid #00FF9A;
+  cursor: pointer;
+  height: 200px;
+  overflow: hidden;
+  padding: 10px 18px; }
+  body[data-template="definitions"] main ul li p {
+    margin-top: 15px; }
+  body[data-template="definitions"] main ul li img {
+    width: 80%; }
+  body[data-template="definitions"] main ul li .loadPage {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0; }
 
 /* PAGE DEFINITIONS -- page.php*/
 #content-def {
@@ -8981,13 +8980,13 @@ nav.breadcrumb {
   z-index: 1;
   background-color: #FFFFFF; }
   #content-def h1 {
-    font-family: "amiri", serif;
+    font-family: "amiri", georgia, serif;
     font-weight: bold;
     font-size: 30px;
     color: #0000D2;
     background-color: #FFFFFF; }
   #content-def p {
-    font-family: "amiri", serif;
+    font-family: "amiri", georgia, serif;
     font-size: 16px;
     color: #0000D2;
     background-color: #FFFFFF; }
@@ -8996,7 +8995,7 @@ nav.breadcrumb {
 
 #info-def {
   /* id -> devrait être une classe ?*/
-  font-family: "amiri", serif; }
+  font-family: "amiri", georgia, serif; }
   #info-def p {
     color: #000000;
     display: inline; }
@@ -9006,7 +9005,7 @@ nav.breadcrumb {
       list-style: none;
       display: inline; }
       #info-def ul li a {
-        font-family: "amiri", serif;
+        font-family: "amiri", georgia, serif;
         color: #0000D2;
         border-bottom-width: 2px;
         border-bottom-style: solid;

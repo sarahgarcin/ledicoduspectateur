@@ -1,1 +1,25 @@
-Title: Site Title
+Title: Le dico du spectateur
+
+----
+
+Author: 
+
+----
+
+Description: 
+
+----
+
+Keywords: 
+
+----
+
+Logo: dico.png
+
+----
+
+Ogimage: 
+
+----
+
+Socialnetworks: 

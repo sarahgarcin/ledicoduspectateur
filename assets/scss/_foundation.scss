@@ -7,7 +7,7 @@
 // Core variables and mixins
 // @import "../../bower_components/foundation/scss/foundation/settings";
 @import "../../bower_components/foundation/scss/foundation/_functions.scss";
-@import "_foundation.variables.scss"; //We add a new variable file to override the default values to limit the Foundation CSS overload.
+
 
 // Reset and dependencies
 @import "../../bower_components/foundation/scss/normalize.scss";
@@ -50,3 +50,5 @@
 @import '../../bower_components/foundation/scss/foundation/components/type';
 @import '../../bower_components/foundation/scss/foundation/components/offcanvas';
 @import '../../bower_components/foundation/scss/foundation/components/visibility';
+
+@import "_foundation.variables.scss"; //We add a new variable file to override the default values to limit the Foundation CSS overload.

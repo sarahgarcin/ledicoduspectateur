@@ -4,7 +4,7 @@ $text-color: #0000D2;
 $vert: #00FF9A;
 $lighter: lighten($vert,30%);
 $rouge: #FF2E74;
-$font-family:  "amiri", serif;
+$font-family:  "amiri", georgia, serif;
 $box-border: 3px solid $vert;
 
 
@@ -42,5 +42,9 @@ $box-border: 3px solid $vert;
     padding-bottom: 1px;
     border-bottom: 3px solid $vert;
     display: inline-block;
+}
+
+@mixin boxShadow($color){
+    box-shadow: 0px 0px 30px $color;
 }
 

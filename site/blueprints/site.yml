@@ -1,32 +1,37 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Site
+
 pages: true
 fields:
   siteSettings:
-    label: Site Settings
+    label: Paramètres du site
     type:  headline
   title:
-    label: Title
+    label: Titre
     type:  title
   author:
-    label: Author
+    label: Auteur(s)
     type:  text
   description:
     label: Description
     type:  textarea
   keywords:
-    label: Keywords
+    label: Mots clés
     type:  tags
+  logo: 
+    label: Logo
+    type: selector
+    mode: single
+    types:
+      - image
   socialNetworkSettings:
-    label: Social Network Settings
+    label: Réseaux Sociaux
     type:  headline
   ogimage:
-    label: Site Thumbnail
+    label: Image représentante du site
     type:  url
-    help:  URL of the thumbnail that will represent your website on the social networks.
+    help:  URL d'une image qui représentera le site sur les réseaux sociaux.
   socialnetworks:
-    label: Your Social Network
+    label: Vos réseaux sociaux
     type:  structure
     entry: >
       <span class="fa-stack fa-lg">

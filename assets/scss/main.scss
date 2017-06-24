@@ -51,29 +51,50 @@ ul {
 }
 
 /* HEADER ET NAV - snippet menu.php*/ 
+nav.menu{
+  position: fixed; 
+  z-index: 1000;
+  top: 0;
+  padding: 1em; 
+  > ul{
+    display: flex;
+    > li{
+      flex: 1 1 100%;
+      display: block;
+      text-align: center;
+      > a {
+        @include title;
+      }
+      &:hover, &.active{
+        border-bottom: 3px solid $vert;
+      }
+      &:hover .submenu {
+        display: block;
+      }
+      .submenu{
+        display:none;
+        margin-left:0;
+        background:#FFF;
+        padding: 1em;
+        border-bottom: $box-border;
+        border-left: $box-border;
+        border-right: $box-border;
+        
+        li {
+          text-align: left;
+          margin-bottom: 0.3em;
 
-#menu {
-    position: fixed;
-    top: 25%;
-    z-index: 999;
-    li {
-        margin-bottom: 30px;
-
-        a {
-            @include title;
-            background: white;
-            border: $box-border;
-            padding: 9px 20px 15px 35px;
-            display: inline-block;
-            &:hover {
-                box-shadow: 0px 0px 30px #FF2E74;
-            }
+          a {
+              &:hover{
+                text-decoration:underline;
+              }
+          }
         }
-        &:hover #submenu {
-            display: block;
-        }
+      }
     }
+  }
 }
+
 
 @media #{$small-only}{
     .buttonmenu {
@@ -100,66 +121,47 @@ ul {
     }
 }
 
-
-#submenu {
-    @media #{$medium-up}{
-        position: absolute;
-        display: none;
-        width: 50vw;
-        left: -51.4vw;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-
-        li {
-            list-style-type: none;
-            position: relative;
-            margin: 0;
-            text-align: right;
-
-            a {
-                font-family: $font-family;
-                font-size: 18px;
-                color: $text-color;
-                padding: 2px 15px 2px 15px;
-                border: $box-border;
-                background-color: $vert;
-                display: inline-block;
-                z-index: 99;
-                &:hover {
-                    color: #FF2E74;
-                    box-shadow: 0 0 0 0;
-                }
-            }
-        }
-    }
-
-    @media #{$small-only}{
-        position: absolute;
-        display: none;
-        width: 50vw;
-        left: -4.9vw;
-        li {
-            list-style-type: none;
-            position: relative;
-            margin: 0;
-            text-align: left;
-            z-index: 99;
-            a {
-                font-family: $font-family;
-                font-size: 18px;
-                color: $text-color;
-                padding: 2px 15px 2px 15px;
-                border: $box-border;
-                background-color: $vert;
-                display: inline-block;
-            }
-        }
-    }
+header{
+  position:fixed; 
+  z-index: 1; 
+  bottom: 1.5em;
+  left:1.5em;
+  .logo-wrapper{
+  }
 }
 
 /*END HEADER ET MENU*/
+
+// Style qu'on retrouve sur plusieurs pages
+.close-button{
+    font-family:helvetica, sans-serif; 
+    color: $rouge;
+    font-size: 1.3em;
+    position:absolute;
+    top:0;
+    right: 10px;
+    cursor: pointer;
+}
+
+// HOME - home.php
+body[data-template="home"]{
+  .logo-wrapper-home{
+    margin-top: 3rem;
+  }
+  .citation-wrapper{
+    border: $box-border;
+    background: #FFF;
+    @include boxShadow($rouge);
+    position: absolute; 
+    padding: 1em;
+    z-index: 999;
+    cursor: move;
+    p{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+  }
+}
 
 /* TEXTE AVANT PROPOS*/
 #texte {
@@ -183,9 +185,13 @@ ul {
     }
 }
 
+main{
+  margin-top: 100px;
+}
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
-    margin-top: 100px;
+    //margin-top: 100px;
     padding: 0;
     display: inline-block;
     ul {
@@ -322,30 +328,33 @@ nav.breadcrumb {
 
 
 /* PAGE DEFINITIONS -- definition.php*/
-#content-definitions {
-    position: relative;
-    top: 80px;
-    z-index: 5;
+body[data-template="definitions"] {
+  main{
     ul {
-        width: 70%;
-        li {
-            padding: 10px;
-            div {
-                background: white;
-                border: $box-border; 
-                cursor: pointer;
-                height: 200px;
-                overflow:hidden;
-                padding: 10px 18px;
-                p {
-                    margin-top: 15px;
-                }
-                img {
-                    width: 80%;
-                }
-            }
+      li {
+        padding: 10px;
+        background: #FFF;
+        border: $box-border; 
+        cursor: pointer;
+        height: 200px;
+        overflow:hidden;
+        padding: 10px 18px;
+        p {
+            margin-top: 15px;
         }
+        img {
+            width: 80%;
+        }
+        .loadPage{
+          position:absolute;
+          width: auto; 
+          height:auto;
+          top: 0;
+          left:0;
+        }
+      }
     }
+  }
 }
 
 /* PAGE DEFINITIONS -- page.php*/
