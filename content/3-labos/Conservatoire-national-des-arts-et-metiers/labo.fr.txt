@@ -20,7 +20,7 @@ Ressourcesmedia: Bibliotheque.jpg
 
 ----
 
-Linkeddefinition: cul-de-plomb, disney, economiste, flic
+Linkeddefinition: 
 
 ----
 

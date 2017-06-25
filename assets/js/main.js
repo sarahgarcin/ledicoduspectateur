@@ -26,7 +26,7 @@ function init() {
 
   
     //definitions
-    if($('body').attr('data-template') == "definitions"){
+    //if($('body').attr('data-template') == "definitions"){
       $('.definition').on('click', function(e){
         var url = $(this).attr("data-target");
         var $loadCont = $(this).next('.loadPage');
@@ -71,7 +71,7 @@ function init() {
           $('.abc ul').hide();
         }
       });
-    }
+    //}
 
 
 

@@ -8,7 +8,7 @@ Text:
 
 ###**Val-d'Oise - 2015**
 
-![val-d'Oise](image.png)
+(image: image.png)
 
 		
 Les arts du spectacle ? Nous leur mettrons le compteur à zéro. Nous simulerons une rencontre entre spectateurs et artistes, autour d’un spectacle qui n’a pas eu lieu. 
@@ -44,7 +44,7 @@ Ressourcesmedia:
 
 ----
 
-Linkeddefinition: anti-communautariste - 2
+Linkeddefinition: 
 
 ----
 

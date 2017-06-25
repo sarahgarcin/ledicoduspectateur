@@ -13,7 +13,7 @@ fields:
 	linkeddefinition:
 		label: Définitions Liées
 		type: multiselect
-		required: true
+		required: false
 		search: true
 		options: query
 		query:

@@ -175,20 +175,19 @@ body[data-template="home"]{
     padding: 20px;
     display: block;
     margin-bottom: 100px;
-    z-index: 2;
     background-color: #FFFFFF;
-    h1 {
-        display: none;
-    }
-    p {
-        @include anchorText;
-        a {
-            @include highlightLink;
-        }
-        a:hover {
-            color: $vert;
-        }
-    }
+    // h1 {
+    //     display: none;
+    // }
+    // p {
+    //     @include anchorText;
+    //     a {
+    //       @include highlightLink;
+    //     }
+    //     a:hover {
+    //         color: $vert;
+    //     }
+    // }
 }
 
 main{
@@ -334,7 +333,7 @@ nav.breadcrumb {
 
 
 /* PAGE DEFINITIONS -- definition.php*/
-body[data-template="definitions"] {
+body[data-template="definitions"], body[data-template="labo"] {
   main{
     .left-sidebar{
       position:fixed;

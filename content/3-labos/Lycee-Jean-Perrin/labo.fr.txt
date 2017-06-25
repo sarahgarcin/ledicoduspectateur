@@ -77,7 +77,7 @@ Ressourcesmedia: boissons.jpg,IMG_5512.jpg,IMG_5517.jpg
 
 ----
 
-Linkeddefinition: bof, cul-de-plomb, resistant
+Linkeddefinition: bof
 
 ----
 

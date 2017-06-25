@@ -8,7 +8,7 @@ Text:
 
 ###**Lycée expérimental de Saint-Nazaire. 2009-2012**
 
-![photo du lycée xp](image.jpg)
+(image: image.jpg)
 
 **Ça, c’était le point de départ** : Un lycée, pas n’importe lequel. Un lycée expérimental au coeur de Saint-Nazaire. Qui expérimente le pouvoir, le pouvoir aux élèves autant qu’aux profs, fallait oser. L’histoire dure depuis quasi trente ans. Je suis allé les rencontrer. Pour expérimenter ensemble. Trois années de rencontres expérimentales autour de l'art. Une façon de mettre en oeuvre les savoirs. Pour les élèves autant que les profs. Pour moi. Les invités. Les habitants de Saint-Nazaire. 
 
@@ -20,7 +20,7 @@ NOUS mettrons sur le même plan le rapport à l'oeuvre (ce que je vois), le rapp
 
 **Ça, c’était un « accident »** : Pour faire face à notre désarroi de spectateur et nous donner quelques balises, des définitions de spectateur sont créées. Ça se passa à l'occasion d'un spectacle de théâtre, *Napoli Napoli*, mis en scène par Benoit Bradel.
 
-![athenor](athenor.jpg)
+(image: athenor.jpg)
 
 Mais ça, c'est encore [une autre histoire](CouvBalises.pdf), l'histoire du premier [mini-dico du spectateur](#mini-dico).
 
@@ -39,7 +39,7 @@ Ressourcesmedia:
 
 ----
 
-Linkeddefinition: a-la-recherche-dun-temps-mort
+Linkeddefinition: 
 
 ----
 

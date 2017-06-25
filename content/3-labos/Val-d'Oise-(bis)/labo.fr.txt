@@ -8,7 +8,7 @@ Text:
 
 ###**Val-d'Oise (bis)**
 
-![](image.jpg)
+(image: image.jpg)
 
 ######© Croquis _ Céline Jimenez
 
@@ -125,7 +125,7 @@ Ressourcesmedia:
 
 ----
 
-Linkeddefinition: a-la-recherche-dun-temps-mort
+Linkeddefinition: 
 
 ----
 

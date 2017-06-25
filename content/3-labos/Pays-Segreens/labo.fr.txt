@@ -10,7 +10,7 @@ Text:
 
 ***
 
-![photo couv](image.jpg)
+(image: image.jpg)
 
 
 Nous n’arrivions pas - c’était le point de départ - nous n’arrivions pas à faire exprimer les enfants sur ce qu’ils voient quand il s’agit de danse. 
@@ -69,7 +69,7 @@ Ressourcesmedia: image.jpg,IMG_5630.jpg,IMG_5632.jpg
 
 ----
 
-Linkeddefinition: a-la-recherche-dun-temps-mort
+Linkeddefinition: 
 
 ----
 
