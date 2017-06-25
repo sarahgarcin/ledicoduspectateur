@@ -1,0 +1,21 @@
+title: Labos
+
+pages: true
+files: labo
+
+fields: 
+	title:
+		label: Titre
+		type:  title
+	text:
+		label: Texte
+		type: markdown
+	ressourcesmedia: 
+		label: Image de couverture
+		type: selector
+		mode: single
+		types:
+			- image
+
+
+

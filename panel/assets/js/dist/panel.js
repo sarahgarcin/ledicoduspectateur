@@ -5847,7 +5847,7 @@ var Context = function() {
     text = $.trim(text.toLowerCase());
 
     $.each($.slug.table || {}, function(key, val) {
-      text = text.replace(key, val);
+      text = text.split(key).join(val);
     });
 
     return text
@@ -6770,6 +6770,17 @@ var Form = function(form, params) {
     
       // handle redirection and replacement of data
       options.redirect(response);
+
+    }).error(function(response, message) {
+
+      // hide the loading indicator
+      if(app) app.isLoading(false);
+
+      if(response.responseJSON && response.responseJSON.message) {
+        alert(response.responseJSON.message);
+      } else {
+        alert('An unexpected error occurred');
+      }
 
     });
 

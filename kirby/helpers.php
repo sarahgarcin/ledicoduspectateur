@@ -51,17 +51,17 @@ function markdown($text) {
  * @return string
  */
 function smartypants($text) {
-  return kirby::instance()->component('smartypants')->parse($text);
+  return kirby::instance()->component('smartypants')->parse($text, true);
 }
 
 /**
  * Converts a string to Kirbytext
  *
- * @param Field $field
+ * @param Field/string $field
  * @return string
  */
-function kirbytext($field) {
-  return (string)new Kirbytext($field);
+function kirbytext($field, $page = null) {
+  return (string)new Kirbytext($field, $page);
 }
 
 /**

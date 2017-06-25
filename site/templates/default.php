@@ -4,7 +4,7 @@
 <main>
   <div class="small-10 small-push-1 medium-6 medium-push-3">
       <?php snippet('breadcrumbs')?>
-      <div id="texte">
+      <div class="text-wrapper">
 
           <h1><?php echo $page->title()->html() ?></h1>
 

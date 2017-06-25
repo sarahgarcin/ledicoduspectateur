@@ -26,10 +26,15 @@ var app = {
 
     // add the current csrf token to each post request
     $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
-      if(originalOptions.type && originalOptions.type.toLowerCase() == 'post') {      
-        options.data = $.param($.extend(originalOptions.data, {
-          csrf: $('body').attr('data-csrf')
-        }));
+      if(originalOptions.type && originalOptions.type.toLowerCase() == 'post') {
+        var csrf = $('body').attr('data-csrf');
+        if(typeof originalOptions.data == 'string' && originalOptions.data != '') {
+          options.data = originalOptions.data + '&csrf=' + csrf
+        } else {
+          options.data = $.param($.extend(originalOptions.data, {
+            csrf: csrf
+          }));
+        }
       }    
     });
 
@@ -37,7 +42,9 @@ var app = {
     $(document).on('click', 'a', function(e) {      
 
       var link = $(this);
-      var href = link.attr('href') || "";
+      var href = link.attr('href');
+
+      if(!href) return false;
 
       if(link.is('[data-dropdown]') || href.match(/^#/)) {
         return true;
