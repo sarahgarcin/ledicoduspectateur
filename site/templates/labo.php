@@ -34,7 +34,7 @@
                   
                 </li>
               <?php endif ?>
-              <li class="definition small-12 medium-4 large-4 columns end" data-target="<?php echo $def->url()?>" data-inoff="<?php echo $def->inoff()?>">
+              <li class="definition definition-item small-12 medium-4 large-4 columns end" data-target="<?php echo $def->url()?>" data-inoff="<?php echo $def->inoff()?>">
                 <div class="inner-definition">
                   <h2><?php echo $def->title()->html()?></h2>
                   <?php if($image = $def->image()): ?>
@@ -43,10 +43,10 @@
                     <p><?php echo $def->text()->excerpt(110) ?></p>
                   <?php  endif ?>
                 </div>
-              </li>  
-              <div class="loadPage wrapper small-6"></div>      
+              </li>       
             <?php endforeach ?>
           </ul>
+          <div class="loadPage wrapper small-10 medium-10 large-8"></div> 
         </div>
       <?php endif; ?>
       <?php if($page->credits()->isNotEmpty()):?>

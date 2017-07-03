@@ -16,7 +16,7 @@ body {
     font-size: 16px;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6{
   font-family:$font-family;
   color:$text-color;
   line-height: 1.2;
@@ -39,8 +39,16 @@ hr {
     border: 0;
 }
 
+h1{
+  margin-bottom: 0.5em;
+}
+
 h2 {
     @include subtitle;
+}
+
+h6{
+  font-size: 1rem;
 }
 
 p {
@@ -132,8 +140,6 @@ header{
   z-index: 1; 
   bottom: 1.5em;
   left:1.5em;
-  .logo-wrapper{
-  }
 }
 
 /*END HEADER ET MENU*/
@@ -149,16 +155,46 @@ header{
     cursor: pointer;
 }
 
+main{
+  padding-top: 100px;
+}
+
+.sources{
+  border-top: 1px solid $text-color;
+  padding-top:1em;
+}
+
+/* SNIPPET BREADCRUMB - */
+nav.breadcrumb {
+  padding: 0;
+  display: inline-block;
+  ul {
+    margin: 0;
+    background-color: $vert;
+    display: flex;
+    padding: 0 10px 3px 10px;
+  }
+  li { 
+    margin-left: 3px;
+    a {
+      @include tinyText;
+    }
+  }
+}
+/*-- END BREADCRUMB --*/
+
 // HOME - home.php
 body[data-template="home"]{
-  .logo-wrapper-home{
-    margin-top: 3rem;
+  main{
+    padding-top:70px;
   }
   .citation-wrapper{
     border: $box-border;
     background: #FFF;
     @include boxShadow($rouge);
     position: absolute; 
+    top:0;
+    left:0;
     padding: 1em;
     z-index: 999;
     cursor: move;
@@ -171,170 +207,50 @@ body[data-template="home"]{
 
 /* TEXTE AVANT PROPOS*/
 .text-wrapper {
-    border: $box-border;
-    padding: 20px;
-    display: block;
-    margin-bottom: 100px;
-    background-color: #FFFFFF;
-    // h1 {
-    //     display: none;
-    // }
-    // p {
-    //     @include anchorText;
-    //     a {
-    //       @include highlightLink;
-    //     }
-    //     a:hover {
-    //         color: $vert;
-    //     }
-    // }
+  border: $box-border;
+  padding: 20px;
+  display: block;
+  margin-bottom: 3em;
+  background-color: #FFFFFF;
 }
 
-main{
-  margin-top: 100px;
-}
-
-/* SNIPPET BREADCRUMB - */
-nav.breadcrumb {
-    //margin-top: 100px;
-    padding: 0;
-    display: inline-block;
-    ul {
-        margin: 0;
-        background-color: $vert;
-        display: flex;
-        padding: 0 10px 3px 10px;
-    }
-    li { 
-        margin-left: 3px;
-        a {
-            @include tinyText;
-        }
-    }
-}
-/*-- END BREADCRUMB --*/
 
 #subpage {
-    margin: 24px 0px 24px 0px;
-    li {
-        list-style-type: none;
-        margin: 20px 6px 0px 6px;
-        display: inline-block;
-        a {
-            font-family: $font-family;
-            font-size: 16px;
-            color: $text-color;
-            padding: 2px 15px 2px 15px;
-            background-color: $vert;
-        }
-    }
-}
-
-
-#textlabo {
-    border: $box-border;
-    padding: 20px;
-    margin-bottom: 12px;
-    background-color: #FFFFFF;
-    h1, h2 {
-        display: none;
-        width: 0;
-    }
-
-    strong {
-        font-family: $font-family;
-        font-size: 30px;
-        color: $text-color;
-    }
-    p {
-        font-family: $font-family;
-        font-size: 20px;
-        color: $text-color;
-    }
-    h6 {
-        font-family: $font-family;
-        font-size: 18px;
+  display: flex;
+  flex-flow: row wrap;
+  li {
+    margin: .3em .5em;
+    border:3px solid $vert;
+    background: $vert;
+    padding: 0.5em;
+    &:hover{
+      @include boxShadow($rouge);
+      background:#FFF;
     }
     a {
-        color: $text-color;
-        border-bottom: 2px solid $vert;
+      line-height:1;
     }
+  }
 }
-
-.ressources {
-    div {
-        background-color: $text-color;
-        max-width: 80%;
-        margin: auto;
-        margin-top: 24px;
-        margin-bottom: 24px;
-        vertical-align: middle;
-
-    }
-    img {
-        mix-blend-mode: luminosity;
-    }
-}
-
-
-
-#labodefinition {
-    max-width: 73.5%;
-    li {
-        height: 220px;
-        border: $box-border;
-        padding: 5px 10px 5px 10px;
-        z-index: 1;
-        background-color: #FFFFFF;
-        overflow: hidden;
-        margin: 12px;
-        list-style: none;
-        display: inline-block;
-        &:hover {
-            box-shadow: 0px 0px 30px #FF2E74;
-        }
-        h1 {
-            display: none;
-        }
-        h2 {
-            font-family: $font-family;
-            font-weight: bold;
-            font-size: 22px;
-            color: $text-color;
-        }
-        p {
-            position: relative;
-            font-family: $font-family;
-            font-size: 16px;
-            color: $text-color;
-            background-color: #FFFFFF;
-        }
-        img {
-            width: 80%;
-            vertical-align: center;
-        }
-    }
-}
-/* --- */
-/* CREDITS */
-#credits {
-    border: $box-border;
-    padding: 20px;
-    margin-top: 24px;
-    margin-bottom: 100px;
-    background-color: #FFFFFF;
-    p {
-        font-family: $font-family;
-        font-size: 20px;
-        color: $text-color;
-    }
-}
-
 
 
 /* PAGE DEFINITIONS -- definition.php*/
 body[data-template="definitions"], body[data-template="labo"] {
   main{
+    &.in{
+      .letter{
+        .inner-definition{
+          color: $vert;
+        }
+      }
+    }
+    &.off{
+      .letter{
+        .inner-definition{
+          color: $rouge;
+        }
+      }
+    }
     .left-sidebar{
       position:fixed;
       z-index: 10;
@@ -379,7 +295,7 @@ body[data-template="definitions"], body[data-template="labo"] {
       }
     }
     ul {
-      > li {
+      > li.definition {
         margin-bottom: 1.8em;
         .inner-definition{
           background: #FFF;
@@ -390,6 +306,7 @@ body[data-template="definitions"], body[data-template="labo"] {
           padding: 10px 18px;
           p {
             margin-top: 15px;
+            font-size: 0.95rem;
           }
           img {
               width: 80%;
@@ -401,28 +318,29 @@ body[data-template="definitions"], body[data-template="labo"] {
             font-size: 7rem;
             text-align: center;
             line-height: 1.2;
-            color: $rouge;
+            cursor:default;
+            color: $vert;
           }
         }
       }
-      .loadPage{
-        position:absolute;
-        height:auto;
-        top: 0;
-        left:0;
-        display:none;
-        z-index: 999;
-        background: #FFF;
-        padding: 1em 2em; 
-        border: $box-border;
-        @include boxShadow($rouge);
-        h1{
-          font-size: 2em;
-          font-weight:bold;
-          line-height: 1;
-          margin-top: 0;
-          margin-bottom: 0.5em;
-        }
+    }
+    .loadPage{
+      position:absolute;
+      height:auto;
+      top: 0;
+      left:0;
+      display:none;
+      z-index: 999;
+      background: #FFF;
+      padding: 1em 2em; 
+      border: $box-border;
+      @include boxShadow($rouge);
+      h1{
+        font-size: 2em;
+        font-weight:bold;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 0.5em;
       }
     }
   }

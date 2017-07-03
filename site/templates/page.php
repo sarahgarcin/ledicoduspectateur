@@ -12,6 +12,11 @@ if(!kirby()->request()->ajax()) {
     <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
   <?php endif ?>
   <?php echo $page->text()->kirbytext() ?>
+  <?php if($page->sources()->isNotEmpty()):?>
+    <div class="sources">
+       <?php echo $page->sources()->kirbytext() ?>
+    </div>
+  <?php endif; ?>
   <div class="close-button">
     <span>x</span>
   </div>

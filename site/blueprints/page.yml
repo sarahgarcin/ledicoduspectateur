@@ -10,6 +10,9 @@ fields:
 	text:
 		label: Texte
 		type: markdown
+	sources:
+		label: Sources
+		type: markdown
 	ressourcesmedia: 
 		label: Image de couverture
 		type: selector

@@ -5,7 +5,7 @@
 ?>
 
 <?php $cur_let = null; ?>
-<main>
+<main class="in">
   <div class="row">
     <div class="left-sidebar medium-2 columns">
       <div class="inoff-button">
@@ -60,7 +60,7 @@
               
             </li>
           <?php endif ?>
-          <li class="definition small-12 medium-4 large-4 columns end" data-target="<?php echo $subpage->url()?>" data-inoff="<?php echo $subpage->inoff()?>">
+          <li class="definition definition-item small-12 medium-4 large-4 columns end" data-target="<?php echo $subpage->url()?>" data-inoff="<?php echo $subpage->inoff()?>">
             <div class="inner-definition">
               <h2><?php echo $subpage->title()->html() ?></h2>
               <?php if($image = $subpage->image()): ?>
@@ -70,12 +70,22 @@
               <?php  endif ?>
             </div>
           </li>
-          <div class="loadPage wrapper small-6"></div>
+          
         <?php endforeach ?>
       </ul>
+      <div class="loadPage wrapper small-10 medium-10 large-8"></div>
     </div>
   </div>
 </main>
 
 
 <?php snippet('footer') ?>
+
+<?php function toASCII( $str )
+{
+    return strtr(utf8_decode($str), 
+        utf8_decode(
+        'ŠŒŽšœžŸ¥µÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýÿ'),
+        'SOZsozYYuAAAAAAACEEEEIIIIDNOOOOOOUUUUYsaaaaaaaceeeeiiiionoooooouuuuyy');
+}
+?>

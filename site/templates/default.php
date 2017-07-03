@@ -2,26 +2,26 @@
 <?php snippet('logo') ?>
 <?php snippet('menu') ?>
 <main>
-  <div class="small-10 small-push-1 medium-6 medium-push-3">
-      <?php snippet('breadcrumbs')?>
-      <div class="text-wrapper">
-
-          <h1><?php echo $page->title()->html() ?></h1>
-
-          <?php echo $page->text()->kirbytext() ?>
-          <hr>
-          <nav>
-              <ul id="subpage">
-                  <?php foreach($page->children() as $subpage): ?>
-                  <li>
-                      <a href="<?php echo $subpage->url() ?>">
-                          <?php echo html($subpage->title()) ?>
-                      </a>
-                  </li> 
-                  <?php endforeach ?>
-              </ul>
-          </nav>
-
+  <div class="small-10 small-push-1 medium-8 medium-push-2 large-6 large-push-3">
+    <?php snippet('breadcrumbs')?>
+    <div class="text-wrapper">
+      <h1><?php echo $page->title()->html() ?></h1>
+      <?php echo $page->text()->kirbytext() ?>
+      <?php if($page->hasChildren()):?>
+        <hr>
+        <nav>
+          <ul id="subpage">
+            <?php foreach($page->children() as $subpage): ?>
+            <li>
+              <a href="<?php echo $subpage->url() ?>">
+                <?php echo html($subpage->title()) ?>
+              </a>
+            </li> 
+            <?php endforeach ?>
+          </ul>
+        </nav>
+      <?php endif ?>
+<!-- 
           <div class="ressources">
               <?php $filenames = $page->ressourcesmedia()->split(',');
                          if(count($filenames) < 2) $filenames = array_pad($filenames, 2, '');
@@ -34,7 +34,7 @@
               </div>
 
               <?php } ?>	   
-          </div>
+          </div> -->
 
       </div>
   </div>
