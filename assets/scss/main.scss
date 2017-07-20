@@ -254,15 +254,16 @@ body[data-template="definitions"], body[data-template="labo"] {
     .left-sidebar{
       position:fixed;
       z-index: 10;
-      .inoff-button, .abc{
+      .inoff-button, .abc, .sources-button{
         > div{
           border: $box-border;
           display:inline-block;
           vertical-align: top;
-          padding: 0.5em 1em;
+          padding: 0.5em 0.8em;
           cursor: pointer;
           font-weight: bold;
           font-size: 1.3em;
+          margin-bottom: 0.5em;
           &.active, &:hover{
             background:$vert;
           }

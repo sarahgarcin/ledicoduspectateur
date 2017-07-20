@@ -12,6 +12,10 @@
         <div class="in active">In</div>
         <div class="off">Off</div>
       </div>
+      <div class="sources-button">
+        <div class="sources active">Avec sources</div>
+        <div class="sans-sources">Sans sources</div>
+      </div>
       <div class="abc">
         <div class="abc-button">abc</div>
         <ul>

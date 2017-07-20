@@ -10,7 +10,6 @@ function init() {
 
     // Functions qui peuvent être utiles sur plusieurs pages
     $('body').on('click','.close-button', function(){
-      console.log('hello');
       closePopUp($(this));
     });
 
@@ -65,6 +64,24 @@ function init() {
           $(".definition[data-inoff='in']").hide();
         }
       });
+
+      $('.sources-button .sources').on('click', function(){
+        if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+          $('main').removeClass('no-sources');
+          $('.sources-button .sans-sources').removeClass('active');
+          $('.definition-wrapper .sources').show();
+        }
+      });
+      $('.sources-button .sans-sources').on('click', function(){
+        if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+          $('main').addClass('no-sources');
+          $('.sources-button .sources').removeClass('active');
+          $('.definition-wrapper .sources').hide();
+
+        }
+      });
       $('.abc-button').on('click', function(){
         if(!$(this).hasClass('active')){
           $(this).addClass('active');
@@ -100,6 +117,9 @@ function openPage(url, target){
     success: function(data) {
       target.append(data).addClass('active');
       target.show();
+      if($('main').hasClass('no-sources')){
+        $('.definition-wrapper .sources').hide();
+      }
     }
   });
 }

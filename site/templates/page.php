@@ -7,7 +7,7 @@ if(!kirby()->request()->ajax()) {
 ?>
 
 <div class="definition-wrapper">
-  <h1><?php echo $page->title()->html() ?></h1>
+  <h1>Spectateur-<?php echo $page->title()->html() ?></h1>
   <?php if ($image = $page->image()): ?>
     <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
   <?php endif ?>

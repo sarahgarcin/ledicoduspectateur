@@ -8890,15 +8890,16 @@ body[data-template="definitions"] main.off .letter .inner-definition, body[data-
 body[data-template="definitions"] main .left-sidebar, body[data-template="labo"] main .left-sidebar {
   position: fixed;
   z-index: 10; }
-  body[data-template="definitions"] main .left-sidebar .inoff-button > div, body[data-template="definitions"] main .left-sidebar .abc > div, body[data-template="labo"] main .left-sidebar .inoff-button > div, body[data-template="labo"] main .left-sidebar .abc > div {
+  body[data-template="definitions"] main .left-sidebar .inoff-button > div, body[data-template="definitions"] main .left-sidebar .abc > div, body[data-template="definitions"] main .left-sidebar .sources-button > div, body[data-template="labo"] main .left-sidebar .inoff-button > div, body[data-template="labo"] main .left-sidebar .abc > div, body[data-template="labo"] main .left-sidebar .sources-button > div {
     border: 3px solid #00FF9A;
     display: inline-block;
     vertical-align: top;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.8em;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.3em; }
-    body[data-template="definitions"] main .left-sidebar .inoff-button > div.active, body[data-template="definitions"] main .left-sidebar .inoff-button > div:hover, body[data-template="definitions"] main .left-sidebar .abc > div.active, body[data-template="definitions"] main .left-sidebar .abc > div:hover, body[data-template="labo"] main .left-sidebar .inoff-button > div.active, body[data-template="labo"] main .left-sidebar .inoff-button > div:hover, body[data-template="labo"] main .left-sidebar .abc > div.active, body[data-template="labo"] main .left-sidebar .abc > div:hover {
+    font-size: 1.3em;
+    margin-bottom: 0.5em; }
+    body[data-template="definitions"] main .left-sidebar .inoff-button > div.active, body[data-template="definitions"] main .left-sidebar .inoff-button > div:hover, body[data-template="definitions"] main .left-sidebar .abc > div.active, body[data-template="definitions"] main .left-sidebar .abc > div:hover, body[data-template="definitions"] main .left-sidebar .sources-button > div.active, body[data-template="definitions"] main .left-sidebar .sources-button > div:hover, body[data-template="labo"] main .left-sidebar .inoff-button > div.active, body[data-template="labo"] main .left-sidebar .inoff-button > div:hover, body[data-template="labo"] main .left-sidebar .abc > div.active, body[data-template="labo"] main .left-sidebar .abc > div:hover, body[data-template="labo"] main .left-sidebar .sources-button > div.active, body[data-template="labo"] main .left-sidebar .sources-button > div:hover {
       background: #00FF9A; }
   body[data-template="definitions"] main .left-sidebar .abc, body[data-template="labo"] main .left-sidebar .abc {
     width: 120%;
