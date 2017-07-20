@@ -5,18 +5,37 @@
 ?>
 <?php $cur_let = null; ?>
 <main>
-  <div class="row">
-    <div class="left-sidebar medium-2 columns">
 
+  <div class="row">
+    <div class="left-sidebar labo-menu medium-2 columns">
+      <ul>
+        <li>
+          <a href="#recit" title="Récit">Récit</a>
+        </li>
+        <li>
+          <a href="#mini-dico" title="Mini-Dico">Mini-Dico</a>
+        </li>
+        <li>
+          <a href="#credits" title="Crédits">Crédits</a>
+        </li>
+      </ul>
     </div>
     <div class="small-10 medium-8 medium-push-2 columns end">
       <?php snippet('breadcrumbs')?>
-      <div class="textlabo text-wrapper">
+      <div class="textlabo text-wrapper" id="recit">
+        <div class="etat">
+          <?php if($page->etat() == "termine"):?>
+            <span>▲ Terminé</span>
+          <?php else: ?>
+            <span>▶ En cours</span>
+          <?php endif; ?>
+          
+        </div>
         <h1><?php echo $page->title()->html() ?></h1>
         <?php echo $page->text()->kirbytext() ?>
       </div>
       <?php if($page->linkeddefinition()->isNotEmpty()):?>
-        <div class="def-labo">
+        <div class="def-labo" id="mini-dico">
           <h1>Le mini-dico du spectateur: <?php echo $page->title()->html() ?></h1>
           <ul class="row"> 
             <?php foreach($page->linkeddefinition()->split(',') as $linkeddefinition): ?>  
@@ -50,7 +69,7 @@
         </div>
       <?php endif; ?>
       <?php if($page->credits()->isNotEmpty()):?>
-        <div class="credit-labo text-wrapper">
+        <div class="credit-labo text-wrapper" id="credits">
           <h1>Crédits</h1>
           <?php echo $page->credits()->kirbytext() ?>
         </div>

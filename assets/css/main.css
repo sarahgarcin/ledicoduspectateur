@@ -4720,13 +4720,13 @@ table {
     float: none !important; }
 
 .tooltip {
-  background: #333333;
+  background: #0000D2;
   color: #FFFFFF;
   display: none;
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.3;
-  max-width: 300px;
+  max-width: 250px;
   padding: 0.75rem;
   position: absolute;
   width: 100%;
@@ -4734,7 +4734,7 @@ table {
   left: 50%; }
   .tooltip > .nub {
     border: solid 5px;
-    border-color: transparent transparent #333333 transparent;
+    border-color: transparent transparent #0000D2 transparent;
     display: block;
     height: 0;
     pointer-events: none;
@@ -4763,22 +4763,22 @@ table {
 
 @media only screen {
   .tooltip > .nub {
-    border-color: transparent transparent #333333 transparent;
+    border-color: transparent transparent #0000D2 transparent;
     top: -10px; }
   .tooltip.tip-top > .nub {
-    border-color: #333333 transparent transparent transparent;
+    border-color: #0000D2 transparent transparent transparent;
     bottom: -10px;
     top: auto; }
   .tooltip.tip-left, .tooltip.tip-right {
     float: none !important; }
   .tooltip.tip-left > .nub {
-    border-color: transparent transparent transparent #333333;
+    border-color: transparent transparent transparent #0000D2;
     left: auto;
     margin-top: -5px;
     right: -10px;
     top: 50%; }
   .tooltip.tip-right > .nub {
-    border-color: transparent #333333 transparent transparent;
+    border-color: transparent #0000D2 transparent transparent;
     left: -10px;
     margin-top: -5px;
     right: auto;
@@ -8890,7 +8890,7 @@ body[data-template="definitions"] main.off .letter .inner-definition, body[data-
 body[data-template="definitions"] main .left-sidebar, body[data-template="labo"] main .left-sidebar {
   position: fixed;
   z-index: 10; }
-  body[data-template="definitions"] main .left-sidebar .inoff-button > div, body[data-template="definitions"] main .left-sidebar .abc > div, body[data-template="definitions"] main .left-sidebar .sources-button > div, body[data-template="labo"] main .left-sidebar .inoff-button > div, body[data-template="labo"] main .left-sidebar .abc > div, body[data-template="labo"] main .left-sidebar .sources-button > div {
+  body[data-template="definitions"] main .left-sidebar .inoff-button > div, body[data-template="definitions"] main .left-sidebar .inoff-button li, body[data-template="definitions"] main .left-sidebar .abc > div, body[data-template="definitions"] main .left-sidebar .abc li, body[data-template="definitions"] main .left-sidebar .sources-button > div, body[data-template="definitions"] main .left-sidebar .sources-button li, body[data-template="definitions"] main .left-sidebar ul > div, body[data-template="definitions"] main .left-sidebar ul li, body[data-template="labo"] main .left-sidebar .inoff-button > div, body[data-template="labo"] main .left-sidebar .inoff-button li, body[data-template="labo"] main .left-sidebar .abc > div, body[data-template="labo"] main .left-sidebar .abc li, body[data-template="labo"] main .left-sidebar .sources-button > div, body[data-template="labo"] main .left-sidebar .sources-button li, body[data-template="labo"] main .left-sidebar ul > div, body[data-template="labo"] main .left-sidebar ul li {
     border: 3px solid #00FF9A;
     display: inline-block;
     vertical-align: top;
@@ -8898,8 +8898,9 @@ body[data-template="definitions"] main .left-sidebar, body[data-template="labo"]
     cursor: pointer;
     font-weight: bold;
     font-size: 1.3em;
-    margin-bottom: 0.5em; }
-    body[data-template="definitions"] main .left-sidebar .inoff-button > div.active, body[data-template="definitions"] main .left-sidebar .inoff-button > div:hover, body[data-template="definitions"] main .left-sidebar .abc > div.active, body[data-template="definitions"] main .left-sidebar .abc > div:hover, body[data-template="definitions"] main .left-sidebar .sources-button > div.active, body[data-template="definitions"] main .left-sidebar .sources-button > div:hover, body[data-template="labo"] main .left-sidebar .inoff-button > div.active, body[data-template="labo"] main .left-sidebar .inoff-button > div:hover, body[data-template="labo"] main .left-sidebar .abc > div.active, body[data-template="labo"] main .left-sidebar .abc > div:hover, body[data-template="labo"] main .left-sidebar .sources-button > div.active, body[data-template="labo"] main .left-sidebar .sources-button > div:hover {
+    margin-bottom: 0.5em;
+    color: #0000D2; }
+    body[data-template="definitions"] main .left-sidebar .inoff-button > div.active, body[data-template="definitions"] main .left-sidebar .inoff-button > div:hover, body[data-template="definitions"] main .left-sidebar .inoff-button li.active, body[data-template="definitions"] main .left-sidebar .inoff-button li:hover, body[data-template="definitions"] main .left-sidebar .abc > div.active, body[data-template="definitions"] main .left-sidebar .abc > div:hover, body[data-template="definitions"] main .left-sidebar .abc li.active, body[data-template="definitions"] main .left-sidebar .abc li:hover, body[data-template="definitions"] main .left-sidebar .sources-button > div.active, body[data-template="definitions"] main .left-sidebar .sources-button > div:hover, body[data-template="definitions"] main .left-sidebar .sources-button li.active, body[data-template="definitions"] main .left-sidebar .sources-button li:hover, body[data-template="definitions"] main .left-sidebar ul > div.active, body[data-template="definitions"] main .left-sidebar ul > div:hover, body[data-template="definitions"] main .left-sidebar ul li.active, body[data-template="definitions"] main .left-sidebar ul li:hover, body[data-template="labo"] main .left-sidebar .inoff-button > div.active, body[data-template="labo"] main .left-sidebar .inoff-button > div:hover, body[data-template="labo"] main .left-sidebar .inoff-button li.active, body[data-template="labo"] main .left-sidebar .inoff-button li:hover, body[data-template="labo"] main .left-sidebar .abc > div.active, body[data-template="labo"] main .left-sidebar .abc > div:hover, body[data-template="labo"] main .left-sidebar .abc li.active, body[data-template="labo"] main .left-sidebar .abc li:hover, body[data-template="labo"] main .left-sidebar .sources-button > div.active, body[data-template="labo"] main .left-sidebar .sources-button > div:hover, body[data-template="labo"] main .left-sidebar .sources-button li.active, body[data-template="labo"] main .left-sidebar .sources-button li:hover, body[data-template="labo"] main .left-sidebar ul > div.active, body[data-template="labo"] main .left-sidebar ul > div:hover, body[data-template="labo"] main .left-sidebar ul li.active, body[data-template="labo"] main .left-sidebar ul li:hover {
       background: #00FF9A; }
   body[data-template="definitions"] main .left-sidebar .abc, body[data-template="labo"] main .left-sidebar .abc {
     width: 120%;

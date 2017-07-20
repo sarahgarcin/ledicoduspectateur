@@ -7,6 +7,13 @@ fields:
 	title:
 		label: Titre
 		type:  text
+	etat:
+		label: État
+		type:  radio
+		default: encours
+		options: 
+			encours: En cours
+			termine: Terminé
 	text:
 		label: Texte
 		type: markdown			

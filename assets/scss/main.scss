@@ -251,11 +251,14 @@ body[data-template="definitions"], body[data-template="labo"] {
         }
       }
     }
+    .etat{
+      //color: $vert;
+    }
     .left-sidebar{
       position:fixed;
       z-index: 10;
-      .inoff-button, .abc, .sources-button{
-        > div{
+      .inoff-button, .abc, .sources-button, ul{
+        > div, li{
           border: $box-border;
           display:inline-block;
           vertical-align: top;
@@ -264,6 +267,7 @@ body[data-template="definitions"], body[data-template="labo"] {
           font-weight: bold;
           font-size: 1.3em;
           margin-bottom: 0.5em;
+          color: $text-color;
           &.active, &:hover{
             background:$vert;
           }
