@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $(document).foundation();
     init();
-
+    
 });
 
 
@@ -101,6 +101,20 @@ function init() {
       //     $loadCont.hide();
       //   }
       // })
+
+
+  $(".read-more").on('click', function(){
+    if($(this).hasClass('active')){
+      $('.more-text').hide();
+      $(this).find('span').html('⌄');
+      $(this).removeClass('active');
+    }
+    else{
+      $('.more-text').show();
+      $(this).find('span').html('⌃')
+      $(this).addClass('active');
+    }
+  });
 
 
 

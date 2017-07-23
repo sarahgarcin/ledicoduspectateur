@@ -1,9 +1,0 @@
-Title: quiz
-
-----
-
-Text: 
-
-----
-
-Ressourcesmedia: BLEUE-verso-page-001.jpg,JAUNE-verso-page-001.jpg,QUIZ-verso-page-001.jpg,QUIZ.jpg,ROUGE-verso-page-001.jpg,vignettes-bleu.jpg,vignettes-jaune.jpg,vignettes-rouge.jpg

@@ -8821,6 +8821,31 @@ main {
   border-top: 1px solid #0000D2;
   padding-top: 1em; }
 
+.read-more, .read-less {
+  height: 70px;
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,00ff9a+100 */
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #00ff9a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ff9a',GradientType=0 );
+  /* IE6-9 */ }
+  .read-more span, .read-less span {
+    color: #FFF;
+    font-size: 2.5em;
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    text-shadow: 0px 0px 10px #FFF; }
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
   padding: 0;
@@ -8961,42 +8986,7 @@ body[data-template="definitions"] main .loadPage, body[data-template="labo"] mai
     margin-top: 0;
     margin-bottom: 0.5em; }
 
-/* PAGE DEFINITIONS -- page.php*/
-#content-def {
-  position: absolute;
-  display: block;
-  border: 1px solid blue;
-  padding: 5px 10px 5px 10px;
-  z-index: 1;
-  background-color: #FFFFFF; }
-  #content-def h1 {
-    font-family: "amiri", georgia, serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: #0000D2;
-    background-color: #FFFFFF; }
-  #content-def p {
-    font-family: "amiri", georgia, serif;
-    font-size: 16px;
-    color: #0000D2;
-    background-color: #FFFFFF; }
-  #content-def h6 {
-    padding-left: 45px; }
-
-#info-def {
-  /* id -> devrait être une classe ?*/
-  font-family: "amiri", georgia, serif; }
-  #info-def p {
-    color: #000000;
-    display: inline; }
-  #info-def ul {
-    margin-left: 0; }
-    #info-def ul li {
-      list-style: none;
-      display: inline; }
-      #info-def ul li a {
-        font-family: "amiri", georgia, serif;
-        color: #0000D2;
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-        border-bottom-color: #00ff9a; }
+body[data-template="textelong"] .text-wrapper {
+  padding-bottom: 120px; }
+  body[data-template="textelong"] .text-wrapper .more-text {
+    display: none; }

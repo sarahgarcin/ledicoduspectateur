@@ -164,6 +164,30 @@ main{
   padding-top:1em;
 }
 
+.read-more, .read-less{
+  height: 70px;
+  position: absolute;
+  left:3px;
+  right:3px; 
+  bottom: 3px;
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,00ff9a+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #00ff9a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#00ff9a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#00ff9a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ff9a',GradientType=0 ); /* IE6-9 */
+  span{
+    color: #FFF;
+    font-size: 2.5em;
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    display:block; 
+    padding-top:10px;
+    text-shadow: 0px 0px 10px #FFF;
+  }
+}
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
   padding: 0;
@@ -351,54 +375,13 @@ body[data-template="definitions"], body[data-template="labo"] {
   }
 }
 
-/* PAGE DEFINITIONS -- page.php*/
-#content-def {
-    position: absolute;
-    display: block;
-    border: 1px solid blue;
-    padding: 5px 10px 5px 10px;
-    z-index: 1;
-    background-color: #FFFFFF;
-    h1 {
-        font-family: $font-family;
-        font-weight: bold;
-        font-size: 30px;
-        color: $text-color;
-        background-color: #FFFFFF;
+body[data-template="textelong"]{
+  .text-wrapper{
+    padding-bottom: 120px;
+    .more-text{
+      display:none;
     }
-    p {
-
-        font-family: $font-family;
-        font-size: 16px;
-        color: $text-color;
-        background-color: #FFFFFF;
-    }
-    h6 {
-        padding-left: 45px;
-    }
-
+  }
 }
 
-#info-def { /* id -> devrait être une classe ?*/
-
-    font-family: $font-family;
-    p {
-        color: #000000;
-        display: inline;
-    }
-    ul {
-        margin-left: 0;
-        li {
-            list-style: none;
-            display: inline;
-            a {
-                font-family: $font-family;
-                color: $text-color;
-                border-bottom-width: 2px;
-                border-bottom-style: solid;
-                border-bottom-color: rgb(0, 255, 154);
-            }
-        }
-    }
-}
 
