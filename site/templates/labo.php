@@ -34,6 +34,7 @@
         <h1><?php echo $page->title()->html() ?></h1>
         <?php echo $page->text()->kirbytext() ?>
       </div>
+      <div class="loadPage wrapper small-10 medium-10 large-8"></div>
       <?php if($page->linkeddefinition()->isNotEmpty()):?>
         <div class="def-labo" id="mini-dico">
           <h1>Le mini-dico du spectateur: <?php echo $page->title()->html() ?></h1>

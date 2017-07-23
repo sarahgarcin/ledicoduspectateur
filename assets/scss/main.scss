@@ -23,14 +23,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a {
-    color: $text-color;
-    text-decoration: none;
-    &:hover {
-        color:$text-color;
-    }
-    &:visited {
-        color:$text-color;
-    }
+  color: $text-color;
+  text-decoration: none;
+  &:hover {
+      color:$text-color;
+  }
+  &:visited {
+      color:$text-color;
+  }
+  &.active{
+    text-decoration: underline;
+  }
 }
 
 hr {
@@ -188,6 +191,26 @@ main{
   }
 }
 
+.loadPage{
+  position:absolute;
+  height:auto;
+  top: 0;
+  left:0;
+  display:none;
+  z-index: 999;
+  background: #FFF;
+  padding: 1em 2em; 
+  border: $box-border;
+  @include boxShadow($rouge);
+  h1{
+    font-size: 2em;
+    font-weight:bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
   padding: 0;
@@ -236,6 +259,15 @@ body[data-template="home"]{
   display: block;
   margin-bottom: 3em;
   background-color: #FFFFFF;
+  a{
+    text-decoration: underline;
+    &:hover{
+      color: $vert;
+    }
+  }
+  a[title="definition"]{
+    //pointer-events: none;
+  }
 }
 
 
@@ -351,25 +383,6 @@ body[data-template="definitions"], body[data-template="labo"] {
             color: $vert;
           }
         }
-      }
-    }
-    .loadPage{
-      position:absolute;
-      height:auto;
-      top: 0;
-      left:0;
-      display:none;
-      z-index: 999;
-      background: #FFF;
-      padding: 1em 2em; 
-      border: $box-border;
-      @include boxShadow($rouge);
-      h1{
-        font-size: 2em;
-        font-weight:bold;
-        line-height: 1;
-        margin-top: 0;
-        margin-bottom: 0.5em;
       }
     }
   }

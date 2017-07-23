@@ -8714,6 +8714,8 @@ a {
     color: #0000D2; }
   a:visited {
     color: #0000D2; }
+  a.active {
+    text-decoration: underline; }
 
 hr {
   background-color: #0000D2;
@@ -8846,6 +8848,24 @@ main {
     padding-top: 10px;
     text-shadow: 0px 0px 10px #FFF; }
 
+.loadPage {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+  background: #FFF;
+  padding: 1em 2em;
+  border: 3px solid #00FF9A;
+  box-shadow: 0px 0px 30px #FF2E74; }
+  .loadPage h1 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0.5em; }
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
   padding: 0;
@@ -8888,6 +8908,10 @@ body[data-template="home"] .citation-wrapper {
   display: block;
   margin-bottom: 3em;
   background-color: #FFFFFF; }
+  .text-wrapper a {
+    text-decoration: underline; }
+    .text-wrapper a:hover {
+      color: #00FF9A; }
 
 #subpage {
   display: -ms-flexbox;
@@ -8967,24 +8991,6 @@ body[data-template="definitions"] main ul > li.definition, body[data-template="l
     line-height: 1.2;
     cursor: default;
     color: #00FF9A; }
-
-body[data-template="definitions"] main .loadPage, body[data-template="labo"] main .loadPage {
-  position: absolute;
-  height: auto;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 999;
-  background: #FFF;
-  padding: 1em 2em;
-  border: 3px solid #00FF9A;
-  box-shadow: 0px 0px 30px #FF2E74; }
-  body[data-template="definitions"] main .loadPage h1, body[data-template="labo"] main .loadPage h1 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1;
-    margin-top: 0;
-    margin-bottom: 0.5em; }
 
 body[data-template="textelong"] .text-wrapper {
   padding-bottom: 120px; }

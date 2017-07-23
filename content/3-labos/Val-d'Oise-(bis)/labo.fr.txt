@@ -4,10 +4,6 @@ Title: Val d'Oise (bis)
 
 Text: 
 
-##Labo
-
-###**Val-d'Oise (bis)**
-
 (image: image.jpg)
 
 ######© Croquis _ Céline Jimenez
@@ -125,7 +121,7 @@ Ressourcesmedia:
 
 ----
 
-Linkeddefinition: 
+Linkeddefinition: anti-communautariste, qui-va-chercher-du-sens-partout, sans-commentaire, sociologue
 
 ----
 
@@ -136,3 +132,7 @@ Un Contrat local d’éducation artistique a été signé par le Conseil départ
 Une convention de collaboration publique entre le Conseil départemental du Val d’Oise et le CNFPT Grande-Couronne a pour objet un plan de formation annuel à l’intention des personnels techniciens et relais de la culture sur le Val d’Oise. Dans ce cadre, une « sensibilisation à l'éducation artistique des arts de la scène » est proposé en partenariat avec les signataires du CLEA à l'attention des professionnels de l'animation. Un module spécifique est animé par Joël Kerouanton autour de l’« Accompagnement à l’analyse critique des animateurs avec leurs publics. Exemple de mise en œuvre de l’analyse critique : travailler autour de « être spectateur ». 
 
 Pour garder traces de cet accompagnement, pour permettre aux animateurs de participer à un processus de création littéraire mené par un écrivain, pour rendre visible leurs états de spectateur et les contributions réciproques que leur rédaction a nécessité, le Conseil départemental du Val d'Oise a fait une commande d'écriture à Joël Kérouanton, écrivain. L'oeuvre - l'« Addenda au dico du spectateur » - correspond au recueil, retranscription et réécriture des dits et écrits des participants en formation entre janvier et juin 2016. Puis le Conseil départemental du Val d'Oise a co-produit son édition numérique dans le cadre des Labos du Dico du spectateur.
+
+----
+
+Etat: encours

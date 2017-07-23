@@ -116,6 +116,26 @@ function init() {
     }
   });
 
+  $('a[title="definition"]').on('click', function(e){
+    var url = document.location.origin + $(this).attr("href");
+    var $loadCont = $('.loadPage');
+    console.log(url);
+    $loadCont.center();
+    e.preventDefault();
+    if($loadCont.hasClass('active')){
+      //$loadCont.removeClass('active');
+      $loadCont.html('');
+      openPage(url, $loadCont);
+      //$loadCont.hide();
+    }
+    else{
+      $loadCont.removeClass('active');
+      $loadCont.html('');
+      openPage(url, $loadCont);
+    }
+  });
+
+
 
 
 }

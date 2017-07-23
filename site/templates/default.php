@@ -21,23 +21,10 @@
           </ul>
         </nav>
       <?php endif ?>
-<!-- 
-          <div class="ressources">
-              <?php $filenames = $page->ressourcesmedia()->split(',');
-                         if(count($filenames) < 2) $filenames = array_pad($filenames, 2, '');
-                         $files = call_user_func_array(array($page->files(), 'find'), $filenames);
-
-                         // Use the file collection
-                         foreach($files as $file){ ?>
-              <div>
-                  <?php echo thumb($file, array('width' => 500));?>
-              </div>
-
-              <?php } ?>	   
-          </div> -->
-
-      </div>
+    </div>
+    <div class="loadPage wrapper small-10 medium-10 large-8"></div>
   </div>
+
 </main>
 
 
