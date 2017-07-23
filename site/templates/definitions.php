@@ -7,7 +7,7 @@
 <?php $cur_let = null; ?>
 <main class="in">
   <div class="row">
-    <div class="left-sidebar medium-2 columns">
+    <div class="left-sidebar medium-2 columns hide-for-small-only">
       <div class="inoff-button">
         <div class="in active has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions retenu dans la cours d'honneur (À utiliser sans modération!)">In</div>
         <div class="off has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions non retenu actuellement (À utiliser avec modération!)">Off</div>
@@ -48,7 +48,7 @@
         </ul>
       </div>
     </div>
-    <div class="small-10 medium-8 medium-push-2 columns end">
+    <div class="small-12 medium-8 medium-push-2 columns end">
       <ul class="row">
         <?php foreach ($page->children()->sortBy('title', 'asc') as $subpage):
           $first_let = mb_substr($subpage->title(),0,1, "utf-8");

@@ -13,19 +13,18 @@ function init() {
       closePopUp($(this));
     });
 
-    //home
-    $('.citation-wrapper').draggable();
-    //random position for  $('.citation-wrapper')
-    var randomX = Math.random() * ($(window).width() - $('.citation-wrapper').width());
-    var randomY = Math.random() * ($(window).height() -$('.citation-wrapper').height());
-    $('.citation-wrapper').css({
-        'top': randomY,
-        'left':randomX
-    });
+    if(!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      //home
+      $('.citation-wrapper').draggable();
+      //random position for  $('.citation-wrapper')
+      var randomX = Math.random() * ($(window).width() - $('.citation-wrapper').width());
+      var randomY = Math.random() * ($(window).height() -$('.citation-wrapper').height());
+      $('.citation-wrapper').css({
+          'top': randomY,
+          'left':randomX
+      });
 
-  
-    //definitions
-    //if($('body').attr('data-template') == "definitions"){
+      //definitions
       $('.definition-item').on('click', function(e){
         var url = $(this).attr("data-target");
         var $loadCont = $('.loadPage');
@@ -101,6 +100,12 @@ function init() {
       //     $loadCont.hide();
       //   }
       // })
+    }
+
+    else{
+      mobileFunctions();
+    }
+
 
 
   $(".read-more").on('click', function(){
@@ -165,4 +170,41 @@ jQuery.fn.center = function () {
   this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 5) + 
                                               $(window).scrollLeft()) + "px");
   return this;
+}
+
+function mobileFunctions(){
+  $('#menu-icon').on('click', function(){
+    if($(this).hasClass('active')){
+      $('.menu-first').css('display', 'none');
+      $(this).removeClass("active");
+    }
+    else{
+      $('.menu-first').css('display', 'block');
+      $(this).addClass("active");
+    }
+
+  });
+
+  var oldCont;
+  $('.definition-item').on('click', function(e){
+    var url = $(this).attr("data-target");
+    var $loadCont = $(this).find('.inner-definition');
+    console.log(url);
+    e.preventDefault();
+    if($loadCont.hasClass('active')){
+      $loadCont.removeClass('active');
+      $loadCont.html(oldCont);
+      $loadCont.css('height', '200px');
+      //openPage(url, $loadCont);
+      //$loadCont.hide();
+    }
+    else{
+      oldCont = $loadCont.html();
+      $loadCont.addClass('active');
+      $loadCont.html('');
+      openPage(url, $loadCont);
+      $loadCont.css('height', 'auto');
+    }
+  });
+
 }

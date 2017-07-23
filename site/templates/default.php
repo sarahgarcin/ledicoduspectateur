@@ -2,7 +2,7 @@
 <?php snippet('logo') ?>
 <?php snippet('menu') ?>
 <main>
-  <div class="small-10 small-push-1 medium-8 medium-push-2 large-6 large-push-3">
+  <div class="small-12 medium-8 medium-push-2 large-6 large-push-3">
     <?php snippet('breadcrumbs')?>
     <div class="text-wrapper">
       <h1><?php echo $page->title()->html() ?></h1>

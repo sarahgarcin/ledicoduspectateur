@@ -1,0 +1,22 @@
+body[data-template="print"]{
+	main{
+		width: 15cm;
+		margin: auto;
+	}
+ .page{
+	 	height: 21cm;
+	 	page-break-after:always;
+ }
+}
+
+@media print{
+	@page{
+		size: A5; 
+		orientation: portrait;
+		margin: 15mm 15mm 15mm 15mm;
+	}
+	header, nav{
+		display:none;
+	}
+}
+

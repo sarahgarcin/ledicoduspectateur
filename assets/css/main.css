@@ -8730,8 +8730,22 @@ h2 {
   font-size: 1.3rem;
   line-height: 1.1; }
 
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-left: 2em;
+  margin-bottom: 0; }
+
 h6 {
-  font-size: 1rem; }
+  font-size: 0.8rem;
+  color: #000; }
+
+blockquote {
+  border: none;
+  padding-left: 2em;
+  padding-top: 0; }
+  blockquote p, blockquote h6 {
+    color: #0000D2; }
 
 p {
   font-weight: normal;
@@ -8751,23 +8765,23 @@ nav.menu {
   z-index: 1000;
   top: 0;
   padding: 1em; }
-  nav.menu > ul {
+  nav.menu > ul.menu-first {
     display: -ms-flexbox;
     display: flex; }
-    nav.menu > ul > li {
+    nav.menu > ul.menu-first > li {
       -ms-flex: 1 1 100%;
       flex: 1 1 100%;
       display: block;
       text-align: center; }
-      nav.menu > ul > li > a {
+      nav.menu > ul.menu-first > li > a {
         font-weight: bold;
-        font-size: 1.7rem;
-        line-height: 1; }
-      nav.menu > ul > li:hover, nav.menu > ul > li.active {
-        border-bottom: 3px solid #00FF9A; }
-      nav.menu > ul > li:hover .submenu {
+        font-size: 1.65rem;
+        line-height: 1.2; }
+        nav.menu > ul.menu-first > li > a:hover, nav.menu > ul.menu-first > li > a.active {
+          text-decoration: underline; }
+      nav.menu > ul.menu-first > li:hover .submenu {
         display: block; }
-      nav.menu > ul > li .submenu {
+      nav.menu > ul.menu-first > li .submenu {
         display: none;
         margin-left: 0;
         background: #FFF;
@@ -8775,30 +8789,11 @@ nav.menu {
         border-bottom: 3px solid #00FF9A;
         border-left: 3px solid #00FF9A;
         border-right: 3px solid #00FF9A; }
-        nav.menu > ul > li .submenu li {
+        nav.menu > ul.menu-first > li .submenu li {
           text-align: left;
           margin-bottom: 0.3em; }
-          nav.menu > ul > li .submenu li a:hover {
+          nav.menu > ul.menu-first > li .submenu li a:hover {
             text-decoration: underline; }
-
-@media only screen and (max-width: 40em) {
-  .buttonmenu {
-    max-width: 50px;
-    border: 5px solid #00ff9a;
-    padding: 5px;
-    right: 12px;
-    top: 50%; }
-    .buttonmenu div {
-      width: auto;
-      height: 4px;
-      border-radius: 3px;
-      background-color: #0000D2;
-      margin: 6px 0; }
-  #buttonmenu:target {
-    display: block;
-    position: absolute; }
-  #menu {
-    display: none; } }
 
 header {
   position: fixed;
@@ -8866,6 +8861,37 @@ main {
     margin-top: 0;
     margin-bottom: 0.5em; }
 
+#subpage {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  #subpage li {
+    margin: .3em .5em;
+    border: 3px solid #00FF9A;
+    background: #00FF9A;
+    padding: 0.5em; }
+    #subpage li:hover {
+      box-shadow: 0px 0px 30px #FF2E74;
+      background: #FFF; }
+    #subpage li a {
+      line-height: 1;
+      text-decoration: none; }
+      #subpage li a:hover {
+        color: #0000D2; }
+
+/* TEXTE*/
+.text-wrapper {
+  border: 3px solid #00FF9A;
+  padding: 20px;
+  display: block;
+  margin-bottom: 3em;
+  background-color: #FFFFFF; }
+  .text-wrapper a {
+    text-decoration: underline; }
+    .text-wrapper a:hover {
+      color: #00FF9A; }
+
 /* SNIPPET BREADCRUMB - */
 nav.breadcrumb {
   padding: 0;
@@ -8900,34 +8926,6 @@ body[data-template="home"] .citation-wrapper {
   body[data-template="home"] .citation-wrapper p {
     font-size: 1.5em;
     margin-bottom: 0; }
-
-/* TEXTE AVANT PROPOS*/
-.text-wrapper {
-  border: 3px solid #00FF9A;
-  padding: 20px;
-  display: block;
-  margin-bottom: 3em;
-  background-color: #FFFFFF; }
-  .text-wrapper a {
-    text-decoration: underline; }
-    .text-wrapper a:hover {
-      color: #00FF9A; }
-
-#subpage {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  #subpage li {
-    margin: .3em .5em;
-    border: 3px solid #00FF9A;
-    background: #00FF9A;
-    padding: 0.5em; }
-    #subpage li:hover {
-      box-shadow: 0px 0px 30px #FF2E74;
-      background: #FFF; }
-    #subpage li a {
-      line-height: 1; }
 
 /* PAGE DEFINITIONS -- definition.php*/
 body[data-template="definitions"] main.in .letter .inner-definition, body[data-template="labo"] main.in .letter .inner-definition {
@@ -8996,3 +8994,56 @@ body[data-template="textelong"] .text-wrapper {
   padding-bottom: 120px; }
   body[data-template="textelong"] .text-wrapper .more-text {
     display: none; }
+
+body[data-template="print"] main {
+  width: 15cm;
+  margin: auto; }
+
+body[data-template="print"] .page {
+  height: 21cm;
+  page-break-after: always; }
+
+@media print {
+  @page {
+    size: A5;
+    orientation: portrait;
+    margin: 15mm 15mm 15mm 15mm; }
+  header, nav {
+    display: none; } }
+
+@media only screen and (max-width: 40em) {
+  header {
+    top: 1rem;
+    bottom: auto;
+    z-index: 1001; }
+  nav.menu {
+    padding-left: 0;
+    padding-right: 0; }
+    nav.menu #menu-icon {
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 2rem; }
+    nav.menu > ul.menu-first {
+      display: none;
+      background: #FFF;
+      padding-bottom: 1em;
+      margin-top: 1.5em; }
+      nav.menu > ul.menu-first > li {
+        padding-left: 2rem;
+        text-align: left;
+        margin-bottom: 1em; }
+  main {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+  body[data-template="home"] main {
+    padding-top: 80px; }
+  body[data-template="home"] .citation-wrapper {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    left: 8.33333%;
+    top: auto; }
+  body[data-template="labo"] main {
+    padding-left: 0rem;
+    padding-right: 0rem; } }

@@ -1,10 +1,6 @@
-<nav class="menu medium-12">
-  <div href="#menu" class="buttonmenu">
-      <div></div>
-      <div></div>
-      <div></div>
-  </div>
-  <ul>
+<nav class="menu small-12 medium-12">
+  <a href="#" id="menu-icon" class="show-for-small-only">Menu</a>
+  <ul class="menu-first">
     <?php foreach($pages->visible() as $menu): ?>
     <li>
       <a <?php e($menu->isOpen(), ' class="active"') ?> href="<?php echo $menu->url() ?>" title="<?php echo $menu->title() ?>">

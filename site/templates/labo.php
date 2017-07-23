@@ -7,7 +7,7 @@
 <main>
 
   <div class="row">
-    <div class="left-sidebar labo-menu medium-2 columns">
+    <div class="left-sidebar labo-menu medium-2 columns hide-for-small-only">
       <ul>
         <li>
           <a href="#recit" title="Récit">Récit</a>
@@ -20,7 +20,7 @@
         </li>
       </ul>
     </div>
-    <div class="small-10 medium-8 medium-push-2 columns end">
+    <div class="small-12 medium-8 medium-push-2 columns end">
       <?php snippet('breadcrumbs')?>
       <div class="textlabo text-wrapper" id="recit">
         <div class="etat">

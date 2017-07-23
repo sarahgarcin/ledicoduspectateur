@@ -1,4 +1,4 @@
-<header class="small-1">
+<header class="small-2 medium-1">
 	<?php $logo = $site->logo()->toFile();?>
   <?php if($logo): ?>
 	  <div class="logo-wrapper">

@@ -17,7 +17,7 @@ if(!kirby()->request()->ajax()) {
        <?php echo $page->sources()->kirbytext() ?>
     </div>
   <?php endif; ?>
-  <div class="close-button">
+  <div class="close-button hide-for-small-only">
     <span>x</span>
   </div>
 </div>

@@ -1,0 +1,39 @@
+title: Imprimer
+
+pages: false
+files: true
+
+fields:
+  title:
+    label: Titre de la publication
+    type:  text
+  logosCouv: 
+  	label: Logos pour la couverture
+  	type: selector
+  	mode: multiple
+  coulorCouv: 
+  	label: Couleur de la couverture
+  	type:  color
+  	default: FFFFFF
+  edito: 
+  	label: Édito
+  	type: markdown
+  garde: 
+  	label: Texte page de garde
+  	type: markdown
+ 	imagecredit: 
+  	label: image avant crédits
+  	type: selector
+  	mode: single
+  colophon: 
+  	label: Colophon
+  	type: markdown
+  logosFin: 
+  	label: Logos fin
+  	type: selector
+  	mode: multiple
+  imageFin: 
+  	label: image de fin
+  	type: selector
+  	mode: single
+
