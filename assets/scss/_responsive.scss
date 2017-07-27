@@ -22,6 +22,9 @@
 				padding-left: 2rem;
 				text-align: left;
 				margin-bottom: 1em;
+				&:hover .submenu {
+	        display: none;
+	      }
 			}
 		}
 	}
@@ -30,6 +33,11 @@
 		padding-left: 0.9375rem;
 		padding-right: 0.9375rem;
 	}
+
+	.text-wrapper{
+		position: relative;
+	}
+
 	body[data-template="home"]{
 		main{
 			padding-top: 80px;
@@ -40,7 +48,20 @@
 	    margin-bottom: 1em; 
 	    left: 8.33333%;
 	    top: auto;
+	    display:block;
 	  }
+	}
+
+	body[data-template="definitions"], body[data-template="labo"] {
+		main {
+			ul > li.definition {
+				.inner-definition {
+					p{
+						font-size: 1.1em;
+					}
+				}
+			}
+		}
 	}
 
 	body[data-template="labo"]{

@@ -22,7 +22,7 @@ Ressourcesmedia: IMG_3851.jpg,IMG_3893.jpg
 
 ----
 
-Linkeddefinition: anti-communautariste, bof, bosseur, en-etat-de-grace, fauteuil, grande-prostate, mauvais
+Linkeddefinition: anti-communautariste, bof, bosseur, fauteuil, grande-prostate, mauvais
 
 ----
 
@@ -31,3 +31,11 @@ Credits:
 Iamque lituis cladium concrepantibus internarum non celate ut antea turbidum saeviebat ingenium a veri consideratione detortum et nullo inpositorum vel conpositorum fidem sollemniter inquirente nec discernente a societate noxiorum insontes velut exturbatum e iudiciis fas omne discessit, et causarum legitima silente defensione carnifex rapinarum sequester et obductio capitum et bonorum ubique multatio versabatur per orientales provincias, quas recensere puto nunc oportunum absque Mesopotamia digesta, cum bella Parthica dicerentur, et Aegypto, quam necessario aliud reieci ad tempus.
 
 Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem in Asiam atque erumpentem, ore repulsum et cervicibus interclusum suis sustinerent, tum, inquam, Byzantii et postea signa illa et reliqua urbis ornanemta sanctissime custodita tenuerunt.
+
+----
+
+Years: 
+
+----
+
+Etat: encours

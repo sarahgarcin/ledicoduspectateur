@@ -13,8 +13,8 @@
         <div class="off has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions non retenu actuellement (À utiliser avec modération!)">Off</div>
       </div>
       <div class="sources-button">
-        <div class="sources active has-tip" data-tooltip aria-haspopup="true" title="Lieu, public, biblio, date de la collecte (Universitaire courrez-y!)">Avec sources</div>
-        <div class="sans-sources has-tip" data-tooltip aria-haspopup="true" title="Ni lieu, ni public, ni biblio, ni date de la collecte (Universitaire s'abstenir!)">Sans sources</div>
+        <div class="sources active has-tip tip-right" data-tooltip aria-haspopup="true" title="Lieu, public, biblio, date de la collecte (Universitaire courrez-y!)">Avec les sources</div>
+        <div class="sans-sources has-tip tip-right" data-tooltip aria-haspopup="true" title="Ni lieu, ni public, ni biblio, ni date de la collecte (Universitaire s'abstenir!)">Sans les sources</div>
       </div>
       <div class="abc">
         <div class="abc-button">abc</div>

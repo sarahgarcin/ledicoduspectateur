@@ -17,12 +17,16 @@ function init() {
       //home
       $('.citation-wrapper').draggable();
       //random position for  $('.citation-wrapper')
+      var maxY = $(window).height() - $('.citation-wrapper').height();
       var randomX = Math.random() * ($(window).width() - $('.citation-wrapper').width());
-      var randomY = Math.random() * ($(window).height() -$('.citation-wrapper').height());
+      var randomY = Math.random() * (maxY - 70) + 70;
       $('.citation-wrapper').css({
           'top': randomY,
           'left':randomX
       });
+      setTimeout(function(){
+        $('.citation-wrapper').fadeIn(400);
+      }, 200);
 
       //definitions
       $('.definition-item').on('click', function(e){
@@ -189,16 +193,18 @@ function mobileFunctions(){
   $('.definition-item').on('click', function(e){
     var url = $(this).attr("data-target");
     var $loadCont = $(this).find('.inner-definition');
-    console.log(url);
     e.preventDefault();
+
     if($loadCont.hasClass('active')){
       $loadCont.removeClass('active');
       $loadCont.html(oldCont);
       $loadCont.css('height', '200px');
-      //openPage(url, $loadCont);
-      //$loadCont.hide();
     }
+
     else{
+      $('.definition-item .inner-definition.active').html(oldCont);
+      $('.definition-item .inner-definition.active').css('height', '200px');
+      $('.definition-item .inner-definition.active').removeClass('active');
       oldCont = $loadCont.html();
       $loadCont.addClass('active');
       $loadCont.html('');

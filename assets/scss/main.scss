@@ -71,6 +71,10 @@ blockquote{
   }
 }
 
+img{
+  width: 100%;
+}
+
 p {
     @include currentText;
 }
@@ -120,7 +124,9 @@ nav.menu{
         li {
           text-align: left;
           margin-bottom: 0.3em;
-
+          span.dates-sousmenu{
+            font-size: 12px;
+          }
           a {
             &:hover{
               text-decoration:underline;
@@ -282,6 +288,7 @@ body[data-template="home"]{
     padding: 1em;
     z-index: 999;
     cursor: move;
+    display:none;
     p{
         font-size: 1.5em;
         margin-bottom: 0;
@@ -303,7 +310,7 @@ body[data-template="definitions"], body[data-template="labo"] {
     &.off{
       .letter{
         .inner-definition{
-          color: $rouge;
+          color: $rouge !important;
         }
       }
     }
@@ -313,16 +320,17 @@ body[data-template="definitions"], body[data-template="labo"] {
     .left-sidebar{
       position:fixed;
       z-index: 10;
-      .inoff-button, .abc, .sources-button, ul{
-        > div, li{
+      .inoff-button, .abc, .sources-button, > ul{
+        > div, > li{
           border: $box-border;
           display:inline-block;
           vertical-align: top;
           padding: 0.5em 0.8em;
           cursor: pointer;
           font-weight: bold;
-          font-size: 1.3em;
+          font-size: 1em;
           margin-bottom: 0.5em;
+
           color: $text-color;
           &.active, &:hover{
             background:$vert;
@@ -332,13 +340,13 @@ body[data-template="definitions"], body[data-template="labo"] {
       .abc{
         width: 120%;
         margin-top: 0.5em;
-        ul{
+        > ul{
           border: $box-border;
-          padding: 1em 0em 0.2em 1em;
+          padding: 1em;
           background-color:#FFF;
           margin-top: -3px;
           display:none;
-          li{
+          > li{
             display:inline-block;
             vertical-align: top;
             //cursor: pointer;
@@ -346,8 +354,9 @@ body[data-template="definitions"], body[data-template="labo"] {
             font-size: 1.3em;
             //padding: 0 0.5em;
             text-align: center;
-            width: 30px;
-            margin-bottom: 30px;
+            width: 20px;
+            margin-bottom: 20px;
+            border:none;
             a:hover{
               color: $rouge;
             }
@@ -382,6 +391,38 @@ body[data-template="definitions"], body[data-template="labo"] {
             cursor:default;
             color: $vert;
           }
+        }
+      }
+    }
+  }
+}
+
+body[data-template="labo"]{
+  main{
+    .left-sidebar{
+      > ul{
+        > div, > li{
+          display:block;
+          margin-bottom: 0.5em;
+          padding: 0;
+          border:none;
+          &.active, &:hover{
+            background:transparent;
+          }
+          a{
+            border: $box-border;
+            display:inline-block;
+            vertical-align: top;
+            padding: 0.5em 0.8em;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            color: $text-color;
+            &.active, &:hover{
+              background:$vert;
+            }
+          }
+
         }
       }
     }

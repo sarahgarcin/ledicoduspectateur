@@ -1,4 +1,4 @@
-Title: Conservatoire-national-des-arts-et-metiers
+Title: Conservatoire national des arts et metiers
 
 ----
 
@@ -31,3 +31,11 @@ Textes issus d'un module "Anthropologie des pratiques de la culture" les 12 et 1
 NOTA BENE : les définitions n'ont pas fait l'objet de réécriture : les auditeurs ont opté pour le partage "brut" de leur travail. En complément et à leur demande, leurs textes sont diffusés sous la forme dactylographiée et collée à une photographie de l'original papier.
 
 -> Télécharger le déroulé du module de formation CNAM
+
+----
+
+Years: [2014 - ...]
+
+----
+
+Etat: encours
