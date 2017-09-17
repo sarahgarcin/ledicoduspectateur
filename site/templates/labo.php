@@ -71,7 +71,7 @@
       <?php endif; ?>
       <?php if($page->credits()->isNotEmpty()):?>
         <div class="credit-labo text-wrapper" id="credits">
-          <h1>Crédits</h1>
+          <h1>Contexte & crédits</h1>
           <?php echo $page->credits()->kirbytext() ?>
         </div>
       <?php endif; ?>

@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PRO-00000a0000a0000aa00a000a0000a000');
 
 /*
 
@@ -30,7 +30,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 */
 
 c::set('environment', 'local');
-c::set('debug', true);
+c::set('debug', false);
 
 c::set('languages', array(
   // array(

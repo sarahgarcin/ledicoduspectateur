@@ -1,6 +1,9 @@
 title: Labo
 
 pages: print
+  template:
+    - default
+    - print
 files: true
 
 fields:

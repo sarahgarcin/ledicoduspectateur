@@ -1,12 +1,15 @@
 title: Page
 
-pages: true
+pages: 
+	template:
+    - default
+    - textelong
 files: true
 
 fields:
   title:
     label: Titre
     type:  text
- 	text:
- 		label: Texte
- 		type: markdown
+  text:
+    label: Texte
+    type: markdown

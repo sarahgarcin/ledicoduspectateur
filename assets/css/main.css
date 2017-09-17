@@ -9032,9 +9032,6 @@ blockquote {
   blockquote p, blockquote h6 {
     color: #0000D2; }
 
-img {
-  width: 100%; }
-
 p {
   font-weight: normal;
   font-size: 1.3rem;
@@ -9047,12 +9044,16 @@ ul {
   padding: 0;
   margin: 0; }
 
+span.dates-sousmenu {
+  font-size: 12px; }
+
 /* HEADER ET NAV - snippet menu.php*/
 nav.menu {
   position: fixed;
   z-index: 1000;
   top: 0;
-  padding: 1em; }
+  padding: 1em;
+  transition: all 0.5s; }
   nav.menu > ul.menu-first {
     display: -ms-flexbox;
     display: flex; }
@@ -9084,6 +9085,12 @@ nav.menu {
             font-size: 12px; }
           nav.menu > ul.menu-first > li .submenu li a:hover {
             text-decoration: underline; }
+  nav.menu.transparent {
+    opacity: 0.3;
+    filter: blur(2px); }
+  nav.menu:hover {
+    opacity: 1;
+    filter: none; }
 
 header {
   position: fixed;
@@ -9098,7 +9105,7 @@ header {
   font-size: 1.3em;
   position: absolute;
   top: 0;
-  right: 10px;
+  right: 20px;
   cursor: pointer; }
 
 main {
@@ -9136,6 +9143,7 @@ main {
 .loadPage {
   position: absolute;
   height: auto;
+  max-height: 70vh;
   top: 0;
   left: 0;
   display: none;
@@ -9143,6 +9151,7 @@ main {
   background: #FFF;
   padding: 1em 2em;
   border: 3px solid #00FF9A;
+  overflow: scroll;
   box-shadow: 0px 0px 30px #FF2E74; }
   .loadPage h1 {
     font-size: 2em;
@@ -9221,6 +9230,9 @@ body[data-template="home"] .citation-wrapper {
 /* PAGE DEFINITIONS -- definition.php*/
 body[data-template="definitions"] main.in .letter .inner-definition, body[data-template="labo"] main.in .letter .inner-definition {
   color: #00FF9A; }
+
+body[data-template="definitions"] main.in .definition[data-inoff='off'], body[data-template="labo"] main.in .definition[data-inoff='off'] {
+  display: none; }
 
 body[data-template="definitions"] main.off .letter .inner-definition, body[data-template="labo"] main.off .letter .inner-definition {
   color: #FF2E74 !important; }
@@ -9305,6 +9317,17 @@ body[data-template="textelong"] .text-wrapper {
   padding-bottom: 120px; }
   body[data-template="textelong"] .text-wrapper .more-text {
     display: none; }
+
+body[data-template="textelong"] .small-def {
+  position: absolute;
+  width: 400px;
+  background-color: #0000D2;
+  padding: 1rem; }
+  body[data-template="textelong"] .small-def p, body[data-template="textelong"] .small-def a {
+    color: #FFF;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0; }
 
 body[data-template="print"] main {
   width: 15cm;

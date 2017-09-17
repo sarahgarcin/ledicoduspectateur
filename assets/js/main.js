@@ -13,7 +13,18 @@ function init() {
       closePopUp($(this));
     });
 
+
     if(!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // menu animation on scroll
+      $(window).scroll(function(){
+        var top=$(window).scrollTop();
+        if(top > 50){
+        $("nav.menu").addClass('transparent');
+        }else{
+        $("nav.menu").removeClass('transparent');
+        }
+      })
+
       //home
       $('.citation-wrapper').draggable();
       //random position for  $('.citation-wrapper')
@@ -28,11 +39,13 @@ function init() {
         $('.citation-wrapper').fadeIn(400);
       }, 200);
 
+
       //definitions
+
       $('.definition-item').on('click', function(e){
         var url = $(this).attr("data-target");
         var $loadCont = $('.loadPage');
-        console.log(url);
+        //console.log(url);
         $loadCont.center();
         e.preventDefault();
         if($loadCont.hasClass('active')){
@@ -125,10 +138,11 @@ function init() {
     }
   });
 
+  // définitions sur page texte
   $('a[title="definition"]').on('click', function(e){
-    var url = document.location.origin + $(this).attr("href");
+    var url = $(this).attr("href");
     var $loadCont = $('.loadPage');
-    console.log(url);
+    //console.log(url);
     $loadCont.center();
     e.preventDefault();
     if($loadCont.hasClass('active')){
@@ -143,6 +157,33 @@ function init() {
       openPage(url, $loadCont);
     }
   });
+
+  // definitions sur page mon histoire du spectateur
+  if($('body').attr('data-template') == "textelong"){
+    $('a[title="definition"]').mouseenter(function(e){
+      var url = $(this).attr("href");
+      $(this).append('<div class="small-def"></div>');
+      $('.small-def').css({
+        'top': e.pageY - 80,
+        'left' : e.offsetX,
+      });
+      $.ajax({
+         url: url,
+          success: function(data) {
+            $('.small-def').append(data);
+            $('.small-def').find(".sources").remove();
+            $('.small-def').find("img").remove();
+            $('.small-def').find("h1").remove();
+            $('.small-def').find(".close-button").remove();
+          }
+        });
+
+    });
+    $('a[title="definition"]').mouseleave(function(e){
+      $('.small-def').remove();
+
+    });
+  }
 
 
 
@@ -193,7 +234,8 @@ function mobileFunctions(){
   $('.definition-item').on('click', function(e){
     var url = $(this).attr("data-target");
     var $loadCont = $(this).find('.inner-definition');
-    e.preventDefault();
+    //e.preventDefault();
+    //console.log(e)
 
     if($loadCont.hasClass('active')){
       $loadCont.removeClass('active');

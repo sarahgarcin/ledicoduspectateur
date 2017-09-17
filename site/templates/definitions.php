@@ -8,14 +8,6 @@
 <main class="in">
   <div class="row">
     <div class="left-sidebar medium-2 columns hide-for-small-only">
-      <div class="inoff-button">
-        <div class="in active has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions retenu dans la cours d'honneur (À utiliser sans modération!)">In</div>
-        <div class="off has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions non retenu actuellement (À utiliser avec modération!)">Off</div>
-      </div>
-      <div class="sources-button">
-        <div class="sources active has-tip tip-right" data-tooltip aria-haspopup="true" title="Lieu, public, biblio, date de la collecte (Universitaire courrez-y!)">Avec les sources</div>
-        <div class="sans-sources has-tip tip-right" data-tooltip aria-haspopup="true" title="Ni lieu, ni public, ni biblio, ni date de la collecte (Universitaire s'abstenir!)">Sans les sources</div>
-      </div>
       <div class="abc">
         <div class="abc-button">abc</div>
         <ul>
@@ -47,6 +39,14 @@
           <li><a href="#Z" title="Z">z</a></li>
         </ul>
       </div>
+      <div class="inoff-button">
+        <div class="in active has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions retenu dans la cours d'honneur (À utiliser sans modération!)">In</div>
+        <div class="off has-tip" data-tooltip aria-haspopup="true" title="Corpus de définitions non retenu actuellement (À utiliser avec modération!)">Off</div>
+      </div>
+      <div class="sources-button">
+        <div class="sources active has-tip tip-right" data-tooltip aria-haspopup="true" title="Lieu, public, biblio, date de la collecte (Universitaire courrez-y!)">Avec les sources</div>
+        <div class="sans-sources has-tip tip-right" data-tooltip aria-haspopup="true" title="Ni lieu, ni public, ni biblio, ni date de la collecte (Universitaire s'abstenir!)">Sans les sources</div>
+      </div>
     </div>
     <div class="small-12 medium-8 medium-push-2 columns end">
       <ul class="row">
@@ -66,9 +66,10 @@
           <?php endif ?>
           <li class="definition definition-item small-12 medium-4 large-4 columns end" data-target="<?php echo $subpage->url()?>" data-inoff="<?php echo $subpage->inoff()?>">
             <div class="inner-definition">
+            <!-- ressourcesmedia -->
               <h2><?php echo $subpage->title()->html() ?></h2>
-              <?php if($image = $subpage->image()): ?>
-                <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
+              <?php if($subpage->ressourcesmedia()->isNotEmpty()): ?>
+                <img src="<?php echo $subpage->ressourcesmedia()->toFile()->url() ?>" alt="<?php echo $subpage->ressourcesmedia()->toFile()->filename() ?>">
               <?php else: ?>
                 <p><?php echo $subpage->text()->excerpt(110) ?></p>
               <?php  endif ?>

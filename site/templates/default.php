@@ -15,6 +15,11 @@
             <li>
               <a href="<?php echo $subpage->url() ?>">
                 <?php echo html($subpage->title()) ?>
+                <?php if($subpage->years()->isNotEmpty()):?>
+                <span class="dates-sousmenu">
+                  <?php echo html($subpage->years()) ?>
+                </span>
+                <?php endif; ?>
               </a>
             </li> 
             <?php endforeach ?>
