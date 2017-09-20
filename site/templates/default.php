@@ -11,7 +11,7 @@
         <hr>
         <nav>
           <ul id="subpage">
-            <?php foreach($page->children() as $subpage): ?>
+            <?php foreach($page->children()->visible() as $subpage): ?>
             <li>
               <a href="<?php echo $subpage->url() ?>">
                 <?php echo html($subpage->title()) ?>

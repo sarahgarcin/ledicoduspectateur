@@ -45,8 +45,8 @@ Imprimé en 500 exemplaires, en décembre 2016, par l’imprimerie du Val d’Oi
 
 ----
 
-Logosfin: 
+Logosfin: bissant.png
 
 ----
 
-Imagefin: 
+Imagefin: gui-dico-36.png

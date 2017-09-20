@@ -8,7 +8,7 @@
       </a>
       <?php if($menu->uid() != 'definitions' && $menu->hasChildren()):?>
         <ul class="submenu" >
-          <?php foreach($menu->children() as $subpage): ?>
+          <?php foreach($menu->children()->visible() as $subpage): ?>
           <li>
             <a href="<?php echo $subpage->url() ?>" title="<?php echo $subpage->title() ?>">
               <?php echo $subpage->title()->html() ?>

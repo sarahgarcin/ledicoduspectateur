@@ -50,7 +50,7 @@
     </div>
     <div class="small-12 medium-8 medium-push-2 columns end">
       <ul class="row">
-        <?php foreach ($page->children()->sortBy('title', 'asc') as $subpage):
+        <?php foreach ($page->children()->visible()->sortBy('title', 'asc') as $subpage):
           $first_let = mb_substr($subpage->title(),0,1, "utf-8");
           if($first_let == "À") $first_let = "A";
           if($first_let == "É") $first_let = "E";
