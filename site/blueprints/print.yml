@@ -31,7 +31,7 @@ fields:
   logosFin: 
   	label: Logos fin
   	type: selector
-  	mode: multiple
+  	mode: single
   imageFin: 
   	label: image de fin
   	type: selector

@@ -5676,53 +5676,6 @@ blockquote p {
   h6 {
     font-size: 1rem; } }
 
-/*
-       * Print styles.
-       *
-       * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
-       * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
-      */
-@media print {
-  * {
-    background: transparent !important;
-    color: #000000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-  pre,
-  blockquote {
-    border: 1px solid #999999;
-    page-break-inside: avoid; }
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  img {
-    max-width: 100% !important; }
-  @page {
-    margin: 0.34in; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
-
 .off-canvas-wrap {
   -webkit-backface-visibility: hidden;
   position: relative;
@@ -6605,30 +6558,6 @@ th.hide-for-touch {
     clip: auto; }
 
 /* Print visibility */
-.print-only,
-.show-for-print {
-  display: none !important; }
-
-@media print {
-  .print-only,
-  .show-for-print {
-    display: block !important; }
-  .hide-on-print,
-  .hide-for-print {
-    display: none !important; }
-  table.show-for-print {
-    display: table !important; }
-  thead.show-for-print {
-    display: table-header-group !important; }
-  tbody.show-for-print {
-    display: table-row-group !important; }
-  tr.show-for-print {
-    display: table-row !important; }
-  td.show-for-print {
-    display: table-cell !important; }
-  th.show-for-print {
-    display: table-cell !important; } }
-
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -9329,13 +9258,108 @@ body[data-template="textelong"] .small-def {
     line-height: 1.2;
     margin-bottom: 0; }
 
+body[data-template="print"] h2 {
+  font-size: 2.1875rem;
+  margin-bottom: 1rem; }
+
+body[data-template="print"] p {
+  line-height: 1.2; }
+
+body[data-template="print"] figure {
+  margin-bottom: 0; }
+
+body[data-template="print"] figure + h6 {
+  text-align: right;
+  margin-bottom: 2rem; }
+
 body[data-template="print"] main {
   width: 15cm;
-  margin: auto; }
+  margin: auto;
+  padding: 0;
+  margin-top: -0.1cm; }
 
 body[data-template="print"] .page {
   height: 21cm;
   page-break-after: always; }
+
+body[data-template="print"] .page.cover .cover-wrapper {
+  position: relative;
+  top: 43mm; }
+  body[data-template="print"] .page.cover .cover-wrapper h1 {
+    font-size: 2.8125rem;
+    border: 4px solid #00FF9A;
+    padding: 0.2cm 0.5cm 0.5cm 0.5cm;
+    background: #FFF; }
+
+body[data-template="print"] .page.garde {
+  position: relative; }
+  body[data-template="print"] .page.garde p {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+body[data-template="print"] .texte {
+  page-break-after: always; }
+
+body[data-template="print"] .page.pause .image-wrapper {
+  width: 50%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: auto;
+  position: relative; }
+
+body[data-template="print"] .page.backcover .image-wrapper {
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative; }
+
+body[data-template="print"] .mini-dico {
+  page-break-before: always; }
+
+body[data-template="print"] .left-col {
+  width: 4cm;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.2cm;
+  page-break-before: always; }
+
+body[data-template="print"] .definition.definition-item {
+  page-break-after: always;
+  width: 10cm;
+  display: inline-block;
+  vertical-align: top; }
+  body[data-template="print"] .definition.definition-item .inner-definition h2::before {
+    content: "Spectateur";
+    display: block; }
+  body[data-template="print"] .definition.definition-item .inner-definition p {
+    text-align: left; }
+
+body[data-template="print"] .letter .inner-definition {
+  border: 4px solid #00FF9A;
+  color: #00FF9A;
+  padding: 55px 35px;
+  font-size: 100px;
+  height: 150px;
+  width: 140px;
+  line-height: 0; }
+
+body[data-template="print"] .credits p {
+  font-size: 1.125rem; }
+
+body[data-template="print"] .colophon {
+  color: #000;
+  font-size: 0.9375rem;
+  margin-top: 4rem; }
+
+body[data-template="print"] .page.logos {
+  position: relative; }
+  body[data-template="print"] .page.logos .image-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 @media print {
   @page {

@@ -3,11 +3,14 @@
 <?php snippet('menu') ?>
 <?php $cur_let = null; ?>
 <main>
-  <div class="page cover">
-    <h1><?php echo $page->title()->html()?></h1>
-    <div class="logo-wrapper">
-      <?php $logo = $site->logo()->toFile();?>
-      <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
+
+  <div class="page cover" data-color="<?php echo $page->coulorCouv() ?>">
+    <div class="cover-wrapper">
+      <div class="logo-wrapper">
+        <?php $logo = $site->logo()->toFile();?>
+        <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
+      </div>
+      <h1><?php echo $page->title()->html()?></h1>
     </div>
   </div>
 
@@ -24,6 +27,9 @@
     <?php echo $page->garde()->kirbytext()?>
   </div>
 
+  <div class="page blank">
+  </div>
+
   <div class="texte">
     <?php echo $page->parent()->text()->kirbytext() ?>
   </div>
@@ -34,22 +40,31 @@
       <?php $first_let = mb_substr($def->title(),0,1, "utf-8");
       if($first_let == "À") $first_let = "A";
       if($first_let == "É") $first_let = "E";
-      if($first_let == "È") $first_let = "E";
-      if ($cur_let !== $first_let):
-        $cur_let = $first_let;?>
-        <div id="<?php echo $cur_let?>" class="letter definition">
-          <div class="inner-definition">
-            <?php echo $cur_let?>
-          </div> 
-        </div>
-      <?php endif ?>
-      <div class="definition definition-item small-12">
+      if($first_let == "È") $first_let = "E";?>
+      <div class="left-col">
+        <?php if ($cur_let !== $first_let):
+          $cur_let = $first_let;?>
+          <div id="<?php echo $cur_let?>" class="letter definition">
+            <div class="inner-definition">
+              <?php echo $cur_let?>
+            </div> 
+          </div>
+        <?php endif ?>
+        <?php if($image = $def->image()): ?>
+          <div class="definition-image">
+            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
+          </div>
+        <?php endif ?>
+      </div>
+      <div class="definition definition-item">
         <div class="inner-definition">
           <h2><?php echo $def->title()->html()?></h2>
-            <?php if($image = $def->image()): ?>
-              <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
-            <?php endif ?>
-            <?php echo $def->text()->kirbytext() ?>
+            <div class="definition-text">
+              <?php echo $def->text()->kirbytext() ?>
+              <div class="sources">
+                <?php echo $def->sources()->kirbytext() ?>
+              </div>
+            </div>
         </div>
       </div>       
     <?php endforeach ?>
@@ -57,16 +72,23 @@
 
   <div class="page pause">
     <div class="image-wrapper">
-      <?php $pause = $page->logosFin()->toFile();?>
+      <?php $pause = $page->imagecredit()->toFile();?>
       <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
     </div>
   </div>
 
-  <div class="credits">
+  <div class="page credits">
     <h2>Contexte et Crédits</h2>
     <?php echo $page->parent()->credits()->kirbytext() ?>
     <div class="colophon">
       <?php echo $page->colophon()->kirbytext() ?>
+    </div>
+  </div>
+
+  <div class="page logos">
+    <div class="image-wrapper">
+      <?php $logos = $page->logosFin()->toFile();?>
+      <img src="<?php echo $logos->url() ?>" alt="<?php echo $logos->title()?>">
     </div>
   </div>
 
@@ -78,5 +100,29 @@
   </div>
 </main>
 
+<!-- <script src="/assets/js/css-regions-polyfill.min.js"></script>
+<script>
+    window.paginationConfig = {
+        'sectionStartMarker': 'div.section',
+        'sectionTitleMarker': 'h1.sectiontitle',
+        'chapterStartMarker': 'div.page',
+        'chapterTitleMarker': 'h2',
+        'flowElement': "document.getElementById('flow')",
+        'alwaysEven': true,
+        'enableFrontmatter': true,
+        'bulkPagesToAdd': 50,
+        'pagesToAddIncrementRatio': 1.4,
+        'pageHeight': 21,
+        'pageWidth': 15,
+        'lengthUnit: ': 'cm',
+        'oddAndEvenMargins': false,
+        'frontmatterContents': '<h1>Titre</h1>'
+        + '<div class="pagination-pagebreak"></div>',
+        'autoStart': true,
+
+    };
+</script>
+<script type="text/javascript" src="/assets/js/book-polyfill.js"></script>
+ -->
 
 <?php snippet('footer') ?>

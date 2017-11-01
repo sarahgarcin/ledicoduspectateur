@@ -185,6 +185,11 @@ function init() {
     });
   }
 
+  // var colorCouv = $('.page.cover').attr('data-color');
+  // $('.page.cover').css({
+  //   "background": colorCouv
+  // });
+
 
 
 

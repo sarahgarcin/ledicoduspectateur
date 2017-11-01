@@ -38,14 +38,14 @@ Imagecredit: bissant.png
 
 Colophon: 
 
-Colophon :
+**Colophon :**
 Design graphique : atelier g.u.i.
 Direction éditoriale : Cécile Reverdy-Gaillard et Joël Kérouanton
 Imprimé en 500 exemplaires, en décembre 2016, par l’imprimerie du Val d’Oise
 
 ----
 
-Logosfin: bissant.png
+Logosfin: screen-shot-2017-11-01-at-10.30.37.png
 
 ----
 
