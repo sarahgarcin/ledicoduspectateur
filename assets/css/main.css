@@ -9258,6 +9258,13 @@ body[data-template="textelong"] .small-def {
     line-height: 1.2;
     margin-bottom: 0; }
 
+body[data-template="print"] button.print-button {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  outline: 0;
+  background: #0000D2; }
+
 body[data-template="print"] h2 {
   font-size: 2.1875rem;
   margin-bottom: 1rem; }
@@ -9319,18 +9326,18 @@ body[data-template="print"] .page.backcover .image-wrapper {
 body[data-template="print"] .mini-dico {
   page-break-before: always; }
 
+body[data-template="print"] .definition-container {
+  display: -ms-flexbox;
+  display: flex;
+  page-break-after: always; }
+
 body[data-template="print"] .left-col {
   width: 4cm;
-  display: inline-block;
   vertical-align: top;
-  margin-top: 0.2cm;
-  page-break-before: always; }
+  margin-top: 0.2cm; }
 
 body[data-template="print"] .definition.definition-item {
-  page-break-after: always;
-  width: 10cm;
-  display: inline-block;
-  vertical-align: top; }
+  width: 10cm; }
   body[data-template="print"] .definition.definition-item .inner-definition h2::before {
     content: "Spectateur";
     display: block; }
@@ -9366,7 +9373,7 @@ body[data-template="print"] .page.logos {
     size: A5;
     orientation: portrait;
     margin: 15mm 15mm 15mm 15mm; }
-  header, nav {
+  header, nav, button.print-button {
     display: none; } }
 
 @media only screen and (max-width: 40em) {

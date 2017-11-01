@@ -2,6 +2,7 @@
 <?php snippet('logo') ?>
 <?php snippet('menu') ?>
 <?php $cur_let = null; ?>
+<button type="button" class="print-button" onClick="window.print()">Imprimer</button>
 <main>
 
   <div class="page cover" data-color="<?php echo $page->coulorCouv() ?>">
@@ -41,30 +42,32 @@
       if($first_let == "À") $first_let = "A";
       if($first_let == "É") $first_let = "E";
       if($first_let == "È") $first_let = "E";?>
-      <div class="left-col">
-        <?php if ($cur_let !== $first_let):
-          $cur_let = $first_let;?>
-          <div id="<?php echo $cur_let?>" class="letter definition">
-            <div class="inner-definition">
-              <?php echo $cur_let?>
-            </div> 
-          </div>
-        <?php endif ?>
-        <?php if($image = $def->image()): ?>
-          <div class="definition-image">
-            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
-          </div>
-        <?php endif ?>
-      </div>
-      <div class="definition definition-item">
-        <div class="inner-definition">
-          <h2><?php echo $def->title()->html()?></h2>
-            <div class="definition-text">
-              <?php echo $def->text()->kirbytext() ?>
-              <div class="sources">
-                <?php echo $def->sources()->kirbytext() ?>
-              </div>
+      <div class="definition-container">
+        <div class="left-col">
+          <?php if ($cur_let !== $first_let):
+            $cur_let = $first_let;?>
+            <div id="<?php echo $cur_let?>" class="letter definition">
+              <div class="inner-definition">
+                <?php echo $cur_let?>
+              </div> 
             </div>
+          <?php endif ?>
+          <?php if($image = $def->image()): ?>
+            <div class="definition-image">
+              <img src="<?php echo $image->url() ?>" alt="<?php echo $image->filename() ?>">
+            </div>
+          <?php endif ?>
+        </div>
+        <div class="definition definition-item">
+          <div class="inner-definition">
+            <h2><?php echo $def->title()->html()?></h2>
+              <div class="definition-text">
+                <?php echo $def->text()->kirbytext() ?>
+                <div class="sources">
+                  <?php echo $def->sources()->kirbytext() ?>
+                </div>
+              </div>
+          </div>
         </div>
       </div>       
     <?php endforeach ?>
@@ -99,30 +102,5 @@
     </div>
   </div>
 </main>
-
-<!-- <script src="/assets/js/css-regions-polyfill.min.js"></script>
-<script>
-    window.paginationConfig = {
-        'sectionStartMarker': 'div.section',
-        'sectionTitleMarker': 'h1.sectiontitle',
-        'chapterStartMarker': 'div.page',
-        'chapterTitleMarker': 'h2',
-        'flowElement': "document.getElementById('flow')",
-        'alwaysEven': true,
-        'enableFrontmatter': true,
-        'bulkPagesToAdd': 50,
-        'pagesToAddIncrementRatio': 1.4,
-        'pageHeight': 21,
-        'pageWidth': 15,
-        'lengthUnit: ': 'cm',
-        'oddAndEvenMargins': false,
-        'frontmatterContents': '<h1>Titre</h1>'
-        + '<div class="pagination-pagebreak"></div>',
-        'autoStart': true,
-
-    };
-</script>
-<script type="text/javascript" src="/assets/js/book-polyfill.js"></script>
- -->
 
 <?php snippet('footer') ?>
