@@ -189,6 +189,7 @@ function init() {
   // $('.page.cover').css({
   //   "background": colorCouv
   // });
+    
 
 
 

@@ -2,36 +2,38 @@
 <?php snippet('logo') ?>
 <?php snippet('menu') ?>
 <?php $cur_let = null; ?>
-<button type="button" class="print-button" onClick="window.print()">Imprimer</button>
-<main>
 
-  <div class="page cover" data-color="<?php echo $page->coulorCouv() ?>">
-    <div class="cover-wrapper">
+<button type="button" class="print-button" onClick="window.print()">Imprimer</button>
+
+
+<main id='flow'>
+  <div class="chapter">
+    <div class="cover pagination-pagebreak" data-color="<?php echo $page->coulorCouv() ?>">
       <div class="logo-wrapper">
         <?php $logo = $site->logo()->toFile();?>
         <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
       </div>
       <h1><?php echo $page->title()->html()?></h1>
     </div>
-  </div>
 
-  <div class="page edito">
-    <h2>Édito</h2>
-    <?php echo $page->edito()->kirbytext();?>
-  </div>
-
-  <div class="page garde">
-    <div class="logo-wrapper">
-      <?php $logo = $site->logo()->toFile();?>
-      <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
+    <div class="edito pagination-pagebreak">
+      <h2>Édito</h2>
+      <?php echo $page->edito()->kirbytext();?>
     </div>
-    <?php echo $page->garde()->kirbytext()?>
-  </div>
 
-  <div class="page blank">
-  </div>
+    <div class="garde pagination-pagebreak">
+      <div class="logo-wrapper">
+        <?php $logo = $site->logo()->toFile();?>
+        <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
+      </div>
+      <?php echo $page->garde()->kirbytext()?>
+    </div>
 
-  <div class="texte">
+
+<!--   <div class="blank">
+  </div> -->
+
+  <div class="texte pagination-pagebreak">
     <?php echo $page->parent()->text()->kirbytext() ?>
   </div>
 
@@ -42,7 +44,7 @@
       if($first_let == "À") $first_let = "A";
       if($first_let == "É") $first_let = "E";
       if($first_let == "È") $first_let = "E";?>
-      <div class="definition-container">
+      <div class="definition-container pagination-pagebreak">
         <div class="left-col">
           <?php if ($cur_let !== $first_let):
             $cur_let = $first_let;?>
@@ -73,14 +75,14 @@
     <?php endforeach ?>
   </div>
 
-  <div class="page pause">
+  <div class="pause pagination-pagebreak">
     <div class="image-wrapper">
       <?php $pause = $page->imagecredit()->toFile();?>
       <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
     </div>
   </div>
 
-  <div class="page credits">
+  <div class="credits pagination-pagebreak">
     <h2>Contexte et Crédits</h2>
     <?php echo $page->parent()->credits()->kirbytext() ?>
     <div class="colophon">
@@ -88,19 +90,44 @@
     </div>
   </div>
 
-  <div class="page logos">
+  <div class="logos pagination-pagebreak">
     <div class="image-wrapper">
       <?php $logos = $page->logosFin()->toFile();?>
       <img src="<?php echo $logos->url() ?>" alt="<?php echo $logos->title()?>">
     </div>
   </div>
 
-  <div class="page backcover">
+  <div class="backcover">
     <div class="image-wrapper">
       <?php $pause = $page->imageFin()->toFile();?>
       <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
     </div>
   </div>
+  </div>
 </main>
+
+<script src="/assets/js/css-regions-polyfill.min.js"  type="text/javascript"></script>
+<script>
+    window.paginationConfig = {
+        'sectionStartMarker': 'div.section',
+        'sectionTitleMarker': 'h1.sectiontitle',
+        'chapterStartMarker': 'div.chapter',
+        'chapterTitleMarker': 'h1.chaptertitle',
+        'flowElement': "document.getElementById('flow')",
+        'bulkPagesToAdd': 50,
+        'alwaysEven': false,
+        'enableFrontmatter': false,
+        'pageHeight': 21,
+        'pageWidth': 15,
+        'innerMargin': 1.5,
+        'lengthUnit: ': 'cm',
+        'oddAndEvenMargins': false,
+        'numberPages':false,
+        'autoStart':true,
+
+    };
+</script>
+<script src="/assets/js/book-polyfill.js" type="text/javascript"></script>
+
 
 <?php snippet('footer') ?>

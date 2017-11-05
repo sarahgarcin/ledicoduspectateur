@@ -6,6 +6,7 @@ body[data-template="print"]{
 		outline:0; 
 		background: $text-color;
 	}
+
 	// header,nav{
 	// 	display:none;
 	// }
@@ -32,21 +33,27 @@ body[data-template="print"]{
 		margin-bottom: 2rem;
 	}
 
-	main{
-		width: 15cm;
-		margin: auto;
-		padding: 0;
-		margin-top: -0.1cm;
+	#pagination-layout{
+		// width: 15cm;
+		// margin: auto;
+		// padding: 0;
+		// margin-top: -0.1cm;
+		padding-top: 5rem;
 	}
- .page{
-	 	height: 21cm;
-	 	page-break-after:always;
- }
 
- .page.cover{
- 	.cover-wrapper{
- 		position:relative; 
- 		top: 43mm;
+	.pagination-page:first-child{
+		background-color: #FF685B;
+		border:none;
+	}	
+
+	.pagination-page{
+		box-sizing: border-box;
+    border: 20px solid $vert;
+	}	
+
+ .cover{
+ 	 	position:relative; 
+ 		top: 3cm;
  		h1{
  			font-size: rem-calc(45);
  			border: 4px solid $vert;
@@ -55,10 +62,9 @@ body[data-template="print"]{
  			//transform: rotate(-10deg);
  			//box-shadow: 0px 0px 30px #FF2E74;
  		}
- 	}
  }
 
- .page.garde{
+ .garde{
  	position: relative;
  	p{
  		position:absolute;
@@ -71,7 +77,7 @@ body[data-template="print"]{
  	page-break-after:always;
  }
 
- .page.pause{
+ .pause{
  	.image-wrapper{
  		width: 50%;
  		top:50%;
@@ -80,7 +86,7 @@ body[data-template="print"]{
  		position:relative;
  	}
  }
-  .page.backcover{
+  .backcover{
   	.image-wrapper{
 	 		width: 100%;
 	 		top:50%;
@@ -90,10 +96,10 @@ body[data-template="print"]{
   }
 
  .mini-dico{
- 	page-break-before:always;
+ 	// page-break-before:always;
  }
  .definition-container{
- 	display: flex;
+ 	//display: flex;
  	page-break-after:always;
  }
  .left-col{
@@ -112,8 +118,8 @@ body[data-template="print"]{
 
  			h2{
  				&::before{
- 					content: "Spectateur";
- 					display:block;
+ 					content: "Spectateur-";
+ 					display:inline;
  				}
  			}
  			p{
@@ -159,10 +165,17 @@ body[data-template="print"]{
 	@page{
 		size: A5; 
 		orientation: portrait;
-		margin: 15mm 15mm 15mm 15mm;
+		margin: 20mm 20mm 20mm 20mm;
 	}
 	header, nav, button.print-button{
 		display:none;
+	}
+	.pagination-page{
+		margin-bottom:0cm !important;
+	}
+	
+	#pagination-layout{
+		padding-top: 0cm !important;
 	}
 }
 
