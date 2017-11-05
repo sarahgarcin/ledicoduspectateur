@@ -9258,6 +9258,237 @@ body[data-template="textelong"] .small-def {
     line-height: 1.2;
     margin-bottom: 0; }
 
+.pagination-page {
+  height: 21cm;
+  width: 15cm;
+  background-color: white;
+  position: relative; }
+  .pagination-page:before, .pagination-page:after {
+    position: absolute;
+    content: '';
+    border: solid black;
+    z-index: -1; }
+  .pagination-page:before {
+    top: -32px;
+    bottom: -32px;
+    left: 0px;
+    right: 0px;
+    border-width: 0 1px; }
+  .pagination-page:after {
+    left: -32px;
+    right: -32px;
+    top: 0px;
+    bottom: 0px;
+    border-width: 1px 0; }
+
+.pagination-simple {
+  padding: 1.5cm; }
+
+@media screen {
+  .pagination-page {
+    border: solid 1px #000;
+    margin-bottom: 1cm; } }
+
+.pagination-main-contents-container {
+  width: 12cm; }
+
+.pagination-contents-container {
+  bottom: 1.5cm;
+  height: 18cm;
+  display: -ms-flexbox;
+  display: flex; }
+
+.pagination-pagenumber {
+  bottom: 0.5cm; }
+
+.pagination-header {
+  top: 0.5cm; }
+
+#pagination-toc-title:before {
+  content: 'Contents'; }
+
+#pagination-tof-title:before {
+  content: 'Figures'; }
+
+#pagination-tot-title:before {
+  content: 'Tables'; }
+
+.pagination-page:nth-child(odd) .pagination-contents-container,
+.pagination-page:nth-child(odd) .pagination-pagenumber,
+.pagination-page:nth-child(odd) .pagination-header {
+  right: 1.5cm;
+  left: 1.5cm; }
+
+.pagination-page:nth-child(even) .pagination-contents-container,
+.pagination-page:nth-child(even) .pagination-pagenumber,
+.pagination-page:nth-child(even) .pagination-header {
+  right: 1.5cm;
+  left: 1.5cm; }
+
+.pagination-page:nth-child(odd) .pagination-pagenumber,
+.pagination-page:nth-child(odd) .pagination-header {
+  text-align: right; }
+
+.pagination-page:nth-child(even) .pagination-pagenumber,
+.pagination-page:nth-child(even) .pagination-header {
+  text-align: left; }
+
+.pagination-footnote > * > * {
+  font-size: 0.7em;
+  margin: .25em; }
+
+.pagination-footnote > * > *::before, .pagination-footnote::before {
+  position: relative;
+  top: -0.5em;
+  font-size: 80%; }
+
+.pagination-toc-entry .pagination-toc-pagenumber, .pagination-tof-entry .pagination-tof-pagenumber, .pagination-tot-entry .pagination-tot-pagenumber {
+  float: right; }
+
+.pagination-contents-item {
+  width: 12cm; }
+
+.pagination-frontmatter-contents {
+  width: 12cm; }
+
+.pagination-contents-column-separator {
+  width: 0.09in; }
+
+.pagination-simple .pagination-footnote > span {
+  position: absolute;
+  right: 0in;
+  width: 1in; }
+
+.pagination-marginnotes, .pagination-marginnote-item {
+  width: 0in; }
+
+.pagination-marginnote-item {
+  margin-bottom: 0.09in; }
+
+.pagination-marginnotes-separator {
+  width: 0in; }
+
+.pagination-main-contents-container,
+.pagination-marginnotes,
+.pagination-marginnotes-separator {
+  height: 18cm; }
+
+#flow {
+  display: none; }
+
+.pagination-main-contents-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.pagination-contents-container {
+  position: absolute; }
+
+.pagination-contents {
+  display: -webkit-flex;
+  -webkit-flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1; }
+
+/* There seems to be a bug in the new flexbox model code which requires the
+ * height to be set to an arbitrary value (which is ignored).
+ */
+.pagination-contents {
+  height: 0; }
+
+.pagination-contents-column {
+  -ms-flex: 1;
+  flex: 1; }
+
+body {
+  counter-reset: pagination-footnote pagination-footnote-reference; }
+
+.pagination-footnote::before {
+  counter-increment: pagination-footnote-reference;
+  content: counter(pagination-footnote-reference); }
+
+.pagination-footnote > * > *:first-child::before {
+  counter-increment: pagination-footnote;
+  content: counter(pagination-footnote); }
+
+.pagination-footnote > * > * {
+  display: block; }
+
+.pagination-page {
+  margin-left: auto;
+  margin-right: auto;
+  page-break-after: always;
+  position: relative; }
+
+img {
+  -webkit-region-break-before: always;
+  page-break-before: always;
+  break-before: always;
+  -webkit-region-break-after: always;
+  page-break-after: always;
+  break-after: always; }
+
+.pagination-pagenumber, .pagination-header {
+  position: absolute; }
+
+.pagination-pagebreak {
+  -webkit-region-break-after: always;
+  page-break-after: always;
+  break-after: always; }
+
+.pagination-simple {
+  height: auto;
+  position: relative; }
+
+.pagination-marginnote-item {
+  position: absolute; }
+
+.pagination-marginnote > * {
+  display: block; }
+
+.pagination-frontmatter-layout .pagination-contents-column {
+  -webkit-flow-from: pagination-frontmatter;
+  -ms-flow-from: pagination-frontmatter;
+  flow-from: pagination-frontmatter; }
+
+.pagination-frontmatter-contents {
+  -webkit-flow-into: pagination-frontmatter;
+  -ms-flow-into: pagination-frontmatter;
+  flow-into: pagination-frontmatter; }
+
+.pagination-body-0-layout .pagination-contents-column {
+  -webkit-flow-from: pagination-body-0;
+  -ms-flow-from: pagination-body-0;
+  flow-from: pagination-body-0; }
+
+.pagination-body-0-contents {
+  -webkit-flow-into: pagination-body-0;
+  -ms-flow-into: pagination-body-0;
+  flow-into: pagination-body-0; }
+
+.pagination-body-1-layout .pagination-contents-column {
+  -webkit-flow-from: pagination-body-1;
+  -ms-flow-from: pagination-body-1;
+  flow-from: pagination-body-1; }
+
+.pagination-body-1-contents {
+  -webkit-flow-into: pagination-body-1;
+  -ms-flow-into: pagination-body-1;
+  flow-into: pagination-body-1; }
+
+.pagination-body-2-layout .pagination-contents-column {
+  -webkit-flow-from: pagination-body-2;
+  -ms-flow-from: pagination-body-2;
+  flow-from: pagination-body-2; }
+
+.pagination-body-2-contents {
+  -webkit-flow-into: pagination-body-2;
+  -ms-flow-into: pagination-body-2;
+  flow-into: pagination-body-2; }
+
 body[data-template="print"] button.print-button {
   position: absolute;
   top: 100px;
@@ -9269,8 +9500,13 @@ body[data-template="print"] h2 {
   font-size: 2.1875rem;
   margin-bottom: 1rem; }
 
+body[data-template="print"] h3 {
+  margin-bottom: 0; }
+
 body[data-template="print"] p {
-  line-height: 1.2; }
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-align: justify; }
 
 body[data-template="print"] figure {
   margin-bottom: 0; }
@@ -9284,45 +9520,42 @@ body[data-template="print"] #pagination-layout {
 
 body[data-template="print"] .pagination-page:first-child {
   background-color: #FF685B;
-  border: none; }
+  outline: none; }
+
+body[data-template="print"] .pagination-page:last-child {
+  outline: none; }
+
+@media screen {
+  body[data-template="print"] .pagination-page:first-child, body[data-template="print"] .pagination-page:last-child {
+    border: 1px solid #000; } }
 
 body[data-template="print"] .pagination-page {
   box-sizing: border-box;
-  border: 20px solid #00FF9A; }
+  outline: 20px solid #00FF9A;
+  outline-offset: -10px; }
 
 body[data-template="print"] .cover {
   position: relative;
   top: 3cm; }
   body[data-template="print"] .cover h1 {
-    font-size: 2.8125rem;
-    border: 4px solid #00FF9A;
-    padding: 0.2cm 0.5cm 0.5cm 0.5cm;
-    background: #FFF; }
+    font-size: 2.5rem; }
 
 body[data-template="print"] .garde {
   position: relative; }
-  body[data-template="print"] .garde p {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
 
 body[data-template="print"] .texte {
   page-break-after: always; }
 
 body[data-template="print"] .pause .image-wrapper {
   width: 50%;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   margin: auto;
-  position: relative; }
+  position: relative;
+  margin-top: 6cm !important; }
 
 body[data-template="print"] .backcover .image-wrapper {
   width: 100%;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: relative; }
+  position: relative;
+  margin-top: 3cm !important; }
 
 body[data-template="print"] .definition-container {
   page-break-after: always; }
@@ -9366,13 +9599,13 @@ body[data-template="print"] .page.logos {
 
 @media print {
   @page {
-    size: A5;
-    orientation: portrait;
-    margin: 20mm 20mm 20mm 20mm; }
+    size: 17cm 23cm;
+    orientation: portrait; }
   header, nav, button.print-button {
     display: none; }
   .pagination-page {
-    margin-bottom: 0cm !important; }
+    margin-bottom: 0cm !important;
+    margin-top: 32px; }
   #pagination-layout {
     padding-top: 0cm !important; } }
 
