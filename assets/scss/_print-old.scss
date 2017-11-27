@@ -1,0 +1,408 @@
+$pageW : 15cm;
+$pageH : 21cm;
+$pageMargin: 1.5cm;
+
+// bookjs css
+.pagination-page {
+	height:$pageH; 
+	width:$pageW ;
+	background-color: white;
+	position:relative;	
+	&:before, &:after {
+	  position: absolute;
+	  content: '';
+	  border: solid black;
+	  z-index: -1;
+	}
+	&:before {
+	  top: -32px; 
+	  bottom: -32px;
+	  left: 0px; 
+	  right: 0px;
+	  border-width: 0 1px;
+	}
+	&:after {
+	  left: -32px; 
+	  right: -32px;
+	  top: 0px; 
+	  bottom: 0px;
+	  border-width: 1px 0;
+	}
+}
+.pagination-simple {
+	padding: $pageMargin;
+}
+
+@media screen{
+	.pagination-page {
+		border: solid 1px #000;
+		margin-bottom:1cm;
+	}
+}
+
+.pagination-main-contents-container {
+	width:$pageW - ($pageMargin * 2);
+}
+.pagination-contents-container {
+	bottom:$pageMargin; 
+	height:$pageH - ($pageMargin * 2); 
+	display: flex;
+	// width:$pageW - ($pageMargin * 2);
+}
+// img {
+// 	max-height: $pageH / 2;
+// 	max-width: $pageW / 2;
+// }
+.pagination-pagenumber {bottom:0.5cm;}
+.pagination-header {top:0.5cm;}
+#pagination-toc-title:before {content:'Contents';}
+#pagination-tof-title:before {content:'Figures';}
+#pagination-tot-title:before {content:'Tables';}
+
+.pagination-page:nth-child(odd) .pagination-contents-container, 
+.pagination-page:nth-child(odd) .pagination-pagenumber,
+.pagination-page:nth-child(odd) .pagination-header {
+	right:$pageMargin;
+	left:$pageMargin;
+}
+.pagination-page:nth-child(even) .pagination-contents-container, 
+.pagination-page:nth-child(even) .pagination-pagenumber,
+.pagination-page:nth-child(even) .pagination-header {
+	right:$pageMargin;left:$pageMargin;
+}
+.pagination-page:nth-child(odd) .pagination-pagenumber,
+.pagination-page:nth-child(odd) .pagination-header {
+	text-align:right;
+}
+.pagination-page:nth-child(even) .pagination-pagenumber,
+.pagination-page:nth-child(even) .pagination-header {text-align:left;}
+.pagination-footnote > * > * {font-size: 0.7em; margin:.25em;}
+.pagination-footnote > * > *::before, .pagination-footnote::before {position: relative; top: -0.5em; font-size: 80%;}
+.pagination-toc-entry .pagination-toc-pagenumber, .pagination-tof-entry .pagination-tof-pagenumber, .pagination-tot-entry .pagination-tot-pagenumber {float:right}
+.pagination-contents-item {width:$pageW - ($pageMargin*2);}
+.pagination-frontmatter-contents {width:$pageW - ($pageMargin*2);}
+.pagination-contents-column-separator {width:0.09in;}
+.pagination-simple .pagination-footnote > span {position: absolute; right: 0in; width: 1in;}
+.pagination-marginnotes, .pagination-marginnote-item {width:0in;}
+.pagination-marginnote-item {margin-bottom:0.09in;}
+.pagination-marginnotes-separator {width:0in;}
+.pagination-main-contents-container, 
+.pagination-marginnotes, 
+.pagination-marginnotes-separator {
+	height:$pageH - ($pageMargin*2) ;
+}        
+#flow {
+	display: none;
+}
+
+.pagination-main-contents-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.pagination-contents-container {
+    position: absolute;
+}
+
+.pagination-contents {
+    display: -webkit-flex;
+    -webkit-flex: 1;
+    display: flex;
+    flex: 1;
+}
+
+/* There seems to be a bug in the new flexbox model code which requires the
+ * height to be set to an arbitrary value (which is ignored).
+ */
+.pagination-contents {
+    height: 0;
+}
+
+.pagination-contents-column {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+body {
+    counter-reset: pagination-footnote pagination-footnote-reference;
+}
+
+.pagination-footnote::before {
+    counter-increment: pagination-footnote-reference;
+    content: counter(pagination-footnote-reference);
+}
+
+.pagination-footnote > * > *:first-child::before {
+    counter-increment: pagination-footnote;
+    content: counter(pagination-footnote);
+}
+
+.pagination-footnote > * > * {
+    display: block;
+}
+
+.pagination-page {
+
+    margin-left: auto;
+    margin-right: auto;
+    page-break-after: always;
+    position: relative;
+
+}
+
+img {
+    -webkit-region-break-before: always;
+    break-before: always;
+    -webkit-region-break-after: always;
+    break-after: always;
+}
+
+// .pagination-pagenumber, .pagination-header {
+//     position: absolute;
+// }
+
+// .pagination-pagebreak {
+//     -webkit-region-break-after: always;
+//     break-after: always;
+// }
+
+// .pagination-simple {
+//     height: auto;
+//     position: relative;
+// }
+
+// .pagination-marginnote-item {
+//     position: absolute;
+// }
+
+// .pagination-marginnote > * {
+//     display: block;
+// }
+// .pagination-frontmatter-layout .pagination-contents-column {
+//     flow-from: pagination-frontmatter;
+// }
+
+// .pagination-frontmatter-contents {
+//     flow-into: pagination-frontmatter;
+// } .pagination-body-0-layout .pagination-contents-column {
+//       flow-from: pagination-body-0;
+//   }
+// .pagination-body-0-contents {
+//     flow-into: pagination-body-0;
+// }
+// .pagination-body-1-layout .pagination-contents-column {
+//     flow-from: pagination-body-1;
+// }
+// .pagination-body-1-contents {
+//     flow-into: pagination-body-1;
+// }
+// .pagination-body-2-layout .pagination-contents-column {
+//     flow-from: pagination-body-2;
+// }
+// .pagination-body-2-contents {
+//     flow-into: pagination-body-2;
+// }
+
+body[data-template="print"]{
+	button.print-button{
+		position:absolute;
+		top: 100px;
+		left: 60px;
+		outline:0; 
+		background: $text-color;
+	}
+
+	// header,nav{
+	// 	display:none;
+	// }
+	h2{
+		font-size: rem-calc(35);
+		margin-bottom: 1rem;
+	}
+	h3{
+		margin-bottom:0;
+	}
+	p{
+		font-size: rem-calc(18);
+		line-height: 1.2;
+		text-align: justify;
+	}
+
+	p + p strong{
+		//padding-left: 2rem;
+	}
+
+	figure{
+		margin-bottom: 0;
+	}
+
+	figure + h6{
+		text-align: right;
+		margin-bottom: 2rem;
+	}
+
+	#pagination-layout{
+		// width: 15cm;
+		// margin: auto;
+		// padding: 0;
+		// margin-top: -0.1cm;
+		padding-top: 5rem;
+	}
+
+	.pagination-page:first-child{
+		background-color: #FF685B;
+		outline:none;
+	}	
+	.pagination-page:last-child{
+		outline:none;
+	}	
+
+	@media screen{
+		.pagination-page:first-child, .pagination-page:last-child{
+			border:1px solid #000;
+		}
+	}
+
+	.pagination-page{
+		box-sizing: border-box;
+    //border: 20px solid $vert;
+    outline: 20px solid $vert;
+    outline-offset: -10px;
+	}	
+
+ .cover{
+ 	 	position:relative; 
+ 		top: 3cm;
+ 		h1{
+ 			font-size: rem-calc(40);
+ 			// border: 4px solid $vert;
+ 			// padding: 0.2cm 0.5cm 0.5cm 0.5cm;
+ 			// background: #FFF;
+ 			//transform: rotate(-10deg);
+ 			//box-shadow: 0px 0px 30px #FF2E74;
+ 		}
+ }
+
+ .garde{
+ 	position: relative;
+ 	// p{
+ 	// 	position:absolute;
+ 	// 	bottom: 0;
+ 	// 	right:0;
+ 	// }
+ }
+
+ .texte{
+ 	page-break-after:always;
+ }
+
+ .pause{
+ 	.image-wrapper{
+ 		width: 50%;
+ 		// top:50%;
+ 		// transform:translateY(-50%);
+ 		margin:auto;
+ 		position:relative;
+ 		margin-top:6cm !important;
+ 	}
+ }
+  .backcover{
+  	.image-wrapper{
+	 		width: 100%;
+	 		// top:50%;
+	 		// transform:translateY(-50%);
+	 		position:relative;
+	 		margin-top:3cm !important;
+	 	}
+  }
+
+ .mini-dico{
+ 	// page-break-before:always;
+ }
+ .definition-container{
+ 	//display: flex;
+ 	page-break-after:always;
+ }
+ .left-col{
+ 	width: 4cm;
+ 	//display:inline-block;
+ 	vertical-align: top;
+ 	margin-top: 0.2cm;
+ 	//page-break-before:always;
+ }
+
+ .definition.definition-item{
+ 		width: 10cm;
+		//display:inline-block;
+		//vertical-align: top;
+ 		.inner-definition{
+
+ 			h2{
+ 				&::before{
+ 					content: "Spectateur-";
+ 					display:inline;
+ 				}
+ 			}
+ 			p{
+ 				text-align: left;
+ 			}
+ 		}
+ }
+
+.letter{
+ 	.inner-definition{
+ 		border: 4px solid $vert;
+ 		color: $vert;
+	 	padding: 55px 35px;
+	 	font-size: 100px;
+	 	height: 150px;
+	 	width: 140px;
+	 	line-height: 0;
+ 	}
+}
+
+.credits{
+	p{font-size: rem-calc(18);}
+}
+ .colophon{
+ 	color: #000;
+ 	font-size: rem-calc(15);
+ 	margin-top: 4rem;
+ }
+
+ .page.logos{
+ 		position:relative;
+	 	.image-wrapper{
+	 		position:absolute;
+	 		right:0; 
+	 		bottom: 0;
+
+	 	}
+ }
+}
+
+@media print{
+
+	@page{
+		size: ($pageW + 2) ($pageH + 2); 
+		orientation: portrait;
+		// margin: 20mm 20mm 20mm 20mm;
+	}
+	header, nav, button.print-button{
+		display:none;
+	}
+	.pagination-page{
+		margin-bottom:0cm !important;
+		margin-top:32px;
+	}
+	
+	#pagination-layout{
+		padding-top: 0cm !important;
+	}
+}
+
+
+
+

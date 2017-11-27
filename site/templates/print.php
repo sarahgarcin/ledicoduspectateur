@@ -8,7 +8,7 @@
 
 <main id='flow'>
   <div class="chapter">
-    <div class="cover pagination-pagebreak" data-color="<?php echo $page->coulorCouv() ?>">
+    <div class="cover page" data-color="<?php echo $page->coulorCouv() ?>">
       <div class="logo-wrapper">
         <?php $logo = $site->logo()->toFile();?>
         <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
@@ -16,12 +16,12 @@
       <h1><?php echo $page->title()->html()?></h1>
     </div>
 
-    <div class="edito pagination-pagebreak">
+    <div class="edito page">
       <h2>Édito</h2>
       <?php echo $page->edito()->kirbytext();?>
     </div>
 
-    <div class="garde pagination-pagebreak">
+    <div class="garde page">
       <div class="logo-wrapper">
         <?php $logo = $site->logo()->toFile();?>
         <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
@@ -33,7 +33,7 @@
 <!--   <div class="blank">
   </div> -->
 
-  <div class="texte pagination-pagebreak">
+  <div class="texte">
     <?php echo $page->parent()->text()->kirbytext() ?>
   </div>
 
@@ -44,7 +44,7 @@
       if($first_let == "À") $first_let = "A";
       if($first_let == "É") $first_let = "E";
       if($first_let == "È") $first_let = "E";?>
-      <div class="definition-container pagination-pagebreak">
+      <div class="definition-container page">
         <div class="left-col">
           <?php if ($cur_let !== $first_let):
             $cur_let = $first_let;?>
@@ -75,14 +75,14 @@
     <?php endforeach ?>
   </div>
 
-  <div class="pause pagination-pagebreak">
+  <div class="pause page">
     <div class="image-wrapper">
       <?php $pause = $page->imagecredit()->toFile();?>
       <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
     </div>
   </div>
 
-  <div class="credits pagination-pagebreak">
+  <div class="credits page">
     <h2>Contexte et Crédits</h2>
     <?php echo $page->parent()->credits()->kirbytext() ?>
     <div class="colophon">
@@ -90,14 +90,14 @@
     </div>
   </div>
 
-  <div class="logos pagination-pagebreak">
+  <div class="logos page">
     <div class="image-wrapper">
       <?php $logos = $page->logosFin()->toFile();?>
       <img src="<?php echo $logos->url() ?>" alt="<?php echo $logos->title()?>">
     </div>
   </div>
 
-  <div class="backcover">
+  <div class="backcover page">
     <div class="image-wrapper">
       <?php $pause = $page->imageFin()->toFile();?>
       <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
@@ -105,7 +105,7 @@
   </div>
   </div>
 </main>
-
+<!-- 
 <script src="/assets/js/css-regions-polyfill.min.js"  type="text/javascript"></script>
 <script>
     window.paginationConfig = {
@@ -127,7 +127,7 @@
 
     };
 </script>
-<script src="/assets/js/book-polyfill.js" type="text/javascript"></script>
+<script src="/assets/js/book-polyfill.js" type="text/javascript"></script> -->
 
 
 <?php snippet('footer') ?>
