@@ -7,22 +7,14 @@ fields:
   title:
     label: Titre de la publication
     type:  text
-  logosCouv: 
-  	label: Logos pour la couverture
-  	type: selector
-  	mode: multiple
-  coulorCouv: 
-  	label: Couleur de la couverture
-  	type:  color
-  	default: FFFFFF
+  garde: 
+    label: Texte couverture
+    type: markdown
   edito: 
   	label: Édito
   	type: markdown
-  garde: 
-  	label: Texte page de garde
-  	type: markdown
  	imagecredit: 
-  	label: image avant crédits
+  	label: Image avant crédits
   	type: selector
   	mode: single
   colophon: 
@@ -32,7 +24,7 @@ fields:
   	label: Logos fin
   	type: selector
   	mode: single
-  imageFin: 
+  ImageFin: 
   	label: image de fin
   	type: selector
   	mode: single

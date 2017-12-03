@@ -9,29 +9,22 @@
 <main id='flow'>
   <div class="chapter">
     <div class="cover page" data-color="<?php echo $page->coulorCouv() ?>">
-      <div class="logo-wrapper">
-        <?php $logo = $site->logo()->toFile();?>
-        <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
+      <div class="cover-wrapper">
+        <div class="logo-wrapper">
+          <?php $logo = $site->logo()->toFile();?>
+          <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
+        </div>
+        <h1><?php echo $page->title()->html()?></h1>
+        <div class="auteur">
+          <?php echo $page->garde()->kirbytext()?>
+        </div>
       </div>
-      <h1><?php echo $page->title()->html()?></h1>
     </div>
 
     <div class="edito page">
       <h2>Édito</h2>
       <?php echo $page->edito()->kirbytext();?>
     </div>
-
-    <div class="garde page">
-      <div class="logo-wrapper">
-        <?php $logo = $site->logo()->toFile();?>
-        <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
-      </div>
-      <?php echo $page->garde()->kirbytext()?>
-    </div>
-
-
-<!--   <div class="blank">
-  </div> -->
 
   <div class="texte">
     <?php echo $page->parent()->text()->kirbytext() ?>

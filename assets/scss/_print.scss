@@ -7,13 +7,37 @@ body[data-template="print"]{
 		background: $text-color;
 	}
 
+	hr {
+	  border-top: 1px solid $text-color;
+	  clear:both;
+	  display:block;
+	  width: 100%;               
+	  // background-color:$text-color;
+	  // height: 1px;
+	}
+
 	figure{
 		page-break-inside: avoid;
+		margin-top: 0.8cm;
+		margin-left: 0;
+		margin-right: 0;
+		& + h3, & + h2, & + h4, & + p {
+			margin-top: 0.8cm;
+		}
+		img{
+			max-height: 14cm;
+			margin: auto;
+		}
 	}
 	h2{
-		font-size: rem-calc(35);
 		margin-bottom: 1rem;
 	}
+	h3, h4{
+		font-size: 1.3rem;
+		padding-left: 1cm;
+		margin-top: 1cm;
+	}
+
 	p{
 		//font-size: rem-calc(19);
 		line-height: 1.2;
@@ -24,13 +48,11 @@ body[data-template="print"]{
 		//padding-left: 2rem;
 	}
 
-	figure{
-		margin-bottom: 0;
-	}
 
 	figure + h6{
-		text-align: right;
+		text-align: left;
 		margin-bottom: 2rem;
+		width: 80%;
 	}
 
 	main{
@@ -40,21 +62,32 @@ body[data-template="print"]{
 		margin-top: -0.1cm;
 	}
  .page{
-	 	height: 21cm;
+	 	height: 23cm;
 	 	page-break-after:always;
+	 	h2{
+	 		font-size: rem-calc(35);
+	 	}
  }
 
  .cover{
  	.cover-wrapper{
  		position:relative; 
- 		top: 43mm;
+ 		top: 25mm;
  		h1{
- 			font-size: rem-calc(45);
+ 			font-size: rem-calc(46);
  			border: 4px solid $vert;
- 			padding: 0.2cm 0.5cm 0.5cm 0.5cm;
+ 			padding: 0.2cm 0.2cm 0.5cm 0.2cm;
  			background: #FFF;
+ 			text-align: center;
  			//transform: rotate(-10deg);
  			//box-shadow: 0px 0px 30px #FF2E74;
+ 		}
+ 		.auteur{
+ 			position:relative; 
+ 			p{
+ 				line-height: 1.4;
+ 			}
+ 			// left: 50%;
  		}
  	}
  }
@@ -74,9 +107,8 @@ body[data-template="print"]{
 
  .pause{
  	.image-wrapper{
- 		width: 50%;
- 		top:50%;
- 		transform:translateY(-50%);
+ 		width: 70%;
+ 		padding-top:8cm;
  		margin:auto;
  		position:relative;
  	}
@@ -91,18 +123,18 @@ body[data-template="print"]{
   }
 
  .mini-dico{
- 	page-break-before:always;
+ 	//page-break-before:always;
  }
  .left-col{
  	width: 4cm;
  	display:inline-block;
  	vertical-align: top;
  	margin-top: 0.2cm;
- 	page-break-before:always;
+ 	//page-break-before:always;
  }
 
  .definition.definition-item{
- 		page-break-after:always;
+ 		// page-break-after:always;
  		width: 10cm;
 		display:inline-block;
 		vertical-align: top;
@@ -121,6 +153,7 @@ body[data-template="print"]{
  }
 
  .letter{
+ 	margin-bottom: 1cm;
  	.inner-definition{
  		border: 4px solid $vert;
  		color: $vert;
@@ -143,9 +176,13 @@ body[data-template="print"]{
  .logos{
  		position:relative;
 	 	.image-wrapper{
-	 		position:absolute;
-	 		right:0; 
-	 		bottom: 0;
+	 		position:relative;
+	 		left:10cm; 
+	 		top: 20cm;
+	 		width: 7cm;
+	 		img{
+	 			width:100%;
+	 		}
 
 	 	}
  }
@@ -154,7 +191,7 @@ body[data-template="print"]{
 @media print{
 
 	@page{
-		size: A5; 
+		size: A4; 
 		orientation: portrait;
 		margin: 14mm 15mm 14mm 15mm;
 	}

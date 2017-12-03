@@ -16,7 +16,7 @@
           <a href="#mini-dico" title="Mini-Dico">Mini-Dico</a>
         </li>
         <li>
-          <a href="#credits" title="Crédits">Crédits</a>
+          <a href="#credits" title="Crédits">Contexte & Crédits</a>
         </li>
       </ul>
     </div>
