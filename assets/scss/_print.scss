@@ -101,6 +101,8 @@ body[data-template="print"]{
  	}
  }
 
+
+
  .texte{
  	page-break-after:always;
  }
@@ -200,4 +202,11 @@ body[data-template="print"]{
 	header, nav, button.print-button{
 		display:none;
 	}
+	 .edito{
+	 	position: relative;
+	 	.logo-wrapper{
+	 		position:absolute;
+	 		top: 25cm;
+	 	}
+	 }
 }

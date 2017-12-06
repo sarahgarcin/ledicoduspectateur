@@ -9398,7 +9398,12 @@ body[data-template="print"] .logos {
     orientation: portrait;
     margin: 14mm 15mm 14mm 15mm; }
   header, nav, button.print-button {
-    display: none; } }
+    display: none; }
+  .edito {
+    position: relative; }
+    .edito .logo-wrapper {
+      position: absolute;
+      top: 25cm; } }
 
 @media only screen and (max-width: 40em) {
   header {

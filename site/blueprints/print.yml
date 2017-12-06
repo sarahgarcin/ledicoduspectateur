@@ -10,6 +10,10 @@ fields:
   garde: 
     label: Texte couverture
     type: markdown
+  logosDebut: 
+    label: Logos Page édito
+    type: selector
+    mode: single
   edito: 
   	label: Édito
   	type: markdown

@@ -24,6 +24,10 @@
     <div class="edito page">
       <h2>Édito</h2>
       <?php echo $page->edito()->kirbytext();?>
+      <div class="logo-wrapper">
+          <?php $logoDebut = $page->logosDebut()->toFile();?>
+          <img src="<?php echo $logoDebut->url() ?>" alt="<?php echo $logoDebut->title()?>">
+      </div>
     </div>
 
   <div class="texte">
