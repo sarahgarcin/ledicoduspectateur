@@ -9,22 +9,7 @@
       <?php echo $page->text()->kirbytext() ?>
       <?php if($page->hasChildren()):?>
         <hr>
-        <nav>
-          <ul id="subpage">
-            <?php foreach($page->children()->visible() as $subpage): ?>
-            <li>
-              <a href="<?php echo $subpage->url() ?>">
-                <?php echo html($subpage->title()) ?>
-                <?php if($subpage->years()->isNotEmpty()):?>
-                <span class="dates-sousmenu">
-                  <?php echo html($subpage->years()) ?>
-                </span>
-                <?php endif; ?>
-              </a>
-            </li> 
-            <?php endforeach ?>
-          </ul>
-        </nav>
+        <?php snippet('subpage_menu') ?>
       <?php endif ?>
     </div>
     <div class="loadPage wrapper small-10 medium-10 large-8"></div>

@@ -17221,6 +17221,42 @@ $(document).ready(function() {
 
 function init() {
 
+    // api dodoc 
+    // affiche les publications dans le site
+    var nomPubli = $('main').attr('data-publi');
+    console.log(nomPubli);
+    if(nomPubli != undefined){
+      fetch('https://dansecriture.eu/api/publications/'+nomPubli, {
+      method: 'GET',
+        headers: {
+          "session-password": btoa('doc2019')
+        }
+      }).then(response => {
+        if (!response.ok) throw new Error(response.status);
+        return response.json()
+      }).then(data => {
+        console.log('les médias:', data[nomPubli].medias);
+        console.log('les data:', data)
+        var medias = data[nomPubli].medias;
+        for (media in medias) {
+          var mediaName = medias[media].slugMediaName;
+          var folderName = medias[media].slugProjectName;
+          console.log('dans la boucle: ', mediaName, folderName, medias[media]);
+          if(mediaType == 'text'){
+            var mediaContent = medias[media]._source_media_meta.content;
+            $('.publi-content').append('<div class="publi-element">'+mediaContent+'</div>');
+          }
+          if(mediaType == 'image'){
+            var mediaImageName = medias[media]._source_media_meta.thumbs[2].path;
+            var mediaImageSrc = 'https://dansecriture.eu/'+mediaImageName;
+            var mediaType= medias[media]._source_media_meta.type;
+            $('.publi-content').append('<div class="publi-element"><figure><img src="'+mediaImageSrc+'"></figure></div>');
+          }
+        }
+
+      });
+    }
+
     // Functions qui peuvent être utiles sur plusieurs pages
     $('body').on('click','.close-button', function(){
       closePopUp($(this));
@@ -17403,7 +17439,18 @@ function init() {
   //   "background": colorCouv
   // });
     
+  // print
+  // supprimer le texte Lire 
+  if($('body').attr("data-template") == "print"){
+    $('a').each(function(){
+      console.log($(this).html());
+      if($(this).html() == "Lire"){
+        console.log($(this));
+        $(this).remove();
+      }
+    });
 
+  }
 
 
 

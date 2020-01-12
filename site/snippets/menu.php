@@ -6,7 +6,7 @@
       <a <?php e($menu->isOpen(), ' class="active"') ?> href="<?php echo $menu->url() ?>" title="<?php echo $menu->title() ?>">
         <?php echo $menu->title()->html() ?>
       </a>
-      <?php if($menu->uid() != 'definitions' && $menu->hasChildren()):?>
+      <?php if($menu->uid() != 'definitions' &&  $menu->hasChildren() && $menu->uid() != 'labos' &&  $menu->hasChildren()):?>
         <ul class="submenu" >
           <?php foreach($menu->children()->visible() as $subpage): ?>
           <li>

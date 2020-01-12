@@ -11,7 +11,11 @@
     <div class="cover page" data-color="<?php echo $page->coulorCouv() ?>">
       <div class="cover-wrapper">
         <div class="logo-wrapper">
-          <?php $logo = $site->logo()->toFile();?>
+          <?php if($page->couv()->isNotEmpty()):?>
+            <?php $logo = $page->couv()->toFile();?>
+          <?php else: ?>
+            <?php $logo = $site->logo()->toFile();?>
+          <?php endif;?>
           <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
         </div>
         <h1><?php echo $page->title()->html()?></h1>
@@ -20,9 +24,25 @@
         </div>
       </div>
     </div>
+    <div class="page">
+    </div>
+    <?php if($page->sommaire()->isNotEmpty()):?>
+      <div class="sommaire page">
+        <h2>Sommaire</h2>
+        <?php foreach($page->sommaire()->toStructure() as $el):?>
+          <p><span class='num-page'><?php echo $el->numero() ?></span>
+           <span class='nom-page'><?php echo $el->title() ?></span>
+          </p>
+        <?php endforeach ?>
+      </div>
+    <?php endif ?>
 
     <div class="edito page">
-      <h2>Édito</h2>
+      <?php if($page->titreEdito()->isNotEmpty()):?>
+        <h2><?=$page->titreEdito()->text()?></h2>
+      <?php else:?>
+        <h2>Édito</h2>
+      <?php endif; ?>
       <?php echo $page->edito()->kirbytext();?>
       <div class="logo-wrapper">
           <?php $logoDebut = $page->logosDebut()->toFile();?>
@@ -33,6 +53,18 @@
   <div class="texte">
     <?php echo $page->parent()->text()->kirbytext() ?>
   </div>
+
+  <?php if( $page->parent()->children()->intendedTemplate() != "print"):?>
+    <div class="texte subpages" >
+      <?php foreach($page->parent()->children()->visible() as $textChild):?>
+          <?php if($textChild->intendedTemplate() != "print"):?>
+            <h2 class="print-title-subpage"><?php echo $textChild->title()->html() ?></h2>
+            <?php echo $textChild->text()->kirbytext() ?>
+            <hr>
+          <?php endif?>
+      <?php endforeach ?>
+    </div>
+  <?php endif?>
 
   <div class="mini-dico">
     <?php foreach($page->parent()->linkeddefinition()->split(',') as $linkeddefinition): ?>  
@@ -74,13 +106,19 @@
 
   <div class="pause page">
     <div class="image-wrapper">
-      <?php $pause = $page->imagecredit()->toFile();?>
-      <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
+      <?php if($page->imagecredit()->isNotEmpty()):?>
+        <?php $pause = $page->imagecredit()->toFile();?>
+        <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
+      <?php endif ?>
     </div>
   </div>
 
   <div class="credits page">
-    <h2>Contexte et Crédits</h2>
+    <?php if($page->titreCredits()->isNotEmpty()):?>
+        <h2><?=$page->titreCredits()->text()?></h2>
+      <?php else:?>
+        <h2>Contexte et Crédits</h2>
+      <?php endif; ?>
     <?php echo $page->parent()->credits()->kirbytext() ?>
     <div class="colophon">
       <?php echo $page->colophon()->kirbytext() ?>
@@ -89,15 +127,19 @@
 
   <div class="logos page">
     <div class="image-wrapper">
-      <?php $logos = $page->logosFin()->toFile();?>
-      <img src="<?php echo $logos->url() ?>" alt="<?php echo $logos->title()?>">
+      <?php if($page->logosFin()->isNotEmpty()):?>
+        <?php $logos = $page->logosFin()->toFile();?>
+        <img src="<?php echo $logos->url() ?>" alt="<?php echo $logos->title()?>">
+      <?php endif ?>
     </div>
   </div>
 
   <div class="backcover page">
     <div class="image-wrapper">
-      <?php $pause = $page->imageFin()->toFile();?>
-      <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
+      <?php if($page->imageFin()->isNotEmpty()):?>
+        <?php $pause = $page->imageFin()->toFile();?>
+        <img src="<?php echo $pause->url() ?>" alt="<?php echo $pause->title()?>">
+      <?php endif ?>
     </div>
   </div>
   </div>

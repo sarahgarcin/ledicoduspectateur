@@ -8,6 +8,69 @@ $(document).ready(function() {
 
 function init() {
 
+    // api dodoc 
+    // affiche les publications dans le site
+    var rechargerLaPage = $('main').attr('data-recharge');
+    if(rechargerLaPage != undefined && rechargerLaPage != ''){
+      console.log('test', rechargerLaPage);
+      setInterval(function(){
+        location.reload();
+      },rechargerLaPage * 1000);
+    }
+    
+    var nomPubli = $('main').attr('data-publi');
+
+    if(nomPubli != undefined){
+      fetch('https://dansecriture.eu/api/publications/'+nomPubli, {
+      method: 'GET',
+        headers: {
+          "session-password": btoa('doc2019')
+        }
+      }).then(response => {
+        if (!response.ok) throw new Error(response.status);
+        return response.json()
+      }).then(data => {
+        // console.log('les médias:', data[nomPubli].medias);
+        // console.log('les data:', data)
+        var medias = data[nomPubli].medias;
+        for(page in data[nomPubli].pages){
+          $('.publi-content').append('<div id="'+data[nomPubli].pages[page].id+'"></div>');
+        }
+        for (media in medias) {
+          console.log(medias[media]);
+          var mediaName = medias[media].slugMediaName;
+          var folderName = medias[media].slugProjectName;
+          if(medias[media]._source_media_meta != undefined){
+            var mediaType= medias[media]._source_media_meta.type;
+          }
+          else{
+            var mediaType  = undefined; 
+          }
+          
+          var page_id = medias[media].page_id;
+          // console.log('dans la boucle: ', mediaName, folderName, medias[media]);
+          if(mediaType == 'text'){
+            var mediaContent = medias[media]._source_media_meta.content;
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)">'+mediaContent+'</div>');
+          }
+          else if(mediaType == 'image'){
+            console.log('image:', mediaName, 'folder:', folderName);
+            var mediaImageName = medias[media]._source_media_meta.thumbs[2].path;
+            var mediaImageSrc = 'https://dansecriture.eu/'+mediaImageName;
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)"><figure><img src="'+mediaImageSrc+'"></figure></div>');
+
+          }
+          else if(mediaType == 'video'){
+            var mediaVideoPoster = 'https://dansecriture.eu/'+ medias[media]._source_media_meta.thumbs[0].thumbsData[2].path;
+            var mediaVideoSrc = 'https://dansecriture.eu/'+folderName+ '/'+ medias[media]._source_media_meta.media_filename
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)"><video poster="'+mediaVideoPoster+'" src="'+mediaVideoSrc+'" preload="none" controls></video></div>');
+
+          }
+        }
+
+      });
+    }
+
     // Functions qui peuvent être utiles sur plusieurs pages
     $('body').on('click','.close-button', function(){
       closePopUp($(this));
@@ -190,7 +253,18 @@ function init() {
   //   "background": colorCouv
   // });
     
+  // print
+  // supprimer le texte Lire 
+  if($('body').attr("data-template") == "print"){
+    $('a').each(function(){
+      console.log($(this).html());
+      if($(this).html() == "Lire"){
+        console.log($(this));
+        $(this).remove();
+      }
+    });
 
+  }
 
 
 

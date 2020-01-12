@@ -4,12 +4,17 @@ pages:
 	template:
     - default
     - textelong
+    - souspage
 files: true
 
 fields:
   title:
     label: Titre
     type:  text
+  cover: 
+    label: Image à afficher en photo de couverture
+    type: selector
+    mode: single
   text:
     label: Texte
     type: markdown

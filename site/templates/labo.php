@@ -33,6 +33,10 @@
         </div>
         <h1><?php echo $page->title()->html() ?></h1>
         <?php echo $page->text()->kirbytext() ?>
+        <?php if($page->hasChildren()):?>
+          <hr>
+          <?php snippet('subpage_menu') ?>
+        <?php endif ?>
       </div>
       <div class="loadPage wrapper small-10 medium-10 large-8"></div>
       <?php if($page->linkeddefinition()->isNotEmpty()):?>

@@ -10,10 +10,29 @@ fields:
   garde: 
     label: Texte couverture
     type: markdown
+  couv: 
+    label: Image de couverture
+    type: selector
+    mode: single
   logosDebut: 
     label: Logos Page édito
     type: selector
     mode: single
+  sommaire: 
+    label: Sommaire
+    type: structure
+    entry: >
+      {{title}} .............................. {{numero}}
+    fields:
+      title: 
+        label: Nom de la page
+        type: text
+      numero: 
+        label: Numéro de la page
+        type: text
+  titreEdito:
+    label: Titre à afficher pour l'édito
+    type: text
   edito: 
   	label: Édito
   	type: markdown
@@ -21,6 +40,9 @@ fields:
   	label: Image avant crédits
   	type: selector
   	mode: single
+  titreCredits: 
+    label: Titre à afficher sur le colophon / Crédits
+    type: text
   colophon: 
   	label: Colophon
   	type: markdown
