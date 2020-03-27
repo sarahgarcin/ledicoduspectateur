@@ -89,7 +89,13 @@
             </div>
           <?php endif ?>
         </div>
-        <div class="definition definition-item">
+        <!-- afficher les citations ou non sur les définitions -->
+        <?php $displayDef = "oui"; ?>
+        <?php if($page->displayQuotes() == "non"):
+          $displayDef = "non";
+        endif; ?>
+        <!-- fin affichage de citations -->
+        <div class="definition definition-item" data-quotes="<?php echo $displayDef?>">
           <div class="inner-definition">
             <h2><?php echo $def->title()->html()?></h2>
               <div class="definition-text">
@@ -134,6 +140,14 @@
     </div>
   </div>
 
+  <?php if($page->ajouterDespages()->isNotEmpty()):?>
+    <?php for($i=0; $i<$page->ajouterDespages()->int(); $i++):?>
+      <div class="page">
+        
+      </div>
+    <?php endfor ?>
+  <?php endif; ?>
+
   <div class="backcover page">
     <div class="image-wrapper">
       <?php if($page->imageFin()->isNotEmpty()):?>
@@ -144,29 +158,6 @@
   </div>
   </div>
 </main>
-<!-- 
-<script src="/assets/js/css-regions-polyfill.min.js"  type="text/javascript"></script>
-<script>
-    window.paginationConfig = {
-        'sectionStartMarker': 'div.section',
-        'sectionTitleMarker': 'h1.sectiontitle',
-        'chapterStartMarker': 'div.chapter',
-        'chapterTitleMarker': 'h1.chaptertitle',
-        'flowElement': "document.getElementById('flow')",
-        'bulkPagesToAdd': 50,
-        'alwaysEven': false,
-        'enableFrontmatter': false,
-        'pageHeight': 21,
-        'pageWidth': 15,
-        'innerMargin': 1.5,
-        'lengthUnit: ': 'cm',
-        'oddAndEvenMargins': false,
-        'numberPages':false,
-        'autoStart':true,
-
-    };
-</script>
-<script src="/assets/js/book-polyfill.js" type="text/javascript"></script> -->
 
 
 <?php snippet('footer') ?>

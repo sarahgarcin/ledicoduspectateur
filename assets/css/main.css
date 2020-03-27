@@ -8973,8 +8973,9 @@ ul {
   padding: 0;
   margin: 0; }
 
-span.dates-sousmenu {
-  font-size: 12px; }
+.dates-sousmenu {
+  font-size: 12px;
+  padding-left: 0; }
 
 /* HEADER ET NAV - snippet menu.php*/
 nav.menu {
@@ -9010,7 +9011,7 @@ nav.menu {
         nav.menu > ul.menu-first > li .submenu li {
           text-align: left;
           margin-bottom: 0.3em; }
-          nav.menu > ul.menu-first > li .submenu li span.dates-sousmenu {
+          nav.menu > ul.menu-first > li .submenu li .dates-sousmenu {
             font-size: 12px; }
           nav.menu > ul.menu-first > li .submenu li a:hover {
             text-decoration: underline; }
@@ -9082,6 +9083,10 @@ main {
   border: 3px solid #00FF9A;
   overflow: scroll;
   box-shadow: 0px 0px 30px #FF2E74; }
+  .loadPage[data-quotes="non"] hr {
+    display: none; }
+  .loadPage[data-quotes="non"] .definition-wrapper blockquote {
+    display: none; }
   .loadPage h1 {
     font-size: 2em;
     font-weight: bold;
@@ -9105,15 +9110,19 @@ body[data-intended-template="labos"] #subpage li {
       border: 3px solid #00FF9A;
       background: #00FF9A;
       padding: 0.5em; }
-    #subpage li:hover {
-      box-shadow: 0px 0px 30px #FF2E74; }
-    #subpage li:hover .submenu-text-wrapper {
-      background: #FFF; }
+      #subpage li .submenu-text-wrapper h2 {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 1.3rem; }
     #subpage li a {
       line-height: 1;
-      text-decoration: none; }
+      text-decoration: none;
+      display: block; }
       #subpage li a:hover {
-        color: #0000D2; }
+        color: #0000D2;
+        box-shadow: 0px 0px 30px #FF2E74; }
+      #subpage li a:hover .submenu-text-wrapper {
+        background: #FFF; }
 
 /* TEXTE*/
 .text-wrapper {
@@ -9229,9 +9238,10 @@ body[data-template="definitions"] main ul > li.definition, body[data-template="l
   body[data-template="definitions"] main ul > li.definition.letter .inner-definition, body[data-template="labo"] main ul > li.definition.letter .inner-definition {
     font-size: 7rem;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.4;
     cursor: default;
-    color: #00FF9A; }
+    color: #00FF9A;
+    font-weight: normal; }
 
 body[data-template="labo"] main .left-sidebar > ul > div, body[data-template="labo"] main .left-sidebar > ul > li {
   display: block;
@@ -9272,7 +9282,7 @@ body[data-template="textelong"] .small-def {
   min-height: auto; }
   .publi-content > div {
     width: 100%;
-    height: calc(297mm/1.2);
+    height: calc(297mm);
     min-height: auto;
     position: relative; }
   .publi-content h1, .publi-content p {
@@ -9419,6 +9429,10 @@ body[data-template="print"] .definition.definition-item {
   width: 10cm;
   display: inline-block;
   vertical-align: top; }
+  body[data-template="print"] .definition.definition-item[data-quotes="non"] hr {
+    display: none; }
+  body[data-template="print"] .definition.definition-item[data-quotes="non"] .definition-text blockquote {
+    display: none; }
   body[data-template="print"] .definition.definition-item .inner-definition h2::before {
     content: "Spectateur-";
     display: block; }
@@ -9430,11 +9444,11 @@ body[data-template="print"] .letter {
   body[data-template="print"] .letter .inner-definition {
     border: 4px solid #00FF9A;
     color: #00FF9A;
-    padding: 55px 35px;
     font-size: 100px;
     height: 150px;
     width: 140px;
-    line-height: 0; }
+    line-height: 1.4;
+    text-align: center; }
 
 body[data-template="print"] .credits p {
   font-size: 1.125rem; }
@@ -9451,9 +9465,9 @@ body[data-template="print"] .logos {
   position: relative; }
   body[data-template="print"] .logos .image-wrapper {
     position: relative;
-    left: 8cm;
-    top: 15cm;
-    width: 7cm; }
+    right: 0cm;
+    top: 13cm;
+    width: 100%; }
     body[data-template="print"] .logos .image-wrapper img {
       width: 100%; }
 
