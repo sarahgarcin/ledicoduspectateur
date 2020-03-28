@@ -1,0 +1,27 @@
+Title: Test photo pour livre ASSIS
+
+----
+
+Text: 
+
+(image: 1-8r1a9615_31923086328_o.jpg)
+(image: 7-8r1a9555_45744718472_o.jpg)
+
+
+(image: 3-8r1a9639_31923034738_o.jpg)
+
+(image: 4-8r1a9836_43976971360_o.jpg)
+
+(image: 5-8r1a9783_30854279477_o.jpg)
+
+(image: 6-8r1a9719_43977188050_o.jpg)
+
+(image: 2-8r1a9519_31923234568_o.jpg)
+
+
+
+(image: 8-8r1a9695_45793985301_o.jpg)
+
+(image: 9-8r1a9859_45069326344_o.jpg)
+
+(image: 10-8r1a9470_44881617825_o.jpg)

@@ -52,28 +52,36 @@ La coproduction est un moyen de mettre en vis-à-vis des expériences menées à
 ***
 
 **Perspectives pour de futures coproductions** :
+
+
+##### Page d'acceuil
+###### - Conception & design d'une page d'acceuil interactive.
+
 ##### Menus
-###### - Conception & design des menus de façon à différencier et donner un statut différent aux items "Laboratoires", "Définitions" et "Activation", par rapport à "À propos", "Presse/agenda" et "Crédits".
+###### - Conception & design des menus de façon à différencier les menus "Expériences" et "Définitions", par rapport à "À propos", "Outils", "Presse/agenda" et "Crédits".
 
 ##### Définitions
-###### - Conception & design d'une barre de recherche et d'un sommaire
-###### - Conception & design pour entrer dans les définitions par : les labos, les figures du spectateur, la géocalisation, le visionning, les citations de spectateurs, ...
+###### - Conception & design d'une barre de recherche et d'un sommaire pour smartphone
+###### - Conception & design pour entrer dans les définitions par : les expériences, les figures du spectateur, la géocalisation, le visionning, les citations de spectateurs, ...
 
-##### Labos
+##### Expériences
 ###### Trouver un design pour accéder aux sous-pages rapidement et simplement.
 
 ##### Agenda
 ###### - Conception & design d'un agenda
 
 ##### Crédits
-###### - Conception & design de modalités d'accès à l'ensemble des crédits (crédits généraux et crédits labos)
+###### - Conception & design de modalités d'accès à l'ensemble des crédits (crédits généraux et crédits expériences)
 ###### - Design d'une page coproduction.
 
 ##### Transversal
+###### - conception d'un livre évolutif du Dico, à imprimer chez soi. 
 ###### - Lecture-correction de l'ensemble des textes par un correcteur professionnel
 ###### - Conception plugging bande son et divers codes écriture (guillemets, espace insécable, balise "lire la suite")
+###### - Note de bas de page
+###### - Accès à l'historique des versions des pages
 ###### - Design accès son & vidéo 
-###### - Animation du visuel "le dico du spectateur" 
+###### - Animation du visuel "Le Dico du spectateur" 
 ###### - Conception & design d'un espace de contribution ouvert (de type forum)
 ###### - Conception, programmation, construction, design et installation de bornes interactives (à disposer par exemple à la sortie d'une salle de spectacle)
 

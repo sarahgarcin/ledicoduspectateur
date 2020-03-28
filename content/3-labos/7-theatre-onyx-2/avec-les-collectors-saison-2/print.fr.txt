@@ -1,0 +1,87 @@
+Title: Théâtre ONYX <br> Avec Les Collectors  <br> saison 2
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Logosdebut: onyx-theatre-petit-2.jpg
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "4"
+- 
+  title: 'Autour de : « Avril »'
+  numero: "5"
+- 
+  title: 'Autour de : « MLE »'
+  numero: "13"
+- 
+  title: 'Autour de : « Fracasse... »'
+  numero: "29"
+- 
+  title: 'Autour de : « Projet PDF »'
+  numero: "36"
+- 
+  title: 'Le mini-dico du spectateur - ONYX'
+  numero: "45"
+- 
+  title: Colophon
+  numero: "50"
+
+----
+
+Edito: 
+
+**Saint-Herblain, 2018-2019**
+
+Après un spectacle, qui n’a jamais eu envie de poursuivre la discussion ? Qui n’a jamais laissé un avis, un commentaire, ou même un petit like ? Mais le fait-on vraiment ? Prend-on le temps de l’écrire ou l’enregistrer et à fortiori de le diffuser ?
+
+Lors de cette saison nomade, le théâtre ONYX a décidé de s’en occuper, en constituant une Brigade d’intervieweurs qui s'est chargée de collecter les avis des spectateurs. Grâce au coaching de Joël Kérouanton, chantre du « laissez-les-dire », les spectateurs se sont transformés en intervieweurs chevronnés.
+
+Sans prise de tête, animer de sa seule volonté d’en savoir plus et d’échanger avec d’autres spectateurs, une Brigade de collecteurs avisés — *Les Collectors* — spécialisée dans le recueil de paroles en or, a été chargée de février à juin, à raison d’une fois par mois et selon leur disponibilité, de recueillir les témoignages du public. La matière collectée a donné lieu à ce livret, receuil de critiques collaboratives des spectacles qui alimentent désormais *Le Dico du spectateur*, une œuvre en ligne qui répertorie, sous forme de définitions théorico-rigolotes, une typologie de spectateurs.
+
+
+L'équipe d'ONYX
+(image: unknown-1.png)
+
+----
+
+Imagecredit: gui-dico-16.png
+
+----
+
+Colophon: 
+
+Design graphique : atelier g.u.i.
+Les Collectors : Jacqueline, Alexandra, Nathalie, Isabelle, Vincent, Thérèse, Danièle, Isabelle, Kim, Sandrine, Josiane. 
+Lecture-correction : Amandine Glévarec
+Direction éditoriale : Gaëlle Lecareux, Jean-Noël Charpentier et Joël Kérouanton
+
+----
+
+Logosfin: logo-ville-saint-herblain-noir.jpg
+
+----
+
+Imagefin: gui-dico-08.png
+
+----
+
+Couv: gui-dico-51.png
+
+----
+
+Titreedito: 
+
+----
+
+Titrecredits: Colophon

@@ -1,0 +1,25 @@
+Title: Ateliers
+
+----
+
+Text: 
+
+## TU-Nantes
+## Devenir auteur de sa propre création à partir d’une thématique de la pièce *Mascarade*.
+## Nantes, 25-26 oct., 25-26 nov., 6-7 déc. 2019
+ 
+(image: 76747421_2476534565927005_8470463604146044928_o.jpg)
+ 
+***Les ateliers DANSÉCRITURE 2019 proposent aux participants d’expérimenter, de ressentir, de mettre en mot et en mouvement leur propre vision de *Mascarade* afin que chacun crée un « texte de présentation du spectacle »  et une « composition chorégraphique ». Ces pratiques et processus sont proposés sous forme de « workshop » où littérature et chorégraphie, dans un ping pong de mot et de geste, se déploient.***
+
+----
+
+Sous-menu: 
+
+- 
+  title: Appel à participation
+  url: appel-a-participation
+
+----
+
+Cover: 76747421_2476534565927005_8470463604146044928_o.jpg

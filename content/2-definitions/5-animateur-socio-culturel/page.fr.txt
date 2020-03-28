@@ -8,7 +8,7 @@ Text: // *choisir un spectacle* // Lance des ponts entre l'œuvre et le public. 
 
 Sources: 
 
-###### **Laboratoire** : [Val d'Oise 3](labos/val-d-oise-3)
+###### **Expérience** : [Val d'Oise 3](labos/val-d-oise-3)
 ###### **Collecte** : animateurs socio-culturels du Val d'Oise, 2017
 ###### **Géolocalisation** : [Espace Germinal, Fosses, Val d'Oise (France)](https://www.google.fr/maps/place/ESPACE+GERMINAL/@49.0977347,2.5146829,17z/data=!3m1!4b1!4m5!3m4!1s0x47e638d39a944f2d:0x88a1487e11672e06!8m2!3d49.0977347!4d2.5168716?dcr=0)
 

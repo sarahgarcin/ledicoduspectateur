@@ -8,7 +8,7 @@ Text: // *recueillir les impressions* // Chercheur d'or et de pépites. S'imbibe
 
 Sources: 
 
-###### **Laboratoire** : [Val d'Oise 3](labos/val-d-oise-3)
+###### **Expérience** : [Val d'Oise 3](labos/val-d-oise-3)
 ###### **Collecte** : animateurs socio-culturels du Val d'Oise, 2017
 ###### **Géolocalisation** : [Pôle culturel de Coulanges, Gonesse, Val d'Oise (France)](https://www.google.fr/maps/place/Auditorium+de+Coulanges/@48.9835576,2.4436424,15z/data=!4m15!1m9!2m8!1zSMO0dGVscw!3m6!1zSMO0dGVscw!2s48.9851916,+2.4471637!3s0x47e66ac2cb27b763:0x5ac9fb5928441142!4m2!1d2.4471637!2d48.9851916!3m4!1s0x0:0x996c50c8f37a34de!8m2!3d48.985163!4d2.4468063?dcr=0)
 

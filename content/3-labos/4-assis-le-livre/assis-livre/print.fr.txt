@@ -1,0 +1,88 @@
+Title: ASSIS
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Logosdebut: unknown-1.png
+
+----
+
+Edito: 
+
+***
+ASSIS est une fiction ethnographique d’un peuple qui aurait passé trop de temps assis. ASSIS est une vision décalée d’une posture qui aurait envahit le monde du travail, les espaces publics, les espaces intimes, le dedans et le dehors. ASSIS est une pièce de danse, on bouge assis, on se déploie assis, on traverse assis, on se raconte assis. ASSIS est une petite communauté, vraiment petite de 5 personnes. On ne découvre pas le quotidien de ce peuple, on les voit danser. ASSIS aurait pu rencontrer Henri Michaux lors de son voyage en grande Carabagne. ASSIS est une poésie qui prend corps.
+
+----
+
+Imagecredit: gui-dico-06.png
+
+----
+
+Colophon: 
+
+**Colophon :**
+*Design graphique et maquettage*  : atelier g.u.i. / Sarah Garcin (Paris)
+*Page de première de couverture* : dessin réalisé par une contributrice à l'occasion de l'atelier DANSÉCRITURE à la Maison de quartier du Champ de mars (Nantes)
+*Photographies* : en studio : Joël Kérouanton ; en chapeau des chapitre : Ollivier Morells
+*Impression* : Henry impressions, 12 Rue Chabanais, 75002 Paris
+*Direction éditoriale*  : Joël Kérouanton
+
+***
+*Production* : coopérative culturelle Oz
+*Partenaires* : Ville de Nantes, Ville de Saint-Herblain, Ville de Saint-Nazaire, Musique et danse en Loire Atlantique, Théâtre de la Ruche
+*Soutien* : le SEPT CENT QUATRE VING TROIS
+
+----
+
+Logosfin: 
+
+----
+
+Imagefin: gui-dico-30.png
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "3"
+- 
+  title: Documenter un spectacle
+  numero: "5"
+- 
+  title: "La tentation de l'assise"
+  numero: "7"
+- 
+  title: "L'essayage de la danse"
+  numero: "10"
+- 
+  title: Les fameuses
+  numero: "15"
+- 
+  title: Assis sur son train
+  numero: "26"
+- 
+  title: Assemblage
+  numero: "30"
+- 
+  title: "L'art des pipelettes"
+  numero: "33"
+- 
+  title: Mal cul
+  numero: "37"
+- 
+  title: La première
+  numero: "49"
+- 
+  title: Critique du spectateur
+  numero: "53"
+- 
+  title: "Mettre en mouvement l'assise"
+  numero: "62"

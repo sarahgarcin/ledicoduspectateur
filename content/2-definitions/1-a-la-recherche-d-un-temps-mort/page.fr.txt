@@ -59,7 +59,7 @@ Inoff: in
 
 Sources: 
 
-######**Laboratoire** : [L'Archipel](labos/L-Archipel)
+######**Expérience** : [L'Archipel](labos/L-Archipel)
 
 ######**Collecte** : menée par l'atelier L'écume des mots + invités.
 

@@ -1,4 +1,4 @@
-Title: Former à une démarche artistique inclusive <br> Pays de Retz | 2018-2019 <br> Musique et Danse <br> en Loire Atlantique
+Title: Former à une démarche artistique inclusive <br> Pays de Retz | 2019 <br> Musique et Danse <br> en Loire-Atlantique
 
 ----
 
@@ -16,16 +16,18 @@ Logosdebut: unknown-2-small.png
 Sommaire: 
 
 - 
+  title: Édito
+  numero: "4"
+- 
   title: >
-    Présentation de la Formation-Action
-    Culture/Social
+    Former à une démarche artistique
+    inclusive
   numero: "5"
 - 
   title: Témoignage de la démarche
   numero: "7"
 - 
-  title: |
-    Vers un grand débat des spectateurs-trices <br> (après "Ce qui m'est dû")
+  title: "Vers un grand débat des spectateurs-trices <br> (après <i>Ce qui m'est dû</i>)"
   numero: "10"
 - 
   title: Définitions de spectateurs
@@ -67,7 +69,7 @@ Colophon:
 <Br>
 <Br>
 Design graphique : atelier g.u.i.
-Photos de constat (expériences collectives de spectateurs) : Cécile Gaillard- Reverdy et Joël Kérouanton
+Photos de constat :  Élisabeth Le Pape, Bertrand Jannot
 Correction : Amandine Glévarec
 Direction éditoriale : Élisabeth Le Pape et Joël Kérouanton
 
@@ -94,3 +96,7 @@ Titrecredits: Crédits
 ----
 
 Ajouterdespages: 3
+
+----
+
+Displayquotes: non

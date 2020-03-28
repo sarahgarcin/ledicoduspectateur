@@ -1,0 +1,93 @@
+Title: Expérience Val d'Oise 2019 <br> Former à une critique collaborative de spectacle
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Logosdebut: logos-val-oise.png
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "4"
+- 
+  title: >
+    Vers une critique collaborative de
+    spectacle
+  numero: "5"
+- 
+  title: Des regards en miroir
+  numero: "31"
+- 
+  title: "Le mini-dico du Val d'Oise 2019"
+  numero: "39"
+- 
+  title: 'Contexte & Crédits'
+  numero: "47"
+
+----
+
+Edito: 
+
+#####Je vous invite à parcourir ce livret qui met en partage l'expérience proposée par le Département du Val d’Oise et le Centre National de la Fonction Publique Territoriale (CNFPT) à des médiateurs culturels et des professionnels de l’animation, au cours de la formation Animation & critique collaborative de spectacle.
+
+#####En mars 2019, à l’issue du spectacle *Belladona* et après une journée de préparation, les stagiaires ont invité le public à échanger, par petits groupes, dans des espaces aménagés pour l’occasion. Le contenu des échanges a ensuite été partagé. Joël Kérouanton, écrivain, l’a retranscrit. Un premier texte est né, multiple, fait d'ajouts, de morceaux. Les stagiaires l'ont alors lu, découpé, questionné, assemblé et réassemblé. De là, l’écrivain l'a finalisé. 
+#####Émilie Lebel, médiatrice culturelle - Enfance, Art et Philosophie, montre alors que ce texte collectif unique peut tenir lieu de critique. Constitué de différents échanges, il fabrique un point de vue représentatif du spectacle. 
+Des définitions du spectateur suivent. L’ensemble rejoint le corpus complet du *Dico du spectateur*, œuvre numérique de Joël Kérouanton, sur le site http://ledicoduspectateur.net.
+
+#####Les approches, sensations, arguments des publics, aussi divers soient-ils et ainsi réunis, offrent une vision recomposée du spectacle, celle qui appartient aux publics qui l’ont vu. Fruit de l’ouvrage des stagiaires et du geste de l’écrivain, ce texte suscite la curiosité pour de futurs spectateurs.
+
+#####Aussi n'hésitez plus ! Profitez des animations qui vous sont proposées, rejoignez un des nombreux lieux culturels du Val d'Oise pour assister à un spectacle, voir une exposition, bénéficier des temps de rencontres et du réel savoir-faire des équipes qui les mettent en œuvre.
+
+#####**Marie-Christine Cavecchi**
+#####**Présidente du Conseil départemental du Val d’Oise**
+
+----
+
+Imagecredit: gui-dico-03.png
+
+----
+
+Colophon: 
+
+**Colophon :**
+Design graphique : atelier g.u.i.
+Photos de constat (expériences collectives de spectateurs) : Cécile Gaillard-Reverdy et Joël Kérouanton
+Correction : Amandine Glévarec
+Direction éditoriale : Cécile Gaillard-Reverdy et Joël Kérouanton
+
+----
+
+Logosfin: gui-dico-62.png
+
+----
+
+Imagefin: gui-dico-66.png
+
+----
+
+Couv: gui-dico-32.png
+
+----
+
+Titreedito: 
+
+----
+
+Titrecredits: 
+
+----
+
+Ajouterdespages: 1
+
+----
+
+Displayquotes: non

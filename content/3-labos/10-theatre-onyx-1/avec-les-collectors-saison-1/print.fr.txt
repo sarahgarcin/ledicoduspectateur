@@ -1,0 +1,79 @@
+Title: Théâtre ONYX <br> Avec Les Collectors <br> saison 1
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Logosdebut: onyx-theatre-petit-2.jpg
+
+----
+
+Edito: 
+
+**Saint-Herblain, 2017-2018**
+Cette saison, nous avons confié l’animation de nos coachings du spectateur à Joël Kérouanton, écrivain, poète et essayiste. Il a proposé des expériences collectives de spectateurs, en s’appuyant essentiellement sur *Le Dico du spectateur*, œuvre interactive sur la relation du public au spectacle vivant. 
+
+Ce livret propose une mise en récit de ces coachings et présente des définitions du spectateur rédigées à la suite de ces expériences. Ces définitions herblinoises ont rejoint le corpus complet du *Dico du spectateur*, œuvre de Joël Kérouanton, sur le site ledicoduspectateur.net.
+
+L'équipe d'ONYX
+(image: unknown-1-1.png)
+
+----
+
+Imagecredit: gui-dico-18.png
+
+----
+
+Colophon: 
+
+Design graphique : atelier g.u.i.
+Lecture-correction : Solène Bouton
+Direction éditoriale : Gaëlle Lecareux, Jean-Noël Charpentier et Joël Kérouanton
+
+----
+
+Logosfin: logo-ville-saint-herblain-noir.jpg
+
+----
+
+Imagefin: gui-dico-66.png
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "4"
+- 
+  title: 'Autour de : « (S)acre »'
+  numero: "5"
+- 
+  title: 'Autour de : « Via Kanana »'
+  numero: "11"
+- 
+  title: 'Autour de : « ASSIS »'
+  numero: "23"
+- 
+  title: Le mini-dico du spectateur — ONYX
+  numero: "33"
+- 
+  title: Colophon
+  numero: "44"
+
+----
+
+Couv: gui-dico-32.png
+
+----
+
+Titreedito: 
+
+----
+
+Titrecredits: Colophon

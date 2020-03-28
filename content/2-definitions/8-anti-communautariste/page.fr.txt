@@ -101,8 +101,7 @@ Inoff: in
 
 Sources: 
 
-###### **Laboratoire** : [Val d'Oise 2](labos/val-d-oise-2)
-
+###### **Expérience** : [Val d'Oise 2](labos/val-d-oise-2)
 
 ###### **Collecte** : animateurs socioculturels du Val d'Oise (France), 2016.
 

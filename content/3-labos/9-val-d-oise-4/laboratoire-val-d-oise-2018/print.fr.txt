@@ -1,0 +1,64 @@
+Title: Laboratoire Val d'Oise 2018
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Logosdebut: logos-val-oise.png
+
+----
+
+Edito: 
+
+Le Conseil départemental a invité l’écrivain Joël Kérouanton à restituer le parcours entrepris lors d’une formation de sensibilisation aux arts de la scène, co-organisée par le Centre National de la Fonction Publique Territoriale (CNFPT). Au cours de cette formation, l’auteur a proposé à des professionnels de l’animation la réalisation d’une critique collaborative de spectacle.
+ 
+A l’issue d’un spectacle, après une journée de préparation, les stagiaires ont invité le public à échanger, par petits groupes, dans des espaces aménagés pour l’occasion. Le contenu des échanges a ensuite été partagé. Joël Kérouanton l’a retranscrit et en a dégagé les lignes de force. Il est revenu vers les stagiaires, qui, accompagnés de trois acteurs de la vie artistique du Val d’Oise, ont affiné les points de vue, évitant les caricatures de cette critique sensible. L’écrivain l’a finalisée et les définitions du spectateur ont suivi.
+ 
+L’ensemble – le Labo du Val d’Oise n°4 – a rejoint le corpus complet du Dico du spectateur, œuvre numérique de Joël Kérouanton, sur le site http://ledicoduspectateur.net.
+ 
+Je vous en souhaite une bonne lecture et vous encourage à assister à des représentations dans les théâtres et scènes du spectacle vivant pour en goûter la pertinence !
+
+Marie-Christine Cavecchi
+Présidente du Conseil départemental du Val d’Oise
+
+----
+
+Imagecredit: gui-dico-05.png
+
+----
+
+Colophon: 
+
+**Colophon :**
+Design graphique : atelier g.u.i.
+Direction éditoriale : Cécile Reverdy-Gaillard et Joël Kérouanton
+
+----
+
+Logosfin: logos.jpg
+
+----
+
+Imagefin: gui-dico-56.png
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "4"
+- 
+  title: Collecter les impressions du public
+  numero: "5"
+- 
+  title: "Le mini-dico du Val d'oise 2018"
+  numero: "18"
+- 
+  title: 'Contexte & Crédits'
+  numero: "25"

@@ -8,7 +8,7 @@ Text: // *susciter l'envie* // Donne envie d'avoir envie. Par tous les moyens im
 
 Sources: 
 
-###### **Laboratoire** : [Val d'Oise 3](labos/val-d-oise-3)
+###### **Expérience** : [Val d'Oise 3](labos/val-d-oise-3)
  ###### **Collecte** : animateurs socio-culturels du Val d'Oise, 2017
 ###### **Géolocalisation** : [Maison des arts, Garges-lès-Gonesse, Val d'Oise (France)](https://www.google.fr/maps/place/Maison+des+Arts+Louis+Aragon/@48.9682149,2.401511,16.46z/data=!4m5!3m4!1s0x47e66bb7058b32ed:0x381a0dda14b45d7a!8m2!3d48.9679703!4d2.4036924?dcr=0)
 

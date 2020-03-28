@@ -1,0 +1,54 @@
+Title: Laboratoire Pays Segréen
+
+----
+
+Garde: 
+
+----
+
+Logosdebut: logo-st-nazaire-300x150.jpg
+
+----
+
+Sommaire: 
+
+- 
+  title: Coeur chaud sur sol froid
+  numero: "6"
+- 
+  title: Les éblouies
+  numero: "13"
+- 
+  title: Segré-sur-danse
+  numero: "23"
+- 
+  title: Splash
+  numero: "34"
+
+----
+
+Edito: 
+
+Et quia Mesopotamiae tractus omnes crebro inquietari sueti praetenturis et stationibus servabantur agrariis, laevorsum flexo itinere Osdroenae subsederat extimas partes, novum parumque aliquando temptatum commentum adgressus. quod si impetrasset, fulminis modo cuncta vastarat. erat autem quod cogitabat huius modi.
+
+Sed laeditur hic coetuum magnificus splendor levitate paucorum incondita, ubi nati sunt non reputantium, sed tamquam indulta licentia vitiis ad errores lapsorum ac lasciviam. ut enim Simonides lyricus docet, beate perfecta ratione vieturo ante alia patriam esse convenit gloriosam.
+Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum.
+
+Beate perfecta ratione vieturo ante alia patriam esse convenit gloriosam.
+Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum.
+
+----
+
+Imagecredit: gui-dico-22.png
+
+----
+
+Colophon: 
+
+----
+
+Logosfin: logo-st-nazaire-300x150.jpg
+
+----
+
+Imagefin: 

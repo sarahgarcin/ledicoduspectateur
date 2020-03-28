@@ -8,9 +8,9 @@ Text: Quelque chose va arriver. L’élément phare du spectacle. Le spectateur-
 
 Sources: 
 
-###### **Laboratoire** : [théâtre ONYX](labos/theatre-onyx)
+###### **Expérience** : (link: labos/theatre-onyx-1 text: théâtre ONYX — 1)
 
-###### **Collecte** : Coaching du spectateur, 19 décembre 2017 
+###### **Collecte** : Coaching du spectateur autour de Via Kanana / G. Maqoma - Via Katlehong, 19 décembre 2017 
 
 ###### **Géocalisation** : [ONYX-La Carrière, Saint-Herblain (France)](https://goo.gl/maps/hL4N6GNwCwK2)
 

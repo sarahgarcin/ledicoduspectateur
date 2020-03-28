@@ -1,22 +1,21 @@
-Title: Temps-partiel
+Title: A-temps-partiel
 
 ----
 
 Text: 
 
-Le spectacle, ce n’est qu’un moment dans une journée. Tout, même le plus insignifiant élément de la vie quotidienne, peut impacter le regard : circulation routière, clin d’œil coquin, bug informatique, nuit agitée, température de l’eau dans sa piscine préférée, digestion mal maîtrisée, alignement des astres peu favorable, SMS de sa belle-mère.
+Le spectacle, ce n’est qu’un moment dans une journée. Tout, même le plus insignifiant élément de la vie quotidienne, peut impacter le regard : circulation routière, clin d’oeil coquin, bug informatique, nuit agitée, température de l’eau dans sa piscine préférée, digestion mal maîtrisée, alignement des astres peu favorable, SMS de sa belle-mère.
 
-***
-
->###### « (...) J'ai dormi vingt minutes, ce n'est pas à cause du spectacle : j'ai fait la fête hier soir. Mais j'ai bien aimé la fin (...). » 
+>***
+>###### « (...) J’ai dormi vingt minutes, ce n’est pas à cause du spectacle : j’ai fait la fête hier soir. Mais j’ai bien aimé la fin (...). » 
 >######  UN SPECTATEUR ANONYME DU XXIe SIÈCLE - COLLECTE D'IMPRESSIONS AUTOUR DE *ASSIS*
 
 ----
 
 Sources: 
 
-###### **Laboratoire** : théâtre ONYX 
-###### **Collecte** : menée lors d’une journée « Critique du spectateur » autour de ASSIS (Cédric Cherdel, association UNCANNY), 27 janvier 2017.  Dans le cadre du projet « DANSÉCRITURE ». 
+###### **Expérience** : (link: labos/theatre-onyx-1 text: théâtre ONYX — 1)
+###### **Collecte** : menée lors d’une journée « Critique du spectateur » autour de ASSIS (Cédric Cherdel, association UNCANNY), 27 janvier 2017.  Dans le cadre du projet [Assis | DANSÉCRITURE](http://www.ledicoduspectateur.net/labos/assis-dansecriture). 
 
 ###### **Géocalisation** : [ONYX-La Carrière, Saint-Herblain (France)](https://goo.gl/maps/hL4N6GNwCwK2)
 

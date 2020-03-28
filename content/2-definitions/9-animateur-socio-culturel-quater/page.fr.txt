@@ -8,7 +8,7 @@ Text: // *aller plus loin ?* // Expose les pépites (tout dépend du grammage)�
 
 Sources: 
 
-###### **Laboratoire** : [Val d'Oise 3](labos/val-d-oise-3)
+###### **Expérience** : [Val d'Oise 3](labos/val-d-oise-3)
  ###### **Collecte** : animateurs socio-culturels du Val d'Oise, 2017
 ###### **Géolocalisation** : [Espace Sarah Bernhardt, Goussainville, Val d'Oise (France)](https://www.google.fr/maps/place/Espace+Sarah+Bernhardt/@49.0322336,2.4699755,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6400a631e9935:0x87276e4233b416f5!8m2!3d49.0322301!4d2.4721695?dcr=0)
 

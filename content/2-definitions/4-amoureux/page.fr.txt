@@ -8,7 +8,7 @@ Text: A toujours adoré cette compagnie de spectacle vivant, ses complices danse
 
 Sources: 
 
-###### **Laboratoire** : [Lycée expérimental de Saint-Nazaire](labos/Lycee-xp-Saint-Nazaire)
+###### **Expérience** : [Lycée expérimental de Saint-Nazaire](labos/Lycee-xp-Saint-Nazaire)
 
 ###### **Collecte** : dits et écrits des spectateurs-expérimentaux du Lycée xp de Saint-Nazaire
  
