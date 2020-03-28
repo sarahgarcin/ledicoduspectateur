@@ -12,7 +12,6 @@
 
   <?php if ( c::get('environment') == 'local' ) : ?>
 
-  <?php echo css('assets/css/bookjs.css') ?>
   <?php echo css('assets/css/main.css') ?>
 
   <?php else: ?>
