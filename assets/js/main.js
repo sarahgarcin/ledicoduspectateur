@@ -28,23 +28,24 @@ function init() {
         }
       }).then(response => {
         if (!response.ok) throw new Error(response.status);
-        return response.json()
+        return response.json();
       }).then(data => {
         // console.log('les médias:', data[nomPubli].medias);
         // console.log('les data:', data)
         var medias = data[nomPubli].medias;
-        for(page in data[nomPubli].pages){
+        for(var page in data[nomPubli].pages){
           $('.publi-content').append('<div id="'+data[nomPubli].pages[page].id+'"></div>');
         }
-        for (media in medias) {
+        for (var media in medias) {
           console.log(medias[media]);
           var mediaName = medias[media].slugMediaName;
           var folderName = medias[media].slugProjectName;
+          var mediaType;
           if(medias[media]._source_media_meta != undefined){
-            var mediaType= medias[media]._source_media_meta.type;
+            mediaType= medias[media]._source_media_meta.type;
           }
           else{
-            var mediaType  = undefined; 
+            mediaType  = undefined;
           }
           
           var page_id = medias[media].page_id;
@@ -62,7 +63,7 @@ function init() {
           }
           else if(mediaType == 'video'){
             var mediaVideoPoster = 'https://dansecriture.eu/'+ medias[media]._source_media_meta.thumbs[0].thumbsData[2].path;
-            var mediaVideoSrc = 'https://dansecriture.eu/'+folderName+ '/'+ medias[media]._source_media_meta.media_filename
+            var mediaVideoSrc = 'https://dansecriture.eu/'+folderName+ '/'+ medias[media]._source_media_meta.media_filename;
             $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)"><video poster="'+mediaVideoPoster+'" src="'+mediaVideoSrc+'" preload="none" controls></video></div>');
 
           }
@@ -86,7 +87,7 @@ function init() {
         }else{
         $("nav.menu").removeClass('transparent');
         }
-      })
+      });
 
       //home
       $('.citation-wrapper').draggable();
@@ -196,7 +197,7 @@ function init() {
     }
     else{
       $('.more-text').show();
-      $(this).find('span').html('⌃')
+      $(this).find('span').html('⌃');
       $(this).addClass('active');
     }
   });
@@ -295,7 +296,7 @@ jQuery.fn.center = function () {
   this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 5) + 
                                               $(window).scrollLeft()) + "px");
   return this;
-}
+};
 
 function mobileFunctions(){
   $('#menu-icon').on('click', function(){

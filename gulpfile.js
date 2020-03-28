@@ -58,8 +58,12 @@ var sass         = require('gulp-sass');
 var nano         = require('gulp-cssnano');
 var plumber      = require('gulp-plumber');
 var rename       = require('gulp-rename');
+var uglifyjs     = require('uglify-es');
 var uglify       = require('gulp-uglify');
 
+var composer     = require('gulp-uglify/composer');
+var pump         = require('pump');
+var minify       = composer(uglifyjs, console);
 
 
 // Compile our SCSS
@@ -97,7 +101,7 @@ gulp.task('css', ['scss'], function (done) {
 // Lint Task
 gulp.task('lint', function() {
   return gulp.src( userScripts)
-    .pipe(jshint())
+    .pipe(jshint({"esversion": 6}))
     .pipe(jshint.reporter('default'));
 });
 
@@ -119,7 +123,7 @@ gulp.task('scripts', ['script-plugins'], function (done) {
     .pipe(concat('all.js'))
     .pipe(gulp.dest('assets/production'))
     .pipe(rename('all.min.js'))
-    .pipe(uglify())
+    .pipe(minify())
     .pipe(gulp.dest('assets/production'));
 });
 
