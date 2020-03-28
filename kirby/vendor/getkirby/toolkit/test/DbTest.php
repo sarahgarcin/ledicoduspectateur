@@ -6,8 +6,8 @@ class DbTest extends PHPUnit_Framework_TestCase {
 
   public static $database = null;
 
-  public function setUp() {
-    
+  public function setUp(): void {
+
     self::$database = ':memory:';
 
     db::connect(array(
@@ -33,7 +33,7 @@ class DbTest extends PHPUnit_Framework_TestCase {
     db::insert('users', array(
       'username' => 'john',
       'fname'    => 'John',
-      'lname'    => 'Lennon', 
+      'lname'    => 'Lennon',
       'email'    => 'john@test.com',
       'password' => 'beatles'
     ));
@@ -41,7 +41,7 @@ class DbTest extends PHPUnit_Framework_TestCase {
     db::insert('users', array(
       'username' => 'paul',
       'fname'    => 'Paul',
-      'lname'    => 'McCartney', 
+      'lname'    => 'McCartney',
       'email'    => 'paul@test.com',
       'password' => 'beatles'
     ));
@@ -49,30 +49,30 @@ class DbTest extends PHPUnit_Framework_TestCase {
     db::insert('users', array(
       'username' => 'george',
       'fname'    => 'George',
-      'lname'    => 'Harrison', 
+      'lname'    => 'Harrison',
       'email'    => 'george@test.com',
       'password' => 'beatles'
     ));
 
   }
 
-  public static function tearDownAfterClass() {  
+  public static function tearDownAfterClass(): void {
     // kill the database
-    f::remove(self::$database);    
+    f::remove(self::$database);
   }
 
   public function testConnect() {
     $this->assertInstanceOf('Database', db::connect());
-  } 
+  }
 
   public function testConnection() {
     $this->assertInstanceOf('Database', db::connection());
-  } 
+  }
 
   public function testType() {
-    
+
     db::connect(array(
-      'database' => self::$database, 
+      'database' => self::$database,
       'type'     => 'sqlite'
     ));
 
@@ -84,7 +84,7 @@ class DbTest extends PHPUnit_Framework_TestCase {
 
     db::connect(array(
       'database' => self::$database,
-      'type'     => 'sqlite', 
+      'type'     => 'sqlite',
       'prefix'   => 'myprefix_'
     ));
 
@@ -97,23 +97,19 @@ class DbTest extends PHPUnit_Framework_TestCase {
 
   }
 
-  public function testEscape() {
-
-  }
-
   public function testLastId() {
 
     $id = db::insert('users', array(
-      'username' => 'ringo', 
+      'username' => 'ringo',
       'fname'    => 'Ringo',
-      'lname'    => 'Starr', 
+      'lname'    => 'Starr',
       'email'    => 'ringo@test.com',
       'password' => 'beatles'
     ));
 
     $this->assertEquals(4, $id);
     $this->assertEquals($id, db::lastId());
-      
+
   }
 
   public function testLastResult() {
@@ -134,16 +130,12 @@ class DbTest extends PHPUnit_Framework_TestCase {
 
   }
 
-  public function testExecute() {
-    
-  }
-
   public function testTable() {
     $this->assertInstanceOf('Database\\Query', db::table('users'));
   }
 
   public function testSelect() {
-  
+
     $result = db::select('users');
 
     $this->assertEquals(3, $result->count());
@@ -162,10 +154,6 @@ class DbTest extends PHPUnit_Framework_TestCase {
   public function testColumn() {
     $result = db::column('users', 'username');
     $this->assertEquals(array('john', 'paul', 'george'), $result->toArray());
-  }
-
-  public function testInsert() {
-    // already tested a couple times in the methods before
   }
 
   public function testUpdate() {
