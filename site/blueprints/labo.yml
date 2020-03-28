@@ -22,13 +22,19 @@ fields:
 		options: 
 			encours: En cours
 			termine: Terminé
+	livret: 
+		label: Pdfs à télécharger
+		type: selector
+		mode: single
+		types: 
+			- document
 	cover: 
     label: Image à afficher en photo de couverture
     type: selector
     mode: single
 	text:
 		label: Texte
-		type: markdown			
+		type: markdown		
 	linkeddefinition:
 		label: Définitions Liées
 		type: multiselect
@@ -39,6 +45,13 @@ fields:
 			page: /
 			fetch: pages
 			template: page
+	displayQuotes: 
+		label: Afficher les citations dans les définitions ? 
+		type: radio
+		options: 
+			oui: oui
+			non: non
+		default: oui 
 	credits:
 		label: Crédits
 		type: markdown

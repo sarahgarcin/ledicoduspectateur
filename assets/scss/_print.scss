@@ -166,6 +166,16 @@ body[data-template="print"]{
  		width: 10cm;
 		display:inline-block;
 		vertical-align: top;
+		 &[data-quotes="non"]{
+	    hr{
+	      display:none;
+	    }
+	    .definition-text{
+	      blockquote{
+	        display:none;
+	      }
+	    }
+	  }
  		.inner-definition{
 
  			h2{
@@ -185,11 +195,11 @@ body[data-template="print"]{
  	.inner-definition{
  		border: 4px solid $vert;
  		color: $vert;
-	 	padding: 55px 35px;
 	 	font-size: 100px;
 	 	height: 150px;
 	 	width: 140px;
-	 	line-height: 0;
+	 	line-height: 1.4;
+	 	text-align:center;
  	}
  }
  .credits{
@@ -208,9 +218,9 @@ body[data-template="print"]{
  		position:relative;
 	 	.image-wrapper{
 	 		position:relative;
-	 		left:8cm; 
-	 		top: 15cm;
-	 		width: 7cm;
+	 		right:0cm; 
+	 		top: 13cm;
+	 		width: 100%;
 	 		img{
 	 			width:100%;
 	 		}

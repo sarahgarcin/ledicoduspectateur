@@ -10,12 +10,11 @@
           </div>
           <div class="submenu-text-wrapper">
             <?php if($subpage->years()->isNotEmpty()):?>
-              <span class="dates-sousmenu">
+              <h3 class="dates-sousmenu">
                 <?php echo html($subpage->years()) ?>
-              </span>
-              <br>
+              </h3>
             <?php endif; ?>
-            <?php echo html($subpage->title()) ?>
+            <h2><?php echo html($subpage->title()) ?></h2>
           </div>
         </a>
       </li>
@@ -24,12 +23,11 @@
         <a href="<?php echo $subpage->url() ?>">
           <div class="submenu-text-wrapper">
             <?php if($subpage->years()->isNotEmpty()):?>
-              <span class="dates-sousmenu">
+              <h3 class="dates-sousmenu">
                 <?php echo html($subpage->years()) ?>
-              </span>
-              <br>
+              </h3>
             <?php endif; ?>
-            <?php echo html($subpage->title()) ?>
+            <h2><?php echo html($subpage->title()) ?></h2>
           </div>
           
         </a>

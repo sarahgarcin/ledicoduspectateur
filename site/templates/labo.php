@@ -18,6 +18,11 @@
         <li>
           <a href="#credits" title="Crédits">Contexte & Crédits</a>
         </li>
+        <?php if($page->livret()->isNotEmpty()):?>
+          <li>
+            <a href="<?php echo $page->livret()->toFile()->url()?>" title="PDF à télécharger" target="_blank">Télécharger le PDF</a>
+          </li>
+        <?php endif; ?>
       </ul>
     </div>
     <div class="small-12 medium-8 medium-push-2 columns end">
@@ -38,7 +43,7 @@
           <?php snippet('subpage_menu') ?>
         <?php endif ?>
       </div>
-      <div class="loadPage wrapper small-10 medium-10 large-8"></div>
+
       <?php if($page->linkeddefinition()->isNotEmpty()):?>
         <div class="def-labo" id="mini-dico">
           <h1>Le mini-dico du spectateur: <?php echo $page->title()->html() ?></h1>
@@ -58,6 +63,12 @@
                   
                 </li>
               <?php endif ?>
+              <!-- afficher les citations ou non sur les définitions -->
+              <?php $displayDef = "oui"; ?>
+              <?php if($page->displayQuotes() == "non"):
+                $displayDef = "non";
+              endif; ?>
+              <!-- fin affichage de citations -->
               <li class="definition definition-item small-12 medium-4 large-4 columns end" data-target="<?php echo $def->url()?>" data-inoff="<?php echo $def->inoff()?>">
                 <div class="inner-definition">
                   <h2><?php echo $def->title()->html()?></h2>
@@ -70,7 +81,7 @@
               </li>       
             <?php endforeach ?>
           </ul>
-          <div class="loadPage wrapper small-10 medium-10 large-8"></div> 
+          <div class="loadPage wrapper small-10 medium-10 large-8" data-quotes="<?php echo $displayDef?>"></div> 
         </div>
       <?php endif; ?>
       <?php if($page->credits()->isNotEmpty()):?>

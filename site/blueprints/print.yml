@@ -36,6 +36,13 @@ fields:
   edito: 
   	label: Édito
   	type: markdown
+  displayQuotes: 
+    label: Afficher les citations dans les définitions ? 
+    type: radio
+    options: 
+      oui: oui
+      non: non
+    default: oui 
  	imagecredit: 
   	label: Image avant crédits
   	type: selector
@@ -50,6 +57,10 @@ fields:
   	label: Logos fin
   	type: selector
   	mode: single
+  ajouterDesPages: 
+    label: Ajouter des pages à la fin pour multiple de 4
+    type: number
+    help: Écrire le nombre de page à ajouter
   ImageFin: 
   	label: image de fin
   	type: selector

@@ -88,8 +88,9 @@ ul {
     margin: 0;
 }
 
-span.dates-sousmenu{
+.dates-sousmenu{
   font-size: 12px;
+  padding-left: 0
 }
 
 /* HEADER ET NAV - snippet menu.php*/ 
@@ -129,7 +130,7 @@ nav.menu{
         li {
           text-align: left;
           margin-bottom: 0.3em;
-          span.dates-sousmenu{
+          .dates-sousmenu{
             font-size: 12px;
           }
           a {
@@ -218,6 +219,16 @@ main{
   border: $box-border;
   overflow:scroll;
   @include boxShadow($rouge);
+  &[data-quotes="non"]{
+    hr{
+      display:none;
+    }
+    .definition-wrapper{
+      blockquote{
+        display:none;
+      }
+    }
+  }
   h1{
     font-size: 2em;
     font-weight:bold;
@@ -267,18 +278,22 @@ body[data-intended-template="labos"]{
       border:3px solid $vert;
       background: $vert;
       padding: 0.5em;
-    }
-    &:hover{
-      @include boxShadow($rouge);
-    }
-    &:hover .submenu-text-wrapper{
-      background:#FFF;
+      h2{
+        margin-top: 5px;
+        margin-bottom:0;
+        font-size:1.3rem;
+      }
     }
     a {
       line-height:1;
       text-decoration:none;
+      display:block;
       &:hover{
         color: $text-color;
+        @include boxShadow($rouge);
+      }
+      &:hover .submenu-text-wrapper{
+        background:#FFF;
       }
     }
   }
@@ -443,9 +458,10 @@ body[data-template="definitions"], body[data-template="labo"] {
           .inner-definition{
             font-size: 7rem;
             text-align: center;
-            line-height: 1.2;
+            line-height: 1.4;
             cursor:default;
             color: $vert;
+            font-weight:normal;
           }
         }
       }
@@ -516,7 +532,7 @@ body[data-template="textelong"]{
   min-height:auto;
   & > div {
     width: 100%;
-    height: calc(297mm/1.2);
+    height: calc(297mm);
     min-height: auto;
     position:relative;
   }
