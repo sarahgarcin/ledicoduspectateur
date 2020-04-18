@@ -1,0 +1,14 @@
+title: Valorisations
+options:
+  preview: false
+  status: false
+  template: false
+  url: false
+  delete: false
+pages: valorisation
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  title

@@ -37,8 +37,8 @@ a {
 }
 
 hr {
-    background-color: $text-color; 
-    height: 1px; 
+    background-color: $text-color;
+    height: 1px;
     border: 0;
 }
 
@@ -93,12 +93,12 @@ ul {
   padding-left: 0
 }
 
-/* HEADER ET NAV - snippet menu.php*/ 
+/* HEADER ET NAV - snippet menu.php*/
 nav.menu{
-  position: fixed; 
+  position: fixed;
   z-index: 1000;
   top: 0;
-  padding: 1em; 
+  padding: 1em;
   transition: all 0.5s;
   > ul.menu-first{
     display: flex;
@@ -126,7 +126,7 @@ nav.menu{
         border-bottom: $box-border;
         border-left: $box-border;
         border-right: $box-border;
-        
+
         li {
           text-align: left;
           margin-bottom: 0.3em;
@@ -153,8 +153,8 @@ nav.menu{
 }
 
 header{
-  position:fixed; 
-  z-index: 1; 
+  position:fixed;
+  z-index: 1;
   bottom: 1.5em;
   left:1.5em;
 }
@@ -163,7 +163,7 @@ header{
 
 // Style qu'on retrouve sur plusieurs pages
 .close-button{
-    font-family:helvetica, sans-serif; 
+    font-family:helvetica, sans-serif;
     color: $rouge;
     font-size: 1.3em;
     position:absolute;
@@ -186,7 +186,7 @@ main{
   height: 70px;
   position: absolute;
   left:3px;
-  right:3px; 
+  right:3px;
   bottom: 3px;
   cursor: pointer;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,00ff9a+100 */
@@ -200,7 +200,7 @@ main{
     font-size: 2.5em;
     font-family: helvetica, sans-serif;
     text-align: center;
-    display:block; 
+    display:block;
     padding-top:10px;
     text-shadow: 0px 0px 10px #FFF;
   }
@@ -215,7 +215,7 @@ main{
   display:none;
   z-index: 999;
   background: #FFF;
-  padding: 1em 2em; 
+  padding: 1em 2em;
   border: $box-border;
   overflow:scroll;
   @include boxShadow($rouge);
@@ -238,42 +238,12 @@ main{
   }
 }
 
-// affichage des sous-pages
-// #subpage {
-//   display: flex;
-//   flex-flow: row wrap;
-//   li {
-//     margin: .3em .5em;
-//     border:3px solid $vert;
-//     background: $vert;
-//     padding: 0.5em;
-//     &:hover{
-//       @include boxShadow($rouge);
-//       background:#FFF;
-//     }
-//     a {
-//       line-height:1;
-//       text-decoration:none;
-//       &:hover{
-//         color: $text-color;
-//       }
-//     }
-//   }
-// }
-body[data-intended-template="labos"]{
-  #subpage{
-    li{
-      margin: 0.5em 0.5em;
-      width: calc(33% - 1em);
-    }
-  }
-}
 #subpage {
   display: flex;
   flex-wrap: wrap;
   li {
     margin: 1em 1em;
-    width: calc(50% - 2em);
+    width: calc(100% - 2em);
     .submenu-text-wrapper{
       border:3px solid $vert;
       background: $vert;
@@ -296,6 +266,18 @@ body[data-intended-template="labos"]{
         background:#FFF;
       }
     }
+    .cover-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media #{$medium-up} {
+    li { width: calc(50% - 2em); }
+  }
+  @media #{$large-up} {
+    li { width: calc(33% - 2em); }
   }
 }
 
@@ -329,7 +311,7 @@ nav.breadcrumb {
     flex-wrap: wrap;
     padding: 0 10px 3px 10px;
   }
-  li { 
+  li {
     margin-left: 3px;
     a {
       @include tinyText;
@@ -350,7 +332,7 @@ body[data-template="home"]{
     border: $box-border;
     background: #FFF;
     @include boxShadow($rouge);
-    position: absolute; 
+    position: absolute;
     top:0;
     left:0;
     padding: 1em;
@@ -366,7 +348,7 @@ body[data-template="home"]{
 
 
 /* PAGE DEFINITIONS -- definition.php*/
-body[data-template="definitions"], body[data-template="labo"] {
+body[data-template="definitions"], body[data-template="labo"], body[data-template="valorization"]{
   main{
     &.in{
       .letter{
@@ -440,7 +422,7 @@ body[data-template="definitions"], body[data-template="labo"] {
         margin-bottom: 1.8em;
         .inner-definition{
           background: #FFF;
-          border: $box-border; 
+          border: $box-border;
           cursor: pointer;
           height: 200px;
           overflow:hidden;
@@ -462,6 +444,10 @@ body[data-template="definitions"], body[data-template="labo"] {
             cursor:default;
             color: $vert;
             font-weight:normal;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
       }
@@ -571,5 +557,3 @@ body[data-template="textelong"]{
 
 @import "_print.scss";
 @import "_responsive.scss";
-
-

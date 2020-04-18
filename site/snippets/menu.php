@@ -1,14 +1,14 @@
 <nav class="menu small-12 medium-12">
   <a href="#" id="menu-icon" class="show-for-small-only">Menu</a>
   <ul class="menu-first">
-    <?php foreach($pages->visible() as $menu): ?>
+    <?php foreach($site->menu() as $menuItem): ?>
     <li>
-      <a <?php e($menu->isOpen(), ' class="active"') ?> href="<?php echo $menu->url() ?>" title="<?php echo $menu->title() ?>">
-        <?php echo $menu->title()->html() ?>
+      <a <?php e($menuItem->isOpen(), ' class="active"') ?> href="<?php echo $menuItem->url() ?>" title="<?php echo $menuItem->title() ?>">
+        <?php echo $menuItem->title()->html() ?>
       </a>
-      <?php if($menu->uid() != 'definitions' &&  $menu->hasChildren() && $menu->uid() != 'labos' &&  $menu->hasChildren()):?>
+      <?php if($menuItem->uid() != 'definitions' &&  $menuItem->hasChildren() && $menuItem->uid() != 'labos' &&  $menuItem->hasChildren()):?>
         <ul class="submenu" >
-          <?php foreach($menu->children()->visible() as $subpage): ?>
+          <?php foreach($menuItem->children()->visible() as $subpage): ?>
           <li>
             <a href="<?php echo $subpage->url() ?>" title="<?php echo $subpage->title() ?>">
               <?php echo $subpage->title()->html() ?>
@@ -23,5 +23,4 @@
     </li>
     <?php endforeach ?>
   </ul>
-</nav>	
-
+</nav>
