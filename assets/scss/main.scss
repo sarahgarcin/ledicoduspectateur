@@ -238,43 +238,12 @@ main{
   }
 }
 
-// affichage des sous-pages
-// #subpage {
-//   display: flex;
-//   flex-flow: row wrap;
-//   li {
-//     margin: .3em .5em;
-//     border:3px solid $vert;
-//     background: $vert;
-//     padding: 0.5em;
-//     &:hover{
-//       @include boxShadow($rouge);
-//       background:#FFF;
-//     }
-//     a {
-//       line-height:1;
-//       text-decoration:none;
-//       &:hover{
-//         color: $text-color;
-//       }
-//     }
-//   }
-// }
-body[data-intended-template="labos"],
-body[data-intended-template="valorization"]{
-  #subpage{
-    li{
-      margin: 0.5em 0.5em;
-      width: calc(33% - 1em);
-    }
-  }
-}
 #subpage {
   display: flex;
   flex-wrap: wrap;
   li {
     margin: 1em 1em;
-    width: calc(50% - 2em);
+    width: calc(100% - 2em);
     .submenu-text-wrapper{
       border:3px solid $vert;
       background: $vert;
@@ -297,6 +266,18 @@ body[data-intended-template="valorization"]{
         background:#FFF;
       }
     }
+    .cover-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media #{$medium-up} {
+    li { width: calc(50% - 2em); }
+  }
+  @media #{$large-up} {
+    li { width: calc(33% - 2em); }
   }
 }
 
@@ -367,7 +348,7 @@ body[data-template="home"]{
 
 
 /* PAGE DEFINITIONS -- definition.php*/
-body[data-template="definitions"], body[data-template="labo"] {
+body[data-template="definitions"], body[data-template="labo"], body[data-template="valorization"]{
   main{
     &.in{
       .letter{
@@ -463,6 +444,10 @@ body[data-template="definitions"], body[data-template="labo"] {
             cursor:default;
             color: $vert;
             font-weight:normal;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
       }
