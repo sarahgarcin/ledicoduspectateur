@@ -29,8 +29,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-c::set('environment', 'local');
-c::set('debug', true);
+c::set('environment', 'production');
 
 c::set('languages', array(
   // array(
@@ -82,4 +81,3 @@ function resizeImage($file) {
       return response::error($e->getMessage());
   }
 }
-
