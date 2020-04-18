@@ -1,3 +1,5 @@
+<?php if($site->isValorization()) return; ?>
+
 <nav class="breadcrumb">
   <ul>
     <?php foreach($site->breadcrumb() AS $crumb): ?>

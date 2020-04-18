@@ -1,3 +1,5 @@
+<?php if($site->isValorization()) return; ?>
+
 <nav class="menu small-12 medium-12">
   <a href="#" id="menu-icon" class="show-for-small-only">Menu</a>
   <ul class="menu-first">

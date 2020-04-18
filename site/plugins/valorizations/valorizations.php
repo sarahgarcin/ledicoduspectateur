@@ -3,14 +3,16 @@
 // Page methods
 page::$methods['rewriteUrlforValorization'] = function($page, $uri = '/') {
   $url = url::home();
-  if( $page->site()->isValorization() ) $url .= '/' . c::get('valorizations.uri', 'valorisations');
+  if( $page->site()->isValorization() ) $url .= '/' . str::split($_SERVER['REQUEST_URI'], '/')[0];
   if( !$page->isHomepage() ) $url .= '/' . $uri;
+  $page->site()->isValorization();
   return $url;
 };
 
 // Site methods
 site::$methods['isValorization'] = function($site) {
-  return strpos($_SERVER['REQUEST_URI'], '/' . c::get('valorizations.uri', 'valorisations')) === 0 ;
+  $pageValorization = page(c::get('valorizations.uri', 'valorisations') . '/'. str::split($_SERVER['REQUEST_URI'], '/')[0]);
+  return $pageValorization ? true : false;
 };
 
 // Routes
@@ -25,11 +27,14 @@ kirby()->routes([
   ),
 
   array(
-    'pattern' => c::get('valorizations.uri', 'valorisations') . '/(:all)',
-    'action'  => function($all) {
+    'pattern' => '(:any)/(:all)',
+    'action'  => function($valorization, $all) {
       $page = page($all);
-      if(!$page) $page = page( c::get('valorizations.uri', 'valorisations') . '/' . $all);
+      if(!$page) $page = page( $valorization . '/' . $all);
       if(!$page) $page = page('error');
+
+      site()->visit($page);
+
       return $page;
     }
   )

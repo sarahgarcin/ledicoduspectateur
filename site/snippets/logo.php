@@ -1,3 +1,5 @@
+<?php if($site->isValorization()) return; ?>
+
 <header class="small-2 medium-1">
 	<?php $logo = $site->logo()->toFile();?>
   <?php if($logo): ?>
