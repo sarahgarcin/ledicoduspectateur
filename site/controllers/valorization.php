@@ -9,7 +9,7 @@ return function($site, $pages, $page) {
   $linkeddefinitions = [];
   foreach ($articles as $article) {
     if($p = $article->relatedpage()->toPage()) {
-      if( $p->linkeddefinition()->isNotEmpty() ) $linkeddefinitions = a::merge($linkeddefinitions, $p->linkeddefinition()->split(','));
+      if( $p->linkeddefinition()->isNotEmpty() ) $linkeddefinitions = array_merge($linkeddefinitions, $p->linkeddefinition()->split(','));
     }
   }
 
