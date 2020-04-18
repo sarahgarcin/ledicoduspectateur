@@ -1,0 +1,19 @@
+Title: Expérimentations au théâtre Onyx
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit ex, consectetur sed odio sed, imperdiet tempor eros. Ut eget cursus metus. Nunc posuere volutpat quam, nec egestas quam mollis vitae. Phasellus tempor justo non odio posuere, non viverra lorem auctor. Nullam semper metus vel scelerisque mattis. Vestibulum varius, ligula eget mattis pulvinar, arcu nisi accumsan purus, ac faucibus elit lorem eget magna. Curabitur blandit arcu sit amet nunc euismod, eget luctus elit commodo. Curabitur fermentum egestas justo in pellentesque.
+
+----
+
+Relatedpages:
+
+-
+  relatedpage: labos/theatre-onyx-1
+  cover: placeholder-l1.png
+-
+  relatedpage: labos/theatre-onyx-2
+  cover: placeholder-l2.png
+-
+  relatedpage: labos/theatre-onyx-3
+  cover: placeholder-l3.png
