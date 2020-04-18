@@ -9164,7 +9164,8 @@ main {
     margin-top: 0;
     margin-bottom: 0.5em; }
 
-body[data-intended-template="labos"] #subpage li {
+body[data-intended-template="labos"] #subpage li,
+body[data-intended-template="valorization"] #subpage li {
   margin: 0.5em 0.5em;
   width: calc(33% - 1em); }
 
