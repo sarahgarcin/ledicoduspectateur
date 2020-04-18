@@ -260,7 +260,8 @@ main{
 //     }
 //   }
 // }
-body[data-intended-template="labos"]{
+body[data-intended-template="labos"],
+body[data-intended-template="valorization"]{
   #subpage{
     li{
       margin: 0.5em 0.5em;
