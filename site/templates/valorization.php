@@ -42,8 +42,8 @@
     </div>
 
     <?php if($linkeddefinitions):?>
-      <div class="def-labo" id="mini-dico">
-        <h1>Le mini-dico du spectateur: <?php echo $page->title()->html() ?></h1>
+      <div class="row def-labo" id="mini-dico">
+        <h1><?php echo $page->labelDico()->html() ?></h1>
         <ul class="row">
           <?php foreach($linkeddefinitions as $linkeddefinition): ?>
             <?php $def =  $pages->find('definitions')->children()->find($linkeddefinition);?>

@@ -23,3 +23,6 @@ fields:
       cover:
         label: Image de couverture
         type: image
+  labelDico:
+    label: Titre dictionnaire
+    type: text

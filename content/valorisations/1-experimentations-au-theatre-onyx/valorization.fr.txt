@@ -6,14 +6,18 @@ Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit ex, c
 
 ----
 
-Relatedpages:
+Relatedpages: 
 
--
+- 
   relatedpage: labos/theatre-onyx-1
   cover: placeholder-l1.png
--
+- 
   relatedpage: labos/theatre-onyx-2
   cover: placeholder-l2.png
--
+- 
   relatedpage: labos/theatre-onyx-3
   cover: placeholder-l3.png
+
+----
+
+Labeldico: Le Dico du : Théâtre ONYX
