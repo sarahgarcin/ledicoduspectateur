@@ -5,8 +5,15 @@ return function($site, $pages, $page) {
   // get all related pages
   $articles = $page->relatedPages()->toStructure();
 
+  // get all linked definitions
+  $linkeddefinitions = [];
+  foreach ($articles as $article) {
+    if($p = $article->relatedpage()->toPage()) {
+      if( $p->linkeddefinition()->isNotEmpty() ) $linkeddefinitions = a::merge($linkeddefinitions, $p->linkeddefinition()->split(','));
+    }
+  }
 
-  // pass $articles to the template
-  return compact('articles');
+  // pass $articles and $linkeddefinitions to the template
+  return compact('articles','linkeddefinitions');
 
 };

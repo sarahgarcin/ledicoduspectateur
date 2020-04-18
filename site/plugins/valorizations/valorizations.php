@@ -3,7 +3,7 @@
 // Page methods
 page::$methods['rewriteUrlforValorization'] = function($page, $uri = '/') {
   $url = url::home();
-  if( $page->site()->isValorization() ) $url .= '/' . str::split($_SERVER['REQUEST_URI'], '/')[0];
+  if( $page->site()->isValorization() ) $url .= '/' . $page->site()->getValorization()->uid();
   if( !$page->isHomepage() ) $url .= '/' . $uri;
   $page->site()->isValorization();
   return $url;
@@ -11,8 +11,21 @@ page::$methods['rewriteUrlforValorization'] = function($page, $uri = '/') {
 
 // Site methods
 site::$methods['isValorization'] = function($site) {
-  $pageValorization = page(c::get('valorizations.uri', 'valorisations') . '/'. str::split($_SERVER['REQUEST_URI'], '/')[0]);
-  return $pageValorization ? true : false;
+  return $site->getValorization() ? true : false;
+};
+
+site::$methods['getValorization'] = function($site) {
+  $url = str::split($_SERVER['REQUEST_URI'], '/');
+  $page = false;
+  if($url[0]) $page = page(c::get('valorizations.uri', 'valorisations') . '/'. $url[0]);
+  if(!$page && $url[1]) $page = page(c::get('valorizations.uri', 'valorisations') . '/'. $url[1]);
+  return $page;
+};
+
+site::$methods['menu'] = function($site) {
+  $collection = $site->pages();
+  if($site->isValorization()) $collection = pages(['about','definitions',$site->getValorization()]);
+  return $collection->visible();
 };
 
 // Routes
