@@ -5,7 +5,7 @@ options:
   template: false
   url: false
   delete: false
-pages: valorisation
+pages: valorization
 files: false
 
 fields:
