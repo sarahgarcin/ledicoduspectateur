@@ -46,18 +46,13 @@
         <h1><?php echo $page->labelDico()->html() ?></h1>
         <ul class="row">
           <?php foreach($linkeddefinitions as $linkeddefinition): ?>
-            <?php $def =  $pages->find('definitions')->children()->find($linkeddefinition);?>
-            <?php $first_let = mb_substr($def->title(),0,1, "utf-8");
-            if($first_let == "À") $first_let = "A";
-            if($first_let == "É") $first_let = "E";
-            if($first_let == "È") $first_let = "E";
-            if ($cur_let !== $first_let):
-              $cur_let = $first_let;?>
+            <?php $def = $pages->find('definitions/'.$linkeddefinition); ?>
+            <?php $first_let = $def->title()->slug()->upper()->toString()[0]; ?>
+            <?php if ($cur_let !== $first_let): $cur_let = $first_let; ?>
               <li id="<?php echo $cur_let?>" class="letter definition small-12 medium-4 large-4 xlarge-3 columns end">
                 <div class="inner-definition">
                   <?php echo $cur_let?>
                 </div>
-
               </li>
             <?php endif ?>
             <!-- afficher les citations ou non sur les définitions -->
