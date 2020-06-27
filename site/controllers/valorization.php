@@ -13,6 +13,12 @@ return function($site, $pages, $page) {
     }
   }
 
+  usort($linkeddefinitions, function($a, $b) use ($pages) {
+    $pa = $pages->find('definitions/'.$a);
+    $pb = $pages->find('definitions/'.$b);
+    return strcmp($pa->title()->slug()->upper()->toString()[0], $pb->title()->slug()->upper()->toString()[0]);
+  });
+
   // pass $articles and $linkeddefinitions to the template
   return compact('articles','linkeddefinitions');
 
