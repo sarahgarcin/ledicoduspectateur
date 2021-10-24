@@ -44,10 +44,11 @@
         <h2>Édito</h2>
       <?php endif; ?>
       <?php echo $page->edito()->kirbytext();?>
-      <div class="logo-wrapper">
-          <?php $logoDebut = $page->logosDebut()->toFile();?>
+      <?php if($logoDebut = $page->logosDebut()->toFile()):?>
+        <div class="logo-wrapper">
           <img src="<?php echo $logoDebut->url() ?>" alt="<?php echo $logoDebut->title()?>">
-      </div>
+        </div>
+      <?php endif;?>
     </div>
 
   <div class="texte">
