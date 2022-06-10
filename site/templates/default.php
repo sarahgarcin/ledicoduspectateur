@@ -12,7 +12,13 @@
         <?php snippet('subpage_menu') ?>
       <?php endif ?>
     </div>
-    <div class="loadPage wrapper small-10 medium-10 large-8"></div>
+    <!-- afficher les citations ou non sur les définitions -->
+    <?php $displayDef = "oui"; ?>
+    <?php if($page->displayQuotes() == "non"):
+      $displayDef = "non";
+    endif; ?>
+    <!-- fin affichage de citations -->
+    <div class="loadPage wrapper small-10 medium-10 large-8" data-quotes="<?php echo $displayDef?>"></div>
   </div>
 
 </main>

@@ -8914,7 +8914,8 @@ th.hide-for-touch {
 body {
   font-family: "amiri", georgia, serif;
   color: #0000D2;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "amiri", georgia, serif;
@@ -9288,11 +9289,17 @@ body[data-template="textelong"] .small-def {
     line-height: 1.2;
     margin-bottom: 0; }
 
+.publi-dodoc > div {
+  width: 210mm;
+  margin: auto;
+  left: 0; }
+
 .publi-content {
+  position: relative;
   min-height: auto; }
   .publi-content > div {
     width: 100%;
-    height: calc(297mm);
+    height: 297mm;
     min-height: auto;
     position: relative; }
   .publi-content h1, .publi-content p {
@@ -9303,14 +9310,19 @@ body[data-template="textelong"] .small-def {
     max-width: 100%;
     margin-left: -10mm;
     position: absolute;
-    min-width: 20mm;
-    min-height: 20mm;
+    overflow: hidden;
     -ms-transform-origin: top left;
     transform-origin: top left; }
+    .publi-content .publi-element p {
+      font-size: 1.2em; }
+      .publi-content .publi-element p span {
+        font-size: 1.4em !important; }
     .publi-content .publi-element video {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    .publi-content .publi-element audio {
+      width: 100%; }
     .publi-content .publi-element figure {
       margin: 0;
       overflow: hidden;

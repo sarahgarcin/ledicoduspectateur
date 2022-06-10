@@ -4,7 +4,7 @@
 
 
 
-<main data-publi="<?php echo $page->publi()?>" data-recharge="<?php if($page->recharge()->isNotEmpty()){echo $page->recharge();}?>">
+<main data-publi="<?php echo $page->publi()?>" data-recharge="<?php if($page->recharge()->isNotEmpty()){echo $page->recharge();}?>" <?php e($page->publi()->isNotEmpty(), "class='publi-dodoc'")?>>
   <div class="small-12 medium-8 medium-push-2 large-6 large-push-3">
     <?php snippet('breadcrumbs')?>
     <div class="text-wrapper">

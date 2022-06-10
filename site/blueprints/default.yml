@@ -18,3 +18,10 @@ fields:
   text:
     label: Texte
     type: markdown
+  displayQuotes: 
+    label: Afficher les citations dans les définitions ? 
+    type: radio
+    options: 
+      oui: oui
+      non: non
+    default: oui 

@@ -17224,7 +17224,7 @@ function init() {
     // api dodoc 
     // affiche les publications dans le site
     var rechargerLaPage = $('main').attr('data-recharge');
-    if(rechargerLaPage != undefined && rechargerLaPage != ''){
+    if(rechargerLaPage !== undefined && rechargerLaPage !== ''){
       console.log('test', rechargerLaPage);
       setInterval(function(){
         location.reload();
@@ -17233,51 +17233,96 @@ function init() {
     
     var nomPubli = $('main').attr('data-publi');
 
-    if(nomPubli != undefined){
-      fetch('https://dansecriture.eu/api/publications/'+nomPubli, {
+    if(nomPubli !== undefined){
+      fetch('https://dodoc.ledicoduspectateur.net/api/publications/'+nomPubli, {
       method: 'GET',
         headers: {
-          "session-password": btoa('doc2019')
+          "session-password": btoa('dico2021')
         }
       }).then(response => {
         if (!response.ok) throw new Error(response.status);
         return response.json();
       }).then(data => {
-        // console.log('les médias:', data[nomPubli].medias);
-        // console.log('les data:', data)
         var medias = data[nomPubli].medias;
         for(var page in data[nomPubli].pages){
+
           $('.publi-content').append('<div id="'+data[nomPubli].pages[page].id+'"></div>');
         }
         for (var media in medias) {
           console.log(medias[media]);
           var mediaName = medias[media].slugMediaName;
           var folderName = medias[media].slugProjectName;
-          var mediaType;
-          if(medias[media]._source_media_meta != undefined){
-            mediaType= medias[media]._source_media_meta.type;
+          var mediaType; 
+
+          if(medias[media]._source_media_meta !== undefined){
+            mediaType = medias[media]._source_media_meta.type;
+          }
+          else if(medias[media].type !== undefined){
+            mediaType = medias[media].type;
           }
           else{
-            mediaType  = undefined;
+            mediaType = 'none';
           }
-          
+
+          // console.log("mediaType = ", mediaType);
+
           var page_id = medias[media].page_id;
-          // console.log('dans la boucle: ', mediaName, folderName, medias[media]);
           if(mediaType == 'text'){
-            var mediaContent = medias[media]._source_media_meta.content;
-            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)">'+mediaContent+'</div>');
+            var mediaContent = medias[media].content;
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width+'mm; height:'+medias[media].height+'mm; transform:translate('+medias[media].x+'mm, '+medias[media].y+'mm)">'+mediaContent+'</div>');
+          }
+          else if(mediaType == "rectangle"){
+            var rect = medias[media];
+            var height = rect.height;
+            var width = rect.width;
+            var x = rect.x;
+            var y = rect.y;
+            var opacity = rect.opacity;
+            var color = rect.fill_color;
+            var strokeColor = rect.stroke_color;
+            var strokeW = rect.stroke_width;
+            var blend = rect.blend_mode;
+            $('#'+page_id).append('<div class="publi-element" style="width:'+width+'mm; height:'+height+'mm; transform:translate('+x+'mm, '+y+'mm); opacity:0.3; background:#0000D2; border: '+strokeW*2+'px solid '+strokeColor+'; mix-blend-mode:color;"></div>');
           }
           else if(mediaType == 'image'){
-            console.log('image:', mediaName, 'folder:', folderName);
-            var mediaImageName = medias[media]._source_media_meta.thumbs[2].path;
-            var mediaImageSrc = 'https://dansecriture.eu/'+mediaImageName;
-            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)"><figure><img src="'+mediaImageSrc+'"></figure></div>');
-
+            var image; 
+            if(medias[media]._source_media_meta !== undefined){
+              image = medias[media]._source_media_meta;
+            }
+            else{
+              image = medias[media];
+            }
+            
+            var mediaImageName = image.thumbs[2].path;
+            var mediaImageSrc = 'https://dodoc.ledicoduspectateur.net/'+mediaImageName;
+            // console.log('image', mediaImageSrc);
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width+'mm; height:'+medias[media].height+'mm; transform:translate('+medias[media].x+'mm, '+medias[media].y+'mm)"><figure><img src="'+mediaImageSrc+'"></figure></div>');
           }
-          else if(mediaType == 'video'){
-            var mediaVideoPoster = 'https://dansecriture.eu/'+ medias[media]._source_media_meta.thumbs[0].thumbsData[2].path;
-            var mediaVideoSrc = 'https://dansecriture.eu/'+folderName+ '/'+ medias[media]._source_media_meta.media_filename;
-            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width/1.2+'mm; height:'+medias[media].height/1.2+'mm; transform:translate('+medias[media].x/1.2+'mm, '+medias[media].y/1.2+'mm)"><video poster="'+mediaVideoPoster+'" src="'+mediaVideoSrc+'" preload="none" controls></video></div>');
+          else if(mediaType == "video"){
+            var video;
+            if(medias[media]._source_media_meta !== undefined){
+              video = medias[media]._source_media_meta;
+            }
+            else{
+              video = medias[media];
+            }
+
+            var mediaVideoPoster = 'https://dodoc.ledicoduspectateur.net/'+ video.thumbs[0].thumbsData[2].path;
+            var mediaVideoSrc = 'https://dodoc.ledicoduspectateur.net/'+medias[media].slugProjectName+ '/'+ video.media_filename;
+            // console.log('vidéo', mediaVideoSrc);
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width+'mm; height:'+medias[media].height+'mm; transform:translate('+medias[media].x+'mm, '+medias[media].y+'mm)"><video poster="'+mediaVideoPoster+'" src="'+mediaVideoSrc+'" preload="none" controls></video></div>');
+          }
+          else if(mediaType == 'audio'){
+            var audio;
+            if(medias[media]._source_media_meta !== undefined){
+              audio = medias[media]._source_media_meta;
+            }
+            else{
+              audio = medias[media];
+            }
+
+            var mediaAudioSrc = 'https://dodoc.ledicoduspectateur.net/'+folderName+ '/'+ audio.media_filename;
+            $('#'+page_id).append('<div class="publi-element" style="width:'+medias[media].width+'mm; height:'+medias[media].height+'mm; transform:translate('+medias[media].x+'mm, '+medias[media].y+'mm)"><audio src="'+mediaAudioSrc+'" controls></video></div>');
 
           }
         }

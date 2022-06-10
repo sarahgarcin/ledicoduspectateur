@@ -29,7 +29,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-c::set('environment', 'production');
+c::set('environment', 'local');
 
 c::set('languages', array(
   // array(
