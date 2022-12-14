@@ -1,0 +1,18 @@
+title: Définitions
+
+sections:
+  drafts:
+    label: Brouillons
+    type: pages
+    status: draft
+    templates: page
+  unlisted:
+    label: Définitions non publiées
+    type: pages
+    status: unlisted
+    # templates: page
+  published:
+    label: Définitions Publiées
+    type: pages
+    status: listed
+    templates: page

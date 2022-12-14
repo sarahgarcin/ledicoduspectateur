@@ -2,24 +2,24 @@ Title: Le dico du spectateur
 
 ----
 
-Author: 
+Logo: - file://bMNPNlGJFrKgPJcX
 
 ----
 
-Description: 
+Socialthumb: - file://bMNPNlGJFrKgPJcX
 
 ----
 
-Keywords: 
+Author: Joël Kerouanton, g-u-i
 
 ----
 
-Logo: dico.png
+Keywords: le dico du spectateur, dico, spectateur
 
 ----
 
-Ogimage: 
+Description: Quel effet ça fait d’être un spectateur ? A priori on n'en sait rien. Pas plus que de savoir quel effet ça fait d’être une chauve-souris.
 
 ----
 
-Socialnetworks: 
+Copyright: 

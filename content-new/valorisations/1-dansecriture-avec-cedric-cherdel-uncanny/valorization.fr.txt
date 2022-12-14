@@ -1,0 +1,24 @@
+Title: Dansécriture avec Cédric Cherdel - Uncanny
+
+----
+
+Text: 
+
+DANSÉCRITURE est un projet liant littérature et chorégraphie qui souhaite déchiffrer les multiples facettes du spectateur en l’invitant à devenir acteur-auteur d’une démarche de création autour des pièces du chorégraphe Cédric Cherdel. Pour cela, avec ce chorégraphe, nous avons créer un groupe de « spectateurs potentiels » à qui nous avons proposé de devenir tour à tour chorégraphe et écrivain et danseur et critique de pièces dont les titres était *Assis* et *Mascarade*.
+
+Le projet DANSÉCRITURE est composé de différentes phases et périodes correspondant au calendrier de la création des pièces.
+
+----
+
+Relatedpages: 
+
+- 
+  relatedpage: labos/assis-dansecriture2
+  cover: ""
+- 
+  relatedpage: labos/dansecriture-mascarade
+  cover: ""
+
+----
+
+Labeldico: 

@@ -1,0 +1,31 @@
+Title: À propos
+
+----
+
+Text:
+
+*Le Dico du spectateur* est une œuvre littéraire interactive. Il a pour appui un site internet. Son objet principal est le champ des arts du spectacle.
+
+Depuis 2009, *Le Dico* cherche à entendre différentes musiques de spectateur, tels des chants du merle à l'aurore. Aussi, des **expériences** collectives de spectateurs sont initiées en mode laboratoire, pendant lesquelles s'interrogent, en co-construction avec un partenaire, la relation du public avec le spectacle vivant. 
+
+Mise en récit par Joël Kérouanton, les données collectées dans ces expériences donnent lieu, le plus souvent, à l'écriture de définitions alimentant le corpus du ***Dico***. 
+
+Lancé en 2015, *Le Dico du spectateur* en ligne est une entrée dans la lecture autant que rebond pour des publications papiers — carte postale, livret, livre d'art — ou des évènements publics ouverts à tous : lectures, expositions, parcours, jeux.
+
+Fin prévisionnelle : jamais
+
+###### NOTA BENE : Ce *Dico* n’aurait pas vu le jour sans la contribution (parfois ronchonne) de spectateurs rencontrés au fil du temps et des spectacles. Des spectateurs assumés, témoins de ce qui se déroule devant eux, artistes dans leurs genres, qui s'amusent à regarder leur propre regard. Qu'ils en soient ici remerciés.
+
+(image: image.png)
+
+----
+
+Ressourcesmedia: 
+
+----
+
+Cover: 
+
+----
+
+Uuid: lDpzDEQ1wombudYT

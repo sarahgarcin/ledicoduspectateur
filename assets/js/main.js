@@ -8,6 +8,18 @@ $(document).ready(function() {
 
 function init() {
 
+  // menu secondaire
+  $('.menu-secondaire .menu-secondaire-btn').on('click', function(){
+    if($('.menu-secondaire').hasClass('active')){
+      $('.menu-secondaire').removeClass('active');
+      $(this).html("+");
+    }
+    else{
+      $('.menu-secondaire').addClass('active');
+      $(this).html("←");
+    }
+  });
+
     // api dodoc 
     // affiche les publications dans le site
     var rechargerLaPage = $('main').attr('data-recharge');
@@ -137,19 +149,23 @@ function init() {
       //home
       $('.citation-wrapper').draggable();
       //random position for  $('.citation-wrapper')
-      var maxY = $(window).height() - $('.citation-wrapper').height();
-      var randomX = Math.random() * ($(window).width() - $('.citation-wrapper').width());
-      var randomY = Math.random() * (maxY - 70) + 70;
-      $('.citation-wrapper').css({
-          'top': randomY,
-          'left':randomX
+      $('.citation-wrapper').each(function(){
+        var $this = $(this);
+        var maxY = $(window).height() - $this.height();
+        var randomX = Math.random() * ($(window).width() - $this.width());
+        var randomY = Math.random() * (maxY - 70) + 70;
+        $this.css({
+            'top': randomY,
+            'left':randomX
+        });
+        setTimeout(function(){
+          $('.citation-wrapper').fadeIn(400);
+        }, 200);
       });
-      setTimeout(function(){
-        $('.citation-wrapper').fadeIn(400);
-      }, 200);
 
 
-      //definitions
+
+// -------- definitions / DICO -----------
 
       $('.definition-item').on('click', function(e){
         var url = $(this).attr("data-target");
@@ -309,11 +325,25 @@ function init() {
         $(this).remove();
       }
     });
-
   }
 
+// ------ print dico ----------
+  $checkbox = $('.def-check');
+  $checkbox.change(function(){
+    console.log(checkArray($checkbox)); 
+    if($(this).is(':checked')) {
+      var thisId = $(this).attr('id');
+      $('.print-definition[data-def="'+thisId+'"]').addClass('active');
+    }
+  });
 
+}
 
+function checkArray($checkbox) {
+  return $checkbox
+      .filter(':checked')
+      .map((_, el) => el.id)
+      .get();
 }
 
 function closePopUp($this){

@@ -1,0 +1,110 @@
+Title: Quartier en scène <Br> Le Théâtre de Laval <Br> 2021-2022<Br>
+
+----
+
+Garde: 
+
+Joël Kérouanton 
+ledicoduspectateur.net
+
+----
+
+Couv: gui-dico-07.png
+
+----
+
+Logosdebut: download.png
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "4"
+- 
+  title: Début de l’aventure
+  numero: "6"
+- 
+  title: Visite du théâtre et des coulisses
+  numero: "11"
+- 
+  title: À nous d’imaginer le spectacle
+  numero: "15"
+- 
+  title: Stage avec la compagnie Label Brut
+  numero: "19"
+- 
+  title: >
+    Livrer ses retours des spectacles
+    (photos)
+  numero: "23"
+- 
+  title: >
+    Livrer ses retours des spectacles
+    (écriture)
+  numero: "29"
+- 
+  title: Mise en récit du parcours
+  numero: "39"
+- 
+  title: Retour sur l’aventure
+  numero: "47"
+- 
+  title: >
+    Mini-dico du spectateur Quartier en
+    scène
+  numero: "55"
+- 
+  title: Contexte et crédits
+  numero: "66"
+
+----
+
+Titreedito: 
+
+----
+
+Edito: 
+
+Cette saison 2021-2022, le théâtre de Laval a déroulé le tapis rouge aux ados en proposant un parcours à vivre comme une aventure collective. Au programme : des spectacles, des ateliers, des rencontres, des moments d’échanges, une participation à la vie du théâtre.
+Dans le cadre du Contrat Local d’Éducation Artistique et Culturelle de Laval, avec le concours des ministères de la Culture et de l’Éducation nationale et en lien étroit avec les services de l'éducation, de la jeunesse, de la petite enfance, de la vie de quartier, les services culturels sont sortis de leurs murs, ont invité des artistes en résidence, ont construit des projets avec et pour les habitants et les habitantes.
+Après six années de travail en profondeur mené avec les forces vives du quartier Saint-Nicolas-Pavement, et trois années à Avesnières, le théâtre donne un nouvel axe à Quartier en scène en proposant cette aventure aux adolescents et aux adolescentes volontaires.
+Entre octobre 2021 et juin 2022, environ une fois par mois, Quartier en scène a réuni un groupe d'adolescents et d’adolescentes pour un rendez-vous convivial en lien avec les différentes facettes du théâtre : découverte du lieu, des expositions, des spectacles, mais aussi débats, ateliers de pratiques artistiques et ateliers critiques. 
+Ce livre est la mise en récit de cette aventure collective : Joël Kérouanton, écrivain et poète, a accompagné à l'émergence des écrits, des images, des moments de partage et des souvenirs. Cet ouvrage numérique et imprimé est aujourd'hui une trace vivante qui nous permet de poursuivre la recherche de nouvelles paroles de jeunes spectateurs et spectatrices !
+
+----
+
+Displayquotes: oui
+
+----
+
+Imagecredit: 
+
+----
+
+Titrecredits: 
+
+----
+
+Colophon: 
+
+**Colophon**
+Design graphique : atelier g.u.i.
+Les participant·es : Abel, Anouk, Bedran, Capucine, Emmanuelle, Hussein, Joël, Lama, Lia, Lily, Marion, Tigui, Vanille, Virginie. 
+Équipe de médiation culturelle : Emmanuelle Breton, Virginie Basset.
+Lecture-correction : Mélanie Tanous.
+Direction éditoriale  : Emmanuelle Breton, Virginie Basset, Pierre Jamet , Joël Kérouanton.
+Livre numérique mis en ligne le 24 septembre 2022 sur ledicoduspectateur.net.
+
+----
+
+Logosfin: getfileattachment.jpg
+
+----
+
+Ajouterdespages: 2
+
+----
+
+Imagefin: dico-bleu.png

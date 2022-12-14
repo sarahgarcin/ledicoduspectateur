@@ -1,0 +1,20 @@
+title: Valorisations
+
+sections:
+  files: 
+    label: Images / Fichiers
+  drafts:
+    label: Brouillons
+    type: pages
+    status: drafts
+    templates: valorization
+  unlisted:
+    label: Pages non publiées
+    type: pages
+    status: unlisted
+    templates: valorization
+  published:
+    label: Pages Publiées
+    type: pages
+    status: listed
+    templates: valorization

@@ -1,0 +1,38 @@
+title: Page
+
+columns: 
+  sidebar: 
+    width: 1/3
+    sections:
+      files: 
+        label: Images / Fichiers
+      drafts:
+        label: Brouillons
+        type: pages
+        status: drafts
+      unlisted:
+        label: Pages non publiées
+        type: pages
+        status: unlisted
+      published:
+        label: Pages Publiées
+        type: pages
+        status: listed
+  content: 
+    width: 2/3
+    type: fields 
+    fields: 
+      cover: 
+        label: Image à afficher en photo de couverture
+        type: files
+        multiple: false
+      text:
+        label: Texte
+        type: markdown
+      displayQuotes: 
+        label: Afficher les citations dans les définitions ? 
+        type: radio
+        options: 
+          oui: oui
+          non: non
+        default: oui 

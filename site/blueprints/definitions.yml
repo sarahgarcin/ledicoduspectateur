@@ -1,9 +1,0 @@
-title: Définitions
-
-pages: page
-files: false
-
-fields: 
-	title:
-		label: Titre
-		type: text

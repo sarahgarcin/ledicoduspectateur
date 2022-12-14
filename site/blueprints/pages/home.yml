@@ -1,0 +1,25 @@
+title: Accueil
+pages : false
+
+columns: 
+  sidebar: 
+    width: 1/3
+    sections:
+      files: 
+        label: Images / Fichiers
+  content: 
+    width: 2/3
+    type: fields
+    fields:
+      text:
+        label: Texte
+        type: markdown
+      actualite:
+        label: Actualités
+        type: markdown
+      publication:
+        label: Dernière publication
+        type: select
+        options:
+          type: query
+          query: site.index.find('livres').children.listed  

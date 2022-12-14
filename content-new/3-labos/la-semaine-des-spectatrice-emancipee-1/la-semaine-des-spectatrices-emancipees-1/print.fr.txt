@@ -1,0 +1,85 @@
+Title: La semaine <Br> des spectatrices <Br> émancipées # 1
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Couv: gui-dico-04.png
+
+----
+
+Logosdebut: 
+
+----
+
+Sommaire: 
+
+- 
+  title: Edito
+  numero: "3"
+- 
+  title: Les évènements (en cours)
+  numero: "5"
+- 
+  title: Ateliers (en continue)
+  numero: "6"
+- 
+  title: Côté pro (en cours)
+  numero: "10"
+- 
+  title: Crédits
+  numero: "12"
+- 
+  title: Production
+  numero: "14"
+- 
+  title: En pratique
+  numero: "14"
+
+----
+
+Titreedito: 
+
+----
+
+Edito: 
+
+Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.
+Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat.
+Ego vero sic intellego, Patres conscripti, nos hoc tempore in provinciis decernendis perpetuae pacis habere oportere rationem. Nam quis hoc non sentit omnia alia esse nobis vacua ab omni periculo atque etiam suspicione belli?
+
+Pour La semaine des spectatrices émancipées,
+Pascal Fraslin Echevin
+
+----
+
+Displayquotes: oui
+
+----
+
+Imagecredit: gui-dico-30.png
+
+----
+
+Titrecredits: 
+
+----
+
+Colophon: 
+
+----
+
+Logosfin: logo-0z-cmjn-orange.png
+
+----
+
+Ajouterdespages: 2
+
+----
+
+Imagefin: dico-bleu.png

@@ -27,7 +27,7 @@ snippet('menu');
     </div>
     <div class="small-12 medium-8 medium-push-2 columns end">
       <ul class="row">
-        <?php foreach ($page->children()->visible()->sortBy('title', 'asc') as $subpage):
+        <?php foreach ($page->children()->listed()->sortBy('title', 'asc') as $subpage):
           $first_let = $subpage->title()->slug()->upper()->toString()[0];
           if ($cur_let !== $first_let):
             $cur_let = $first_let;?>

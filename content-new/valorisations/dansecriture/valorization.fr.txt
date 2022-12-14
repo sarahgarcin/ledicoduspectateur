@@ -1,0 +1,24 @@
+Title: DANSÉCRITURE
+
+----
+
+Text: 
+
+En mars 2016, sur proposition du Théâtre de la Ruche et du SEPT CENT QUATRE VINGT TROIS, Cédric Cherdel et Joël Kérouanton se rencontrent dans un studio de danse. Le premier écrit avec la complicité d’interprètes sur le projet de création ASSIS. Le second écrit autour du processus de création de ASSIS. 
+
+De cette rencontre artistique se dévoile un goût pour les méthodes d’éducations actives et fait naître une connivence artistique qui amène ces deux auteurs à collaborer autour de la fonction de spectateur dans le spectacle vivant aujourd’hui, fondement du projet DANSÉCRITURE.
+
+----
+
+Relatedpages: 
+
+- 
+  relatedpage: labos/assis-dansecriture
+  cover: ""
+- 
+  relatedpage: labos/dansecriture-mascarade
+  cover: ""
+
+----
+
+Labeldico: Le Dico du : DANSECRITURE

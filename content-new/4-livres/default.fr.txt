@@ -1,0 +1,20 @@
+Title: Livres
+
+----
+
+Cover: 
+
+----
+
+Text:
+
+Issue du *Dico du spectateur *en ligne, les livres mettent en récit la fabrique d’un spectacle, de sa genèse à la rencontre avec le public. L’écriture se déploie par une observation participante dans les lieux mêmes de la création, en invitant les artistes et les spectateurs à contribuer. 
+Ces livres aux formes d'écriture différente, associé à des photos et des dessins, présentent des définitions théorico-rigolotes issues du *Dico du spectateur*.
+
+----
+
+Displayquotes: oui
+
+----
+
+Uuid: 6HUzzZJfoc087Iiu

@@ -1,0 +1,16 @@
+Title: 1ère page de couv
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+(image: photos0025.jpg)
+(image: 130327873_431503404541397_2082121754226843678_n.jpg)
+
+----
+
+Displayquotes: oui

@@ -1,52 +1,47 @@
 title: Site
 
-pages: true
-fields:
-  siteSettings:
-    label: Paramètres du site
-    type:  headline
-  title:
-    label: Titre
-    type:  title
-  author:
-    label: Auteur(s)
-    type:  text
-  description:
-    label: Description
-    type:  textarea
-  keywords:
-    label: Mots clés
-    type:  tags
-  logo: 
-    label: Logo
-    type: selector
-    mode: single
-    types:
-      - image
-  socialNetworkSettings:
-    label: Réseaux Sociaux
-    type:  headline
-  ogimage:
-    label: Image représentante du site
-    type:  url
-    help:  URL d'une image qui représentera le site sur les réseaux sociaux.
-  socialnetworks:
-    label: Vos réseaux sociaux
-    type:  structure
-    entry: >
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-{{icon}} fa-stack-1x fa-inverse"></i>
-      </span> {{link}}</i>
-    fields:
-      icon:
-        label: Icon
-        type:  text
-        width: 1/2
-        icon:  share-alt
-      link:
-        label: Link
-        type:  text
-        width: 1/2
-        icon:  link
-    help: Go on <a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a> to find the icon’s name you want to use.
+tabs:
+  pages:
+    label: Pages
+    icon: page
+    columns:
+      - width: 1/2
+        sections:
+          pages:
+            type: pages
+            headline: Pages
+  settings:
+    label: Paramètres
+    icon: settings
+    columns:
+      - width: 1/3
+        sections:
+          images:
+            type: files
+            template: image
+            info: "{{ file.dimensions }}"
+            size: small
+      - width: 1/2
+        fields:
+          logo: 
+            label: Logo
+            type: files
+          socialThumb: 
+            label: Image for social network
+            type: files
+            multiple: false
+          author: 
+            label: Auteur
+            type: text
+          keywords:
+            label: Mots-clés (pour les moteurs de recherche)
+            type: tags
+          description: 
+            label: Description (pour les moteurs de recherche)
+            type: textarea
+            size: small
+          copyright: 
+            label: Copyright
+            type: text
+
+

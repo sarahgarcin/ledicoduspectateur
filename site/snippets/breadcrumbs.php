@@ -1,4 +1,4 @@
-<?php if($site->isValorization()) return; ?>
+<?php if($site->isValorization($site)) return; ?>
 
 <nav class="breadcrumb">
   <ul>

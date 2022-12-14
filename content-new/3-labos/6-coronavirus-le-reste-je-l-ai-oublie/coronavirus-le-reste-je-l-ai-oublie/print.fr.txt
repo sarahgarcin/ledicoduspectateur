@@ -1,0 +1,87 @@
+Title: LE RESTE, JE L'AI OUBLIÉ <br> Happening Covid 19 <br> Saint-Nazaire
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Couv: gui-dico-12.png
+
+----
+
+Logosdebut: visuel-livret-dico-le-reste-je-l-ai-oublie.jpg
+
+----
+
+Sommaire: 
+
+- 
+  title: Edito
+  numero: "3"
+- 
+  title: Les créations Covid 19 remises en jeu
+  numero: "6"
+- 
+  title: Exposition au Garage
+  numero: "10"
+- 
+  title: "Récit d'un confinement en cube"
+  numero: "22"
+- 
+  title: Le mini-dico
+  numero: "25"
+- 
+  title: 'Contexte & Crédits'
+  numero: "29"
+
+----
+
+Titreedito: 
+
+----
+
+Edito: 
+
+Un livre, un lectoir de rue, des sons électros : cet ensemble de créations réalisées pendant le confinement est remis en jeu à l’occasion d’exposition ou de happening. Les spectateurs sont conviés à regarder, à écouter autant qu’à contribuer avec masque et stylo ! Une exposition sous forme de “culture de l’usage”, tel un récit qui prolongerait et réinterpréterait les récits précédents.
+Avec :
+WEN (Performance sonore)
+JOËL KÉROUANTON (Littérature / Médiation numérique)
+DOM CIESIELSKI (Matériel urbain)
+
+----
+
+Displayquotes: oui
+
+----
+
+Imagecredit: img_20200608_185912.jpg
+
+----
+
+Titrecredits: 
+
+----
+
+Colophon: 
+
+**Colophon :**
+Design graphique : atelier g.u.i.
+Photos de constat (expériences collectives de spectateurs) : Dominique Cieslesky et Joël Kérouanton
+Correction : 
+Direction éditoriale : Dominique Cieslesky, Wenaël Aloë-Scala, Joël Kérouanton
+
+----
+
+Logosfin: img_20200615_145800.jpg
+
+----
+
+Ajouterdespages: 0
+
+----
+
+Imagefin: gui-dico-59.png

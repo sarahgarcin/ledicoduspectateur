@@ -1,0 +1,35 @@
+title: Définition
+pages : false
+
+columns: 
+  sidebar: 
+    width: 1/3
+    sections:
+      files: 
+      	label: Images / Fichiers
+  content: 
+  	width: 2/3
+  	type: fields
+  	fields: 
+  		text: 
+  			label: Texte
+  			type: markdown
+  		sources:
+  			label: Sources
+  			type: markdown
+  		ressourcesmedia:
+  			label: Image de couverture
+  			type: files 
+  			multiple: false
+  			query: page.images
+  		inoff: 
+  			label: In / Off
+  			type: radio
+  			default: in
+  			options: 
+  				in: In
+  				off: / Off
+
+
+
+

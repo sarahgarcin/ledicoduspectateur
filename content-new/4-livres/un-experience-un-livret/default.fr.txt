@@ -1,0 +1,44 @@
+Title: Une expérience = un livret
+
+----
+
+Cover: mdla-machecoul.png
+
+----
+
+Text: 
+
+**Les expériences collectives de spectateurs donnent lieux, parfois, à des livrets imprimés issus d'un système dʼimpression automatique de contenu. Conçu sur la base d'un format A5, le PDF est programmé pour être imprimé sur du matériel de bureau classique.**
+(image: mdla-machecoul.png)
+
+[Avec Les Collectors — saison 4](http://ledicoduspectateur.net/content/3-labos/1-theatre-onyx-saison-4/le-dico-du-spectateur-_-theatre-onyx-_br_-avec-les-collectors-_br_-saison-4.pdf), Théâtre ONYX
+
+[Brouette](http://ledicoduspectateur.net/content/3-labos/2-brouette/le-dico-du-spectateur-_-brouette_le-livre-12-11-2021.pdf) — Spectacle intéractif autour de la lecture
+
+[Avec Les Collectors — saison 3](http://ledicoduspectateur.net/content/3-labos/4-theatre-onyx-3/le-dico-du-spectateur-_-theatre-onyx-_br_-avec-les-collectors-_br_-saison-3.pdf), Théâtre ONYX
+
+[Vers une critique collaborative de spectacle](http://ledicoduspectateur.net/content/3-labos/6-val-d-oise-5/le-dico-du-spectateur-experience-val-...ne-critique-collaborative-de-spectacle-def.pdf) - Val d'oise — saison 5
+
+[Formation-Action culture/social](http://ledicoduspectateur.net/content/3-labos/7-mdla-former-a-une-demarche-artistique-inclusive/le-dico-du-spectateur-former-a-une-de...ique-et-danse-br-en-loire-atlantique-definitif.pdf),  Musique et Danse en Loire-Atlantique | Pays de Retz
+
+[Grandir avec la danse](http://ledicoduspectateur.net/content/3-labos/8-preac-pays-de-la-loire-grandir-avec-la-danse/le-dico-du-spectateur-grandir-avec-la...spectacle-vivant-des-pays-de-la-loire-7-juillet.pdf), PREAC spectacle vivant Pays de la Loire, Angers
+
+[Avec Les Collectors — saison 2](http://ledicoduspectateur.net/content/3-labos/9-theatre-onyx-2/le-dico-du-spectateur-theatre-onyx-avec-les-collectors-saison-2-04-10-19.pdf), Théâtre ONYX
+
+[Collecter les impressions du publics](http://ledicoduspectateur.net/content/3-labos/11-val-d-oise-4/le-dico-du-spectateur-_-laboratoire-val-d_oise-2018.pdf) - Val d'oise — saison 4
+
+[Avec Les Collectors — saison 1](http://ledicoduspectateur.net/content/3-labos/12-theatre-onyx-1/le-dico-du-spectateur-theatre-onyx-br-avec-les-collectors-br-saison-1-04-10-2019.pdf), Théâtre ONYX
+
+[Accompagner les publics](http://ledicoduspectateur.net/content/3-labos/13-val-d-oise-3/le-dico-du-spectateur-_-laboratoire-val-d_oise-2017.pdf), Val d'oise — saison 3
+
+[Enquêter sur son propre regard](http://ledicoduspectateur.net/content/3-labos/17-val-d-oise-2/livre-val-doise7-2016-a5-definitif.pdf), Val d'oise — saison 2
+
+[Inventer un langage commun](http://ledicoduspectateur.net/content/3-labos/19-Val-d'Oise/dico-livret-valoise9.pdf), Val d'oise — saison 1
+
+(image: val-d-oise-saison-5.png)
+(image: capture-decran-livret-onyx-saison-4-2021.png)
+(image: grandir-avec-la-danse.png)
+
+----
+
+Displayquotes: oui

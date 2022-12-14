@@ -1,0 +1,33 @@
+Title: Spectateurs en Val d'Oise
+
+----
+
+Cover: 
+
+----
+
+Text: Sensibilisation à l’éducation artistique dans le domaine des arts de la scène  proposée aux animateurs socio-culturels et médiateurs culturells du territoire de l'Est Val-d'Oise [2015-2019]
+
+----
+
+Relatedpages: 
+
+- 
+  relatedpage: "labos/Val-d'Oise"
+  cover: ""
+- 
+  relatedpage: labos/val-d-oise-2
+  cover: ""
+- 
+  relatedpage: labos/val-d-oise-3
+  cover: ""
+- 
+  relatedpage: labos/val-d-oise-4
+  cover: ""
+- 
+  relatedpage: labos/val-d-oise-5
+  cover: ""
+
+----
+
+Labeldico: Le Dico du spectateur Val d'Oise

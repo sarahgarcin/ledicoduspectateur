@@ -18,7 +18,7 @@
           <?php endif;?>
           <img src="<?php echo $logo->url() ?>" alt="<?php echo $logo->title()?>">
         </div>
-        <h1><?php echo $page->title()->html()?></h1>
+        <h1><?php echo $page->title()?></h1>
         <div class="auteur">
           <?php echo $page->garde()->kirbytext()?>
         </div>
@@ -43,7 +43,7 @@
       <?php else:?>
         <h2>Édito</h2>
       <?php endif; ?>
-      <?php echo $page->edito()->kirbytext();?>
+      <?php echo $page->edito()->kt();?>
       <?php if($logoDebut = $page->logosDebut()->toFile()):?>
         <div class="logo-wrapper">
           <img src="<?php echo $logoDebut->url() ?>" alt="<?php echo $logoDebut->title()?>">
@@ -57,7 +57,7 @@
 
   <?php if( $page->parent()->children()->intendedTemplate() != "print"):?>
     <div class="texte subpages" >
-      <?php foreach($page->parent()->children()->visible() as $textChild):?>
+      <?php foreach($page->parent()->children()->listed() as $textChild):?>
           <?php if($textChild->intendedTemplate() != "print"):?>
             <h2 class="print-title-subpage"><?php echo $textChild->title()->html() ?></h2>
             <?php echo $textChild->text()->kirbytext() ?>

@@ -1,0 +1,71 @@
+// ce css permet le design d'impression du dico du spectateur
+body[data-template="dicoprint"]{
+	.select-print-definition{
+		display: block;
+	}
+	.book{
+		width: 210mm;
+		margin: auto;
+		display: none;
+		li{
+			list-style: none;
+		}
+		.letter{
+			font-size: 5em;
+			color: $vert;
+			border: 4px solid $vert;
+			display: inline-block;
+			padding: 0px 23px 18px 23px;
+			line-height: 1;
+			margin-bottom: 30px;
+		}
+		.print-definition{
+			padding: 1cm;
+			border: 12px solid $vert;
+			height: 147mm;
+			position: relative;
+			.inner-definition{
+				width: calc(75% - 1cm);
+				position: absolute;
+				left: 25%;
+				top: 1cm;
+				h2{
+					font-size: 2em;
+					margin-top: 0;
+				}
+				figure{
+					margin:0;
+					width: 5cm;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	@media print{
+		@page{
+			size: A5; 
+			orientation: landscape;
+			margin: 14mm 15mm 14mm 15mm;
+		}
+		main{padding: 0;}
+		.print-menu{
+			display: none;
+		}
+		.print-definition{
+			display: none;
+			page-break-after: always;
+			&.active{
+				display: block;
+			}
+		}
+		.select-print-definition{
+			display: none;
+		}	
+		.book{
+			display: block;
+		}
+	}
+
+}
+

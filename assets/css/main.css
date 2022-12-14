@@ -9511,6 +9511,61 @@ body[data-template="print"] .print-title-subpage {
       position: absolute;
       top: 19.5cm; } }
 
+body[data-template="dicoprint"] .select-print-definition {
+  display: block; }
+
+body[data-template="dicoprint"] .book {
+  width: 210mm;
+  margin: auto;
+  display: none; }
+  body[data-template="dicoprint"] .book li {
+    list-style: none; }
+  body[data-template="dicoprint"] .book .letter {
+    font-size: 5em;
+    color: #00FF9A;
+    border: 4px solid #00FF9A;
+    display: inline-block;
+    padding: 0px 23px 18px 23px;
+    line-height: 1;
+    margin-bottom: 30px; }
+  body[data-template="dicoprint"] .book .print-definition {
+    padding: 1cm;
+    border: 12px solid #00FF9A;
+    height: 147mm;
+    position: relative; }
+    body[data-template="dicoprint"] .book .print-definition .inner-definition {
+      width: calc(75% - 1cm);
+      position: absolute;
+      left: 25%;
+      top: 1cm; }
+      body[data-template="dicoprint"] .book .print-definition .inner-definition h2 {
+        font-size: 2em;
+        margin-top: 0; }
+      body[data-template="dicoprint"] .book .print-definition .inner-definition figure {
+        margin: 0;
+        width: 5cm;
+        margin: auto; }
+
+@media print {
+  @page {
+    body[data-template="dicoprint"] {
+      size: A5;
+      orientation: landscape;
+      margin: 14mm 15mm 14mm 15mm; } }
+  body[data-template="dicoprint"] main {
+    padding: 0; }
+  body[data-template="dicoprint"] .print-menu {
+    display: none; }
+  body[data-template="dicoprint"] .print-definition {
+    display: none;
+    page-break-after: always; }
+    body[data-template="dicoprint"] .print-definition.active {
+      display: block; }
+  body[data-template="dicoprint"] .select-print-definition {
+    display: none; }
+  body[data-template="dicoprint"] .book {
+    display: block; } }
+
 @media only screen and (max-width: 40em) {
   header {
     top: 1rem;

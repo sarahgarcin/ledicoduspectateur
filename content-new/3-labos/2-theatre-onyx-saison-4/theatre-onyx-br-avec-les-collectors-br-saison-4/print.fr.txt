@@ -1,0 +1,96 @@
+Title: Théâtre ONYX <br> Avec Les Collectors  <br> saison 4
+
+----
+
+Garde: 
+
+Joël Kérouanton
+ledicoduspectateur.net
+
+----
+
+Couv: gui-dico-35.png
+
+----
+
+Logosdebut: onyx-theatre-petit-2.jpg
+
+----
+
+Sommaire: 
+
+- 
+  title: Édito
+  numero: "4"
+- 
+  title: Zaï Zaï Zaï Zaï
+  numero: "6"
+- 
+  title: Plastic Platon
+  numero: "12"
+- 
+  title: Obsolète
+  numero: "17"
+- 
+  title: >
+    Mini-dico du spectateur ONYX — Saison
+    4
+  numero: "23"
+- 
+  title: Contexte et Crédits
+  numero: "26"
+
+----
+
+Titreedito: 
+
+----
+
+Edito: 
+
+(image: onyx07189.gif)
+**Avec Les Collectors — saison 4
+Saint-Herblain, 2021**
+
+##### Au départ, c’est une simple idée : chacun, à présent, grâce aux réseaux sociaux, est capable d’émettre un avis sur tout et n’importe quoi, et se livre en pâture au monde entier. Étonnamment, dans le spectacle vivant, cette pratique est l’apanage des professionnels, des critiques autorisés et de la presse spécialisée.
+##### Pour le simple spectateur, la critique se limite souvent à son cercle proche, la personne qui l’accompagne, au mieux quelques amis, au pire le personnel du théâtre toujours à l’écoute. Pourquoi ne pas donner au spectateur la possibilité d’exprimer son avis dès la sortie de salle pour ensuite le partager avec les autres spectateurs ?
+##### Ce serait lui donner une valeur, sa valeur, tout aussi importante que celle du critique professionnel. Comme chaque spectateur participe depuis son siège à l’avènement du spectacle, il peut — il est en droit de — donner lui aussi son avis sur ce spectacle et ainsi apporter sa contribution au but social du spectacle, au questionnement de la société, au débat qu’il peut susciter.
+##### Pour cette quatrième saison, nous vous livrons cette fournée d’avis passée au crible du verbe de Joël Kérouanton, infatigable questionneur de la place du spectateur.
+##### En souhaitant que notre brigade de Collectors et Collectors juniors puisse reprendre ses activités à l'automne 2022, nous vous livrons là cette quatrième mouture, qui, nous l’espérons, vous amusera, vous interrogera et — pourquoi pas — vous donnera l’envie de nous rejoindre.
+##### Bonne lecture !
+
+##### L’équipe du théâtre ONYX
+
+----
+
+Displayquotes: oui
+
+----
+
+Imagecredit: logo-ville-saint-herblain-noir.jpg
+
+----
+
+Titrecredits: 
+
+----
+
+Colophon: 
+
+Design graphique : atelier g.u.i.
+Les Collectors : Audrey, Camille, Cécile, Christine, Claire, Danièle, Elise, France, Isabelle, Jacqueline, Jean-Noël, Joël, Laurence, Rose, Sophie, Thierry, Vincent.
+Équipe de médiation culturelle : Jean-Noël Charpentier, Elise Denier, France Prou.
+Lecture-correction : Mélanie Tanous.
+Direction éditoriale  : Gaëlle Lecareux, Jean-Noël Charpentier et Joël Kérouanton.
+
+----
+
+Logosfin: 
+
+----
+
+Ajouterdespages: 4
+
+----
+
+Imagefin: dico-bleu.png

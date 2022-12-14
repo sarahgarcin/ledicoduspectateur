@@ -1,0 +1,27 @@
+Title: En pratique
+
+----
+
+Cover: presentation-face-garage.jpg
+
+----
+
+Text: 
+
+(image: presentation-face-garage.jpg)
+<Br>
+
+Au Garage, 40 rue des Halles à Saint-Nazaire
+
+Entrée libre.
+
+#####Contact : Joël Kérouanton / infos@joelkerouanton.fr
+***
+
+######Le Garage est un pôle créatif : un espace de travail partagé qui accueille 11 entreprises dans le domaine de la création artisanale, artistique et numérique. Ce lieu vivant est constitué d'ateliers d’artisans (une couturière, une artisan gainier, deux fées, deux modistes, un photographe), de bureaux permanents (une illustratrice, un écrivain, un designer numérique), une boutique (un disquaire) et d'un espace central mutualisé.
+######Partager son lieu de travail avec d'autres entreprises créatives offre aux résidents l’opportunité d'évoluer ensemble dans un esprit de collaboration et d'émulation, de partager des expériences et d'inventer ensemble de nouveaux modes de travail.
+######Sous la verrière centrale, tout au long de l'année, sont organisés des évènements soit par les résidents appelés « Garagistes », soit par des structures extérieures (entreprises ou associations) qui louent l'espace ponctuellement. La programmation multiculturelle touche des publics très variés : foire aux vinyles, salon des écrivains, atelier d'écriture, salon du bien-être, boutique éphémère de créateurs… Lieu de vie et de rencontre, le Garage est équipé d'une give-box pour l'échange de livres.
+
+----
+
+Displayquotes: oui
